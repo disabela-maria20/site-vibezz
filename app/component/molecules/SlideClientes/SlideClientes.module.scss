@@ -1,0 +1,22 @@
+.SlideClientes{
+    padding: 90px 0;
+    @include media(lg){
+        padding: 130px 0;
+    }
+    .Swiper{
+        margin-top: 50px;
+        @include media(lg){
+            margin-top: 100px;
+        }
+        .logo{
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: contain;
+            filter: grayscale(1);
+            transition: all 200ms ease;
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+    }
+}
