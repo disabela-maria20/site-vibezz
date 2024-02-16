@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import Style from "./HomeSectionCard.module.scss"
@@ -45,7 +46,7 @@ const HomeSectionCard = () => {
             {arrayCard.map((data) => (
               <div className={Style.card} key={data.id}>
                 <i>
-                  <img src={`./images/${data.icon}.svg`} alt="" />
+                  <img src={`/images/${data.icon}.svg`} alt="" />
                 </i>
                 <h3>{data.title}</h3>
                 <hr />
