@@ -1,10 +1,12 @@
-import { Menu } from "../../component/molecules"
+
 import transition from "../../utilities/transition"
+import { Header } from "../component/organisms"
+
 
 function Page() {
   return (
     <>
-      <Menu />
+      <Header/>
     </>
   )
 }
