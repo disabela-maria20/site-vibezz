@@ -2,9 +2,6 @@
 
 const path = require("path")
 const nextConfig = {
-  reactStrictMode: true,
-  distDir: "build",
-  trailingSlash: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'utilities','styles', "sass")],
      prependData: `
