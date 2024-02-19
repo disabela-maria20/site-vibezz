@@ -1,8 +1,9 @@
 .marketing {
-  background-image: url('/images/bg/bg-fundo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  @include media(lg) {
+    background-image: url('/images/bg/bg-fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   position: relative;
   font-family: $font-family;
@@ -19,7 +20,6 @@
       display: grid;
       gap: 31px;
       height: 100;
-      max-width: 1200px;
       padding: 15px;
 
       @include media(md) {
@@ -27,6 +27,10 @@
         align-items: center;
         height: 100vh;
         padding: 0;
+      }
+
+      @include media(xl) {
+        margin-right: 20%;
       }
 
       .card {
@@ -128,10 +132,11 @@
 
 
 .mercado {
-  background-image: url('/images/bg/bg-fundo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  @include media(lg) {
+    background-image: url('/images/bg/bg-fundo-inverso.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   position: relative;
   font-family: $font-family;
@@ -148,19 +153,19 @@
     }
 
     .gridCard {
-
       display: grid;
       gap: 31px;
       height: 100;
-      max-width: 1200px;
       padding: 15px;
 
       @include media(md) {
-
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: center;
         height: 100vh;
         padding: 0;
+      }
+      @include media(xl) {
+        margin-left: 20%;
       }
 
       .card {
@@ -176,7 +181,7 @@
         }
 
         &:hover {
-          background-image: linear-gradient(145deg, $primary-color, $primary-colors, $secondary-colors);
+          background-image: linear-gradient(145deg, $tertiary-colors, $quaternary-colos);
 
           h3 {
 
@@ -212,7 +217,8 @@
       align-items: center;
       flex-direction: column;
       padding: 25px 0;
-      margin-bottom: 35px;
+      margin: 35px 0;
+      z-index: 2;
 
       span {
         font-weight: 400;
@@ -249,6 +255,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -1;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
 
         @include media(lg) {
           height: 100vh;
