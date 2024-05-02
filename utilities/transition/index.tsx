@@ -1,3 +1,5 @@
+"use Client"
+
 import { motion } from "framer-motion"
 import { FunctionComponent } from "react"
 
