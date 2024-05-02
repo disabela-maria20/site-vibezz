@@ -3,42 +3,42 @@
 
 import { Title } from "@/component/atoms"
 import Style from "./HomeProcess.module.scss"
-
+import './style.scss'
 const HomeProcess = () => {
   const PROCESS = [
     {
       id: 1, 
       name: 'Ideia', 
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      style: Style.ideia
+      style: 'ideia'
     },
     {
       id: 2, 
       name: 'Pesquisa', 
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      style: Style.pesquisa
+      style: 'pesquisa'
     },
     {
       id: 3, 
       name: 'Planejamento', 
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      style: Style.planejamento
+      style: 'planejamento'
     },
     {
       id: 4, 
       name: 'Execução', 
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      style: Style.execucao
+      style: 'execucao'
     },
     {
       id: 5, 
       name: 'Análise', 
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 
-      style: Style.analise
+      style: 'analise'
     }
   ]
   return (
-    <section>
+    <section className={Style.processArea}>
       <div className="container">
         <div className={Style.title}>
           <Title>
@@ -47,7 +47,7 @@ const HomeProcess = () => {
         </div>
         <div className={Style.process}>
           {PROCESS.map((data) => (
-            <div key={data.id} id={data.name} className={Style.areaProcess}>
+            <div key={data.id} id={data.style} className={Style.areaProcess}>
               <span>{data.id}</span>
               <div>
                 <h2>{data.name}</h2>

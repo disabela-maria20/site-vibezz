@@ -3,6 +3,7 @@
 
 import Style from "./HomeSectionCard.module.scss"
 
+
 const HomeSectionCard = () => {
   const arrayCard = [
     {
