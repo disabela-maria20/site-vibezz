@@ -21,8 +21,8 @@
       flex-wrap: nowrap;
       overflow-x: auto;
       gap: 20px;
-      padding: 40px 90px 50px 20px;
-
+      padding: 40px 20px 40px 20px;
+      scrollbar-width: none;
       @include media(md) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -45,7 +45,10 @@
         color: $primary-color-gray;
         transition: all 1s ease-in-out;
         flex: 0 0 auto;
-        width: 100%;
+        width: calc(100% - 90px);
+        @include media(md) {
+          width: 100%;
+        }
         h3 {
           font-size: 21px;
         }
@@ -166,8 +169,8 @@
       flex-wrap: nowrap;
       overflow-x: auto;
       gap: 20px;
-      padding: 40px 90px 50px 20px;
-
+      padding: 40px 20px 40px 20px;
+      scrollbar-width: none;
       @include media(md) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -190,8 +193,12 @@
         color: $primary-color-gray;
         transition: all 1s ease-in-out;
         flex: 0 0 auto;
-        width: 100%;
+        width: calc(100% - 90px);
+        scrollbar-width: none;
 
+        @include media(md) {
+          width: 100%;
+        }
         h3 {
           font-size: 21px;
         }

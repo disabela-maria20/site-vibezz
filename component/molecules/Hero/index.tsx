@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Atropos from 'atropos/react';
 import Style from "./Hero.module.scss"
 
 const Hero = () => {
@@ -13,11 +13,15 @@ const Hero = () => {
             </h1>
           </div>
           <div className={Style.illustration}>
-            <img
-              src="/images/illustration/1.webp"
-              alt=""
-              className={Style.megaphone}
-            />
+            <Atropos shadow={false} highlight={false} >
+              <img
+                data-atropos-offset="5"
+                draggable={false}
+                src="/images/illustration/1.webp"
+                alt=""
+                className={Style.megaphone}
+              />
+            </Atropos>
             <img
               src="/images/illustration/3D_.webp"
               alt=""
