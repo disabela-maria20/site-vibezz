@@ -17,12 +17,14 @@
     }
 
     .gridCard {
-      display: grid;
-      gap: 31px;
-      height: 100;
-      padding: 15px;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 40px 90px 50px 20px;
 
       @include media(md) {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         padding: 105px 0;
@@ -42,7 +44,8 @@
         box-shadow: -6px 5px 12px 2px #e9e9e9;
         color: $primary-color-gray;
         transition: all 1s ease-in-out;
-
+        flex: 0 0 auto;
+        width: 100%;
         h3 {
           font-size: 21px;
         }
@@ -159,12 +162,14 @@
     }
 
     .gridCard {
-      display: grid;
-      gap: 31px;
-      height: 100;
-      padding: 15px;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 40px 90px 50px 20px;
 
       @include media(md) {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         padding: 105px 0;
@@ -184,6 +189,8 @@
         box-shadow: -6px 5px 12px 2px #e9e9e9;
         color: $primary-color-gray;
         transition: all 1s ease-in-out;
+        flex: 0 0 auto;
+        width: 100%;
 
         h3 {
           font-size: 21px;

@@ -16,7 +16,6 @@ const transition = (OgComponent: FunctionComponent) => {
 
   const transicao = { duration: 1, ease: [0.22, 1, 0.36, 1] }
 
-  // eslint-disable-next-line react/display-name
   return () => (
     <>
       <OgComponent />

@@ -36,9 +36,11 @@
   .illustration {
     position: relative;
     top: 25%;
+    padding: 90px 0;
     .megaphone {
       position: absolute;
       left: 0;
+      width: 100px;
     }
     .graphics {
       display: block;
@@ -46,8 +48,9 @@
       width: 100%;
     }
     .calendar {
+      width: 120px;
       position: absolute;
-      bottom: 0;
+      bottom: 90px;
       left: 0;
     }
   }
