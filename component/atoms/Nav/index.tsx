@@ -1,28 +1,23 @@
 'use client'
 
-import { motion } from "framer-motion"
+import { motion, useAnimate, usePresence } from "framer-motion"
 import Style from "./Nav.module.scss"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
 
-interface NavProps {
-  open: boolean
-  setOpen?: (value: boolean) => void
-}
-
-const Nav: React.FC<NavProps> = ({ open }) => {
+const Nav: React.FC = () => {
   const pathname = usePathname()
 
   const nav = ["/", "/parceiros", "/times", "/seguimentos", "/projetos"]
 
   return (
-    <nav className={`${Style.navBar}`}>
-      <div className={`${!open ? Style.open : Style.close}`}>
+    <>
+      <nav className={`${Style.navBar}`}>
         <ul>
           {nav.map((link) => (
             <li
               key={link}
-               className={`${pathname === link ? Style.active : ""}`}
+              className={`${pathname === link ? Style.active : ""}`}
             >
               <Link href={link}>
                 {link === "/" ? "A Vibezz" : link.slice(1)}
@@ -44,8 +39,9 @@ const Nav: React.FC<NavProps> = ({ open }) => {
             <Link href="#contact"> Vamos Conversar</Link>
           </motion.li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </>
+
   )
 }
 

@@ -23,6 +23,8 @@
       gap: 20px;
       padding: 40px 20px 40px 20px;
       scrollbar-width: none;
+      align-items: center;
+      
       @include media(md) {
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -44,7 +44,7 @@ const PROCESS = [
 
 const boxVariant = (delay: number) => {
   return {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: delay * 0.1 } },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: delay * 0.3 } },
     hidden: { opacity: 0, scale: 0},
     exit: { opacity: .7, transition: { duration: 0.5 } }
   }
@@ -65,6 +65,7 @@ const HomeProcess = () => {
         <div className={Style.process}>
           {PROCESS.map((data) => (
             <motion.div
+              ref={container}
               variants={boxVariant(data.id)}
               initial="hidden"
               animate={control}

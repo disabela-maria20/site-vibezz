@@ -43,18 +43,18 @@ const HomeSectionCard = () => {
             <span>Núcleo</span>
             <strong>Marketing</strong>
           </h2>
-          <div className={Style.gridCard}>
+          <ul className={Style.gridCard}>
             {arrayCard.map((data) => (
-              <div className={Style.card} key={data.id}>
+              <li className={Style.card} key={data.id}>
                 <i>
                   <img src={`/images/${data.icon}.svg`} alt="" />
                 </i>
                 <h3>{data.title}</h3>
                 <hr />
                 <p>{data.description}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
       <section className={Style.mercado}>
