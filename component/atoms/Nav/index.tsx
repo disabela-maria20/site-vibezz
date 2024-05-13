@@ -24,20 +24,19 @@ const Nav: React.FC = () => {
               </Link>
             </li>
           ))}
-
-          <motion.li
-            className={Style.cta}
-            whileHover={{
+          <li className={Style.cta}>
+            <motion.div whileHover={{
               scale: 1.13,
               transition: { duration: 0.25 }
             }}
-            whileTap={{
-              scale: 1.13,
-              transition: { duration: 0.9 }
-            }}
-          >
-            <Link href="#contact"> Vamos Conversar</Link>
-          </motion.li>
+              whileTap={{
+                scale: 1.13,
+                transition: { duration: 0.9 }
+              }}>
+              <Link href="#contact"> Vamos Conversar</Link>
+            </motion.div>
+
+          </li>
         </ul>
       </nav>
     </>

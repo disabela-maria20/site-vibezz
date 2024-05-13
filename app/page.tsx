@@ -1,4 +1,6 @@
+'use client'
 
+import transition from '@/utilities/transition'
 import dynamic from 'next/dynamic'
 import React from 'react'
 
@@ -8,4 +10,4 @@ const pageHome = () => {
   return <Home/>
 }
 
-export default pageHome
+export default transition(pageHome)

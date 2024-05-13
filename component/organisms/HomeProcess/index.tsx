@@ -55,8 +55,8 @@ const HomeProcess = () => {
   const { control } = useView(container)
 
   return (
-    <section className={Style.processArea} ref={container}>
-      <div className="container" >
+    <section className={Style.processArea}>
+      <div className="container" ref={container}>
         <div className={Style.title}>
           <Title>
             apoiamos você desde o início
@@ -65,7 +65,6 @@ const HomeProcess = () => {
         <div className={Style.process}>
           {PROCESS.map((data) => (
             <motion.div
-              ref={container}
               variants={boxVariant(data.id)}
               initial="hidden"
               animate={control}
