@@ -29,7 +29,7 @@ const SlideClientes = () => {
 
   const animate = {
     visible: { opacity:1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
-    hidden: { opacity: 0, y:'15vh'},
+    hidden: { opacity: 0, y:'5vh'},
     exit: { opacity: .7, transition: { duration: 0.5 } }
   }
   return (

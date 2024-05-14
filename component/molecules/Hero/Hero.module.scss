@@ -30,11 +30,11 @@
       font-weight: 400;
 
       @include media(md) {
-        font-size: 4.4rem;
+        font-size: 4.6rem;
         line-height: 5rem;
       }
 
-      @include media(md) {
+      @include media(xxl) {
         font-size: 5.4rem;
         line-height: 6rem;
       }
@@ -60,7 +60,6 @@
   .illustration {
     position: relative;
     top: 25%;
-    transition: all 0.05 ease-in;
 
     .megaphone {
       position: absolute;
@@ -81,14 +80,14 @@
     }
 
     .calendar {
-      position: relative;
+      position: absolute;
       padding: 0px;
-      bottom: 65px;
+      bottom:0;
       width: 150px;
 
       @include media(lg) {
-        width: initial;
-        bottom: 190px;
+        width: 200px;
+
       }
     }
   }

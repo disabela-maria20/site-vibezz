@@ -32,17 +32,6 @@ function useMenuAnimation(open: boolean) {
         ];
 
     animate([
-      [
-        "path.top",
-        { d: open ? "M 3 16.5 L 17 2.5" : "M 2 2.5 L 20 2.5" },
-        { at: "<" }
-      ],
-      ["path.middle", { opacity: open ? 0 : 1 }, { at: "<" }],
-      [
-        "path.bottom",
-        { d: open ? "M 3 2.5 L 17 16.346" : "M 2 16.346 L 20 16.346" },
-        { at: "<" }
-      ],
       ...menuAnimations as any
     ]);
   }, [open]);
@@ -51,7 +40,7 @@ function useMenuAnimation(open: boolean) {
 }
 
 const Menu = (): JSX.Element => {
-  const [open, setOpen] = useState<boolean>(true)
+  const [open, setOpen] = useState<boolean>(false)
 
   const scope = useMenuAnimation(open);  
   
@@ -63,9 +52,9 @@ const Menu = (): JSX.Element => {
             <div className={Style.flexMobile}>
               <Logo />
               <div className={Style.burger} onClick={() => setOpen(!open)}>
-                <span className={`${!open ? Style.active : ""}`}></span>
-                <span className={`${!open ? Style.active : ""}`}></span>
-                <span className={`${!open ? Style.active : ""}`}></span>
+                <span className={`${open ? Style.active : ""}`}></span>
+                <span className={`${open ? Style.active : ""}`}></span>
+                <span className={`${open ? Style.active : ""}`}></span>
               </div>
             </div>
             <Nav/>

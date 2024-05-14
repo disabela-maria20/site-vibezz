@@ -48,6 +48,7 @@
         transition: all 1s ease-in-out;
         flex: 0 0 auto;
         width: calc(100% - 90px);
+        list-style-type: none;
         @include media(md) {
           width: 100%;
         }
@@ -77,6 +78,10 @@
 
         p {
           font-size: 14px;
+          margin-top: 21px;
+        }
+        hr{
+          margin-top: 10px;
         }
       }
     }
@@ -226,9 +231,12 @@
             margin-bottom: 20px;
           }
         }
-
+        hr{
+          margin-top: 10px;
+        }
         p {
           font-size: 14px;
+          margin-top: 21px;
         }
       }
     }

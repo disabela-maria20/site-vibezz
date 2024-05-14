@@ -10,13 +10,14 @@
 	}
 	.grid {
 		display: grid;
-		gap: 20px;
-		padding: 150px 0 45px;
+		gap: 45px;
+		padding: 250px 0 45px;
 		color: $primary-lingh-color;
 		font-family: 'Gantari', sans-serif;
 		font-size: 1.6rem;
 
 		@include media(lg) {
+			padding: 150px 0 45px;
 			grid-template-columns: 1fr 1fr 2fr;
 			align-items: center;
 		}
@@ -28,7 +29,7 @@
 			flex-direction: column;
 			font-style: normal;
 			align-items: center;
-
+			
 			@include media(lg) {
 				align-items: flex-start;
 			}
@@ -73,9 +74,10 @@
 				flex-direction: column;
 				align-items: center;
 				gap: 20px;
-
+				margin-bottom: 45px;
 				@include media(lg) {
 					flex-direction: row;
+					margin: 0;
 
 				}
 
@@ -113,10 +115,7 @@
 								width: 50px;
 								height: 50px;
 								transition: all 400ms ease-in-out;
-								&:hover{
-									background-color: darken($secondary-lingh-color, 10%);
-									cursor: pointer;
-								}
+							
 								@include media(lg){
 									width: 35px;
 									height: 35px;
