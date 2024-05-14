@@ -2,8 +2,9 @@
 import { Footer, SlideClientes } from '@/component/molecules';
 import Hero from '@/component/molecules/Hero';
 import { Header, HomeProcess, HomeSectionCard } from '@/component/organisms';
+import transition from '@/utilities/transition'
 
-export default function Home() {
+  function Home() {
   return (
     <>
       <Header>
@@ -16,3 +17,4 @@ export default function Home() {
     </>
   );
 }
+export default transition(Home);

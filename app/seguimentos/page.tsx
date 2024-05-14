@@ -1,13 +1,6 @@
-'use client'
-
-import { Header } from "@/component/organisms"
-import transition from "../../utilities/transition"
+import { Seguimentos } from "@/component/templates"
 
 function PageSeg() {
-  return (
-    <>
-      <Header />
-    </>
-  )
+  return <Seguimentos/>
 }
-export default transition(PageSeg)
+export default PageSeg

@@ -1,0 +1,6 @@
+export { default as Home } from "./Home"
+export { default as Projetos } from "./Projetos"
+export { default as Parceiros } from "./Parceiros"
+export { default as Contato } from "./Contato"
+export { default as Seguimentos } from "./Seguimentos"
+export { default as Times } from "./Times"

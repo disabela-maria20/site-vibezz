@@ -1,13 +1,17 @@
 'use client'
 
-import transition from '@/utilities/transition'
+import useIsMobile from '@/utilities/hooks/useIsMobile'
 import dynamic from 'next/dynamic'
-import React from 'react'
+import React, { Suspense } from 'react'
 
 const Home = dynamic(() => import('@/component/templates/Home'), { ssr: false })
 
 const pageHome = () => {
-  return <Home/>
+  const {isMobile} =  useIsMobile()
+
+  return <Suspense fallback={<p>Carregango</p>}>
+     <Home/>
+  </Suspense>
 }
 
-export default transition(pageHome)
+export default pageHome

@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { motion } from "framer-motion";
+import {  motion  } from "framer-motion";
 import Style from "./HomeSectionCard.module.scss";
 import { useRef } from "react";
 import { useView } from "@/utilities/hooks/useView";
@@ -39,7 +39,7 @@ const HomeSectionCard = () => {
   const boxVariant = (delay: number) => {
     return {
       visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: delay * 0.3 } },
-      hidden: { opacity: 0, y: '15vh' },
+      hidden: { opacity: 0, y: '100px' },
       exit: { opacity: 1, transition: { duration: 0.5 } }
     };
   };

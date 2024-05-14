@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useAnimate, usePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import Style from "./Nav.module.scss"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'

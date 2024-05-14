@@ -14,7 +14,7 @@ const transition = (OgComponent: FunctionComponent) => {
     visible: { x: "-100%" }
   }
 
-  const transicao = { duration: 1, ease: [0.22, 1, 0.36, 1] }
+  const transicao = { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
 
   return () => (
     <>

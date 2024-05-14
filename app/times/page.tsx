@@ -1,13 +1,8 @@
 'use client'
 
-import { Header } from "@/component/organisms"
-import transition from "../../utilities/transition"
+import { Times } from "@/component/templates"
 
 function PageTimes() {
-  return (
-    <>
-      <Header />
-    </>
-  )
+  return <Times/>
 }
-export default transition(PageTimes)
+export default PageTimes

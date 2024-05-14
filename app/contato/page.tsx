@@ -1,7 +1,5 @@
-'use client'
-
-import { Header } from "@/component/organisms"
+import { Contato } from "@/component/templates"
 
 export default function Page() {
-  return <Header/>
+  return <Contato/>
 }

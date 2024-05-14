@@ -1,13 +1,6 @@
-'use client'
-
-import { Header } from "@/component/organisms"
-import transition from "../../utilities/transition"
+import { Projetos } from "@/component/templates"
 
 function Page() {
-  return (
-    <>
-      <Header/>
-    </>
-  )
+  return <Projetos/>
 }
-export default transition(Page)
+export default Page
