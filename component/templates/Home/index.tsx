@@ -10,9 +10,11 @@ import transition from '@/utilities/transition'
       <Header>
         <Hero />
       </Header>
-      <SlideClientes />
-      <HomeSectionCard />
-      <HomeProcess />
+      <main>
+        <SlideClientes />
+        <HomeSectionCard />
+        <HomeProcess />
+      </main>
       <Footer />
     </>
   );

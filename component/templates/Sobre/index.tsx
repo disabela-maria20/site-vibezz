@@ -45,7 +45,7 @@ function Sobre() {
   const scope = useMenuAnimation(openTimelineIndexes);
 
   const toggleTimelineIndex = (index: number) => {
-    const newIndexes = [...openTimelineIndexes];    
+    const newIndexes = [...openTimelineIndexes];
     const indexPosition = newIndexes.indexOf(index);
     if (indexPosition !== -1) {
       newIndexes.splice(indexPosition, 1);
@@ -73,64 +73,66 @@ function Sobre() {
   return (
     <>
       <Header />
-      <section className={Style.sobre}>
-        <div className="container">
-          <div className={Style.grid}>
-            <div>
-              <Title>A vibezz</Title>
-              <p>A Vibezz é um parceiro que entrega
-                a melhor <strong>Inteligência de dados</strong> sobre seu negócio, para aprimorar e <strong>executar
-                  a sua estratégia</strong> de marketing
-                e <strong>qualificar os seus resultados.</strong>
-              </p>
-            </div>
-            <img src="../../images/illustration/card-sobre.png" alt="" />
-          </div>
-        </div>
-      </section>
-      <section className={Style.timeline}>
-        <Title>nossa evolução</Title>
-        <div className="container">
-          <ul className={Style.flex} ref={scope}>
-            {timeline.map((data, index) => (
-              <li key={data.id} >
-                <motion.h2
-                  whileTap={{ scale: 0.97 }}
-                  onClick={() => toggleTimelineIndex(index)}>
-                  <i className={`${Style.icon} ${openTimelineIndexes.includes(index) ? Style.active : ''}`}></i>
-                  {data.data}
-                </motion.h2>
-                {openTimelineIndexes.includes(index) && <p>{data.paragraph}</p>}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-      <section className={Style.mapa}>
-        <div className="container">
-          <div className={Style.grid}>
-            {/* Mapa vai aqui */}
-            <div className={Style.svg}>
-              <Mapa Local={handleLocal} />
-            </div>
-            <div>
-              <h2>SOLUÇÕES EM DIFERENTES TERRITÓRIOS</h2>
-              <ul>
-                {estados.map((data, index) => (
-                  <li key={data.id} >
-                    <motion.h3
-                      whileTap={{ scale: 0.97 }}
-                      onClick={() => toggleEstadoIndex(data.data)}>
-                      {data.data}
-                    </motion.h3>
-                    {openEstadoIndexes.includes(data.data) && data.paragraph.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
-                  </li>
-                ))}
-              </ul>
+      <main>
+        <section className={Style.sobre}>
+          <div className="container">
+            <div className={Style.grid}>
+              <div>
+                <Title>A vibezz</Title>
+                <p>A Vibezz é um parceiro que entrega
+                  a melhor <strong>Inteligência de dados</strong> sobre seu negócio, para aprimorar e <strong>executar
+                    a sua estratégia</strong> de marketing
+                  e <strong>qualificar os seus resultados.</strong>
+                </p>
+              </div>
+              <img src="../../images/illustration/card-sobre.png" alt="" />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section className={Style.timeline}>
+          <Title>nossa evolução</Title>
+          <div className="container">
+            <ul className={Style.flex} ref={scope}>
+              {timeline.map((data, index) => (
+                <li key={data.id} >
+                  <motion.h2
+                    whileTap={{ scale: 0.97 }}
+                    onClick={() => toggleTimelineIndex(index)}>
+                    <i className={`${Style.icon} ${openTimelineIndexes.includes(index) ? Style.active : ''}`}></i>
+                    {data.data}
+                  </motion.h2>
+                  {openTimelineIndexes.includes(index) && <p>{data.paragraph}</p>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+        <section className={Style.mapa}>
+          <div className="container">
+            <div className={Style.grid}>
+              {/* Mapa vai aqui */}
+              <div className={Style.svg}>
+                <Mapa Local={handleLocal} />
+              </div>
+              <div>
+                <h2>SOLUÇÕES EM DIFERENTES TERRITÓRIOS</h2>
+                <ul>
+                  {estados.map((data, index) => (
+                    <li key={data.id} >
+                      <motion.h3
+                        whileTap={{ scale: 0.97 }}
+                        onClick={() => toggleEstadoIndex(data.data)}>
+                        {data.data}
+                      </motion.h3>
+                      {openEstadoIndexes.includes(data.data) && data.paragraph.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <Footer />
     </>
   );
