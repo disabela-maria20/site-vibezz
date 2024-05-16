@@ -35,21 +35,6 @@ const HomeSectionCard = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
   ];
-
-  const boxVariant = (delay: number) => {
-    return {
-      visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: delay * 0.3 } },
-      hidden: { opacity: 0, y: '100px' },
-      exit: { opacity: 1, transition: { duration: 0.5 } }
-    };
-  };
-
-  const title = {
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay:  0.5 } },
-    hidden: { opacity: 0, y: '15vh' },
-    exit: { opacity: 1, transition: { duration: 0.5 } }
-  };
-
   const containerMark = useRef(null);
   const marketing = useView(containerMark);
 
@@ -60,30 +45,20 @@ const HomeSectionCard = () => {
     <>
       <section className={Style.marketing} ref={containerMark}>
         <div className={Style.grid}>
-          <motion.h2
-            initial="hidden"
-            animate={marketing.control}
-            variants={title}
-            className={Style.title}>
+          <h2 className={Style.title}>
           <span>Núcleo</span>
           <strong>Marketing</strong>
-        </motion.h2>
+        </h2>
         <ul className={Style.gridCard}>
           {arrayCard.map((data) => (
-            <motion.li
-              className={Style.card}
-              key={data.id}
-              variants={boxVariant(data.id)}
-              initial="hidden"
-              animate={marketing.control}
-            >
+            <li className={Style.card} key={data.id}>
               <i>
                 <img src={`/images/${data.icon}.svg`} alt="" />
               </i>
               <h3>{data.title}</h3>
               <hr />
               <p>{data.description}</p>
-            </motion.li>
+            </li>
           ))}
         </ul>
       </div>
@@ -92,30 +67,20 @@ const HomeSectionCard = () => {
         <div className={Style.grid}>
           <div className={Style.gridCard}>
             {arrayCard.map((data) => (
-              <motion.li
-                className={Style.card}
-                key={data.id}
-                variants={boxVariant(data.id)}
-                initial="hidden"
-                animate={mercado.control}
-              >
+              <li className={Style.card} key={data.id}>
                 <i>
                   <img src={`/images/${data.icon}.svg`} alt="" />
                 </i>
                 <h3>{data.title}</h3>
                 <hr />
                 <p>{data.description}</p>
-              </motion.li>
+              </li>
             ))}
           </div>
-          <motion.h2
-            variants={title}
-            initial="hidden"
-            animate={mercado.control}
-            className={Style.title}>
+          <h2 className={Style.title}>
             <span>Núcleo</span>
             <strong>Marketing</strong>
-          </motion.h2>
+          </h2>
         </div>
       </section>
     </>

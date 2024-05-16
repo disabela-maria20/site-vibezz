@@ -4,10 +4,6 @@
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: top;
-
-	@include media(lg){
-		margin-top: 150px;
-	}
 	.grid {
 		display: grid;
 		gap: 45px;

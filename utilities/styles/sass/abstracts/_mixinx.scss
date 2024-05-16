@@ -59,3 +59,14 @@
 .container {
   @include container();
 }
+
+
+@mixin paragraph(){
+  font-family: variable.$font-family;
+  font-size: 1.6rem;
+  line-height: 1.21;
+  color: variable.$secondary-color-gray;
+  @include media(lg){
+    font-size: 1.8rem;
+  }
+}

@@ -1,13 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 
-import { motion } from "framer-motion"
-
 import { Title } from "@/component/atoms"
 import Style from "./HomeProcess.module.scss"
 import './style.scss'
-import { useRef } from "react";
-import { useView } from "@/utilities/hooks/useView"
 
 const PROCESS = [
   {
@@ -42,21 +38,12 @@ const PROCESS = [
   }
 ]
 
-const boxVariant = (delay: number) => {
-  return {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: delay * 0.3 } },
-    hidden: { opacity: 0, scale: 0},
-    exit: { opacity: .7, transition: { duration: 0.5 } }
-  }
-}
+
   
 const HomeProcess = () => {
-  const container = useRef(null)
-  const { control } = useView(container)
-
   return (
     <section className={Style.processArea}>
-      <div className="container" ref={container}>
+      <div className="container">
         <div className={Style.title}>
           <Title>
             apoiamos você desde o início
@@ -64,10 +51,7 @@ const HomeProcess = () => {
         </div>
         <div className={Style.process}>
           {PROCESS.map((data) => (
-            <motion.div
-              variants={boxVariant(data.id)}
-              initial="hidden"
-              animate={control}
+            <div
               key={data.id}
               id={data.style}
               className={Style.areaProcess}>
@@ -76,7 +60,7 @@ const HomeProcess = () => {
                 <h2>{data.name}</h2>
                 <p>{data.paragraph}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

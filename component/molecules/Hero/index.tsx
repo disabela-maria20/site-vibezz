@@ -18,20 +18,12 @@ const Hero = () => {
       <div className="container">
         <div className={Style.grid}>
           <div className={Style.areaTitle}>
-            <motion.h1
-              variants={animate}
-              initial="show"
-              animate={control}
-            >
+            <h1>
               A parceira conectada ao seu&nbsp;
               <strong>planejamento e resultados.</strong>
-            </motion.h1>
+            </h1>
           </div>
-          <motion.div
-            variants={animate}
-            initial="show"
-            animate={control}
-            className={Style.illustration}>
+          <div className={Style.illustration}>
             <img
               src="/images/illustration/1.webp"
               alt=""
@@ -47,8 +39,7 @@ const Hero = () => {
               alt=""
               className={Style.calendar}
             />
-
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
