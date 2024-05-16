@@ -1,6 +1,10 @@
+import { motion } from "framer-motion";
 import React from "react";
 
-function Mapa() {
+interface Props {
+  Local: (param: string) => any;
+}
+const Mapa: React.FC<Props> = ({ Local }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -4296,38 +4300,50 @@ function Mapa() {
           d="M-322.814 611.228c.313-.72.097-.958-.648-.72.196.258.412.498.648.72"
         ></path>
       </g>
-      <ellipse
+      <motion.ellipse
         cx="288.372"
         cy="255.413"
         fill="#fff"
         stroke="#fff"
         rx="6.643"
         ry="6.625"
-      ></ellipse>
-      <ellipse
+        onClick={() => Local("Estados Unidos")}
+        whileTap={{ scale: 2}}
+        whileHover={{scale: 1.5}}
+      ></motion.ellipse>
+      <motion.ellipse
         cx="251.169"
         cy="350.813"
         fill="#fff"
         stroke="#fff"
         rx="6.643"
         ry="6.625"
-      ></ellipse>
-      <ellipse
+        onClick={() => Local("México")}
+        whileTap={{ scale: 2}}
+        whileHover={{scale: 1.5}}
+      ></motion.ellipse>
+      <motion.ellipse
         cx="398.653"
         cy="474.039"
         fill="#fff"
         stroke="#fff"
         rx="6.643"
         ry="6.625"
-      ></ellipse>
-      <ellipse
+        onClick={() => Local("Colômbia")}
+        whileTap={{ scale: 2}}
+        whileHover={{scale: 1.5}}
+      ></motion.ellipse>
+      <motion.ellipse
         cx="536.836"
         cy="578.714"
         fill="#fff"
         stroke="#fff"
         rx="6.643"
         ry="6.625"
-      ></ellipse>
+        onClick={() => Local('Brasil')}
+        whileTap={{ scale: 2}}
+        whileHover={{scale: 1.5}}
+      ></motion.ellipse>
     </svg>
   );
 }

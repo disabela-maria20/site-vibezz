@@ -4,6 +4,9 @@
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: top;
+	z-index: 10;
+  position: relative;
+	
 	.grid {
 		display: grid;
 		gap: 45px;

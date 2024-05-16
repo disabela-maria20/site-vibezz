@@ -9,6 +9,14 @@ import { Footer } from '@/component/molecules';
 import { useEffect, useState } from 'react';
 import { motion, useAnimate } from 'framer-motion';
 import Mapa from '@/utilities/svg/mapa';
+import { estados } from './estados';
+
+interface Estado {
+  id: number;
+  data: string;
+  paragraph: string[];
+}
+
 function useMenuAnimation(openIndexes: number[]) {
   const [scope, animate] = useAnimate();
 
@@ -29,26 +37,38 @@ function useMenuAnimation(openIndexes: number[]) {
 
   return scope;
 }
-const position = [51.505, -0.09]
 
 function Sobre() {
-  const [openIndexes, setOpenIndexes] = useState<number[]>([4]);
-  const scope = useMenuAnimation(openIndexes);
+  const [openTimelineIndexes, setOpenTimelineIndexes] = useState<number[]>([4]);
+  const [openEstadoIndexes, setOpenEstadoIndexes] = useState<string[]>(["Brasil"]);
 
-  const toggleIndex = (index: number) => {
-    const newIndexes = [...openIndexes];
+  const scope = useMenuAnimation(openTimelineIndexes);
+
+  const toggleTimelineIndex = (index: number) => {
+    const newIndexes = [...openTimelineIndexes];    
     const indexPosition = newIndexes.indexOf(index);
     if (indexPosition !== -1) {
       newIndexes.splice(indexPosition, 1);
     } else {
       newIndexes.push(index);
     }
-    setOpenIndexes(newIndexes);
+    setOpenTimelineIndexes(newIndexes);
   };
 
-  const onClickMapa = (index: number) => {
-    console.log(index);
-  }
+  const toggleEstadoIndex = (index: string) => {
+    const newIndexes = [...openEstadoIndexes];
+    const indexPosition = newIndexes.indexOf(index);
+    if (indexPosition !== -1) {
+      newIndexes.splice(indexPosition, 1);
+    } else {
+      newIndexes.push(index);
+    }
+    setOpenEstadoIndexes(newIndexes);
+  };
+
+  const handleLocal = (index: string) => {
+    setOpenEstadoIndexes([index])
+  };
 
   return (
     <>
@@ -76,11 +96,11 @@ function Sobre() {
               <li key={data.id} >
                 <motion.h2
                   whileTap={{ scale: 0.97 }}
-                  onClick={() => toggleIndex(index)}>
-                  <i className={`${Style.icon} ${openIndexes.includes(index) ? Style.active : ''}`}></i>
+                  onClick={() => toggleTimelineIndex(index)}>
+                  <i className={`${Style.icon} ${openTimelineIndexes.includes(index) ? Style.active : ''}`}></i>
                   {data.data}
                 </motion.h2>
-                {openIndexes.includes(index) && <p>{data.paragraph}</p>}
+                {openTimelineIndexes.includes(index) && <p>{data.paragraph}</p>}
               </li>
             ))}
           </ul>
@@ -89,11 +109,24 @@ function Sobre() {
       <section className={Style.mapa}>
         <div className="container">
           <div className={Style.grid}>
-            <div>
-              <Mapa />
+            {/* Mapa vai aqui */}
+            <div className={Style.svg}>
+              <Mapa Local={handleLocal} />
             </div>
             <div>
               <h2>SOLUÇÕES EM DIFERENTES TERRITÓRIOS</h2>
+              <ul>
+                {estados.map((data, index) => (
+                  <li key={data.id} >
+                    <motion.h3
+                      whileTap={{ scale: 0.97 }}
+                      onClick={() => toggleEstadoIndex(data.data)}>
+                      {data.data}
+                    </motion.h3>
+                    {openEstadoIndexes.includes(data.data) && data.paragraph.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
