@@ -1,0 +1,43 @@
+.times {
+	padding: 45px 0 45px 0;
+
+	@include media(lg) {
+		padding: 90px 0;
+	}
+
+	.Marketing {
+		.grid {
+			display: grid;
+
+			@include media(lg) {
+				grid-template-columns: repeat(2, 1fr);
+				
+			}
+			.div1{
+				@include media(lg){
+					grid-area: 1 / 1 / 2 / 2;
+				}
+			}
+			.div2{
+				@include media(lg){
+					grid-area: 1 / 2 / 2 / 3;
+				}
+			}
+			.div3{
+				@include media(lg){
+					grid-area: 2 / 1 / 3 / 3; 
+				}
+			}
+			h1 {
+				text-align: left;
+			}
+
+			p {
+				margin-top: 21px;
+				max-width: 400px;
+				@include paragraph();
+			}
+		}
+	}
+
+}

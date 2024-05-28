@@ -1,8 +1,10 @@
 'use client'
-import { motion } from "framer-motion"
+
+import { motion, stagger, useAnimate } from "framer-motion"
 import Style from "./Nav.module.scss"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
+
 interface NavProps {
   open: boolean
   setOpen?: (value: boolean) => void
@@ -11,6 +13,7 @@ interface NavProps {
 const Nav: React.FC<NavProps> = ({ open }) => {
   const pathname = usePathname()
   const nav = ["/sobre", "/parceiros", "/times", "/seguimentos", "/projetos"]
+
   return (
     <nav className={`${Style.navBar}`}>
       <div className={`${Style.navDiv} ${open ? Style.open : Style.close}`}>
