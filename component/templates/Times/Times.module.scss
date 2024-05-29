@@ -6,30 +6,29 @@
 	}
 
 	.Marketing {
-		.grid {
+		.gridMarketing {
 			display: grid;
+			gap: 20px;
+			padding: 45px 0 45px 0;
 
 			@include media(lg) {
 				grid-template-columns: repeat(2, 1fr);
-				
+				align-items: center;
+				gap: 45px;
 			}
-			.div1{
-				@include media(lg){
-					grid-area: 1 / 1 / 2 / 2;
+
+			h2 {
+				color: $primary-color;
+				font-weight: 900;
+				font-family: $font-family;
+				text-transform: capitalize;
+				font-size: 31px;
+				text-align: center;
+
+				@include media(lg) {
+					font-size: 38px;
+					text-align: left;
 				}
-			}
-			.div2{
-				@include media(lg){
-					grid-area: 1 / 2 / 2 / 3;
-				}
-			}
-			.div3{
-				@include media(lg){
-					grid-area: 2 / 1 / 3 / 3; 
-				}
-			}
-			h1 {
-				text-align: left;
 			}
 
 			p {
@@ -37,6 +36,53 @@
 				max-width: 400px;
 				@include paragraph();
 			}
+		}
+
+		.bgMarketing {
+			background-image: url('/images/bg/bg-times.webp');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			padding-bottom: 45PX;
+			.cardFlex {
+				display: flex;
+				flex-wrap: nowrap;
+				overflow-x: auto;
+				gap: 20px;
+				scrollbar-width: none;
+
+				@include media(md) {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					align-items: center;
+				}
+
+				@include media(xl) {
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+				}
+
+				.card {
+					color: $primary-lingh-color;
+					transition: all 1s ease-in-out;
+					flex: 0 0 auto;
+					scrollbar-width: none;
+					height: 400px;
+					position: relative;
+					.img{
+						width: 100%;
+						height: 100%;
+						img{
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+					.text{
+						position: absolute;
+					}
+				}
+			}
+
 		}
 	}
 

@@ -65,7 +65,7 @@ const HomeSectionCard = () => {
     </section >
       <section className={Style.mercado} ref={containerMercado}>
         <div className={Style.grid}>
-          <div className={Style.gridCard}>
+          <ul className={Style.gridCard}>
             {arrayCard.map((data) => (
               <li className={Style.card} key={data.id}>
                 <i>
@@ -76,7 +76,7 @@ const HomeSectionCard = () => {
                 <p>{data.description}</p>
               </li>
             ))}
-          </div>
+          </ul>
           <h2 className={Style.title}>
             <span>Núcleo</span>
             <strong>Marketing</strong>
