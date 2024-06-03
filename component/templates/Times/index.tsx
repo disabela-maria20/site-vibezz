@@ -5,7 +5,7 @@ import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition'
 import Style from "./Times.module.scss";
 import { Title } from '@/component/atoms';
-import { MARKETING } from './array';
+import { MARKETING, MERCADO } from './array';
 
 function Times() {
   return (
@@ -30,11 +30,47 @@ function Times() {
             </div>
           </div>
           {MARKETING.map((data) => (
-            <div className={Style.bgMarketing}>
+            <div key={data.text} className={Style.bgMarketing}>
               <div className="container">
                 <div className={Style.cardFlex}>
                   {data.data.map((data) => (
-                    <div className={Style.card}>
+                    <div className={Style.card} key={data.id}>
+                      <div className={Style.img}>
+                        <img src={data.img} />
+                      </div>
+                      <div className={Style.text}>
+                        <h3>{data.title}</h3>
+                        <p>{data.text}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className={Style.Mercado}>
+          <div className='container'>
+            <div className={Style.gridMercado}>
+              {MERCADO.map((data) => (
+                <>
+                  <div>
+                    <img src={data.img} />
+                  </div>
+                  <div>
+                    <h2>{data.title}</h2>
+                    <p>{data.text}</p>
+                  </div>
+                </>
+              ))}
+            </div>
+          </div>
+          {MERCADO.map((data) => (
+            <div key={data.text} className={Style.bgMercado}>
+              <div className="container">
+                <div className={Style.cardFlex}>
+                  {data.data.map((data) => (
+                    <div className={Style.card} key={data.id}>
                       <div className={Style.img}>
                         <img src={data.img} />
                       </div>
