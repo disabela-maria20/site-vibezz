@@ -1,18 +1,20 @@
 "use client"
 
 import { Title } from '@/component/atoms';
-import { Header} from '@/component/organisms';
+import { Footer } from '@/component/molecules';
+import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition'
 
-  function Projetos() {
+function Projetos() {
   return (
     <>
-      <Header/>
+      <Header />
       <section>
         <div className="container">
           <Title>Projetos</Title>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
