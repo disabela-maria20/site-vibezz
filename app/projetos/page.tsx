@@ -1,6 +1,10 @@
 import { Projetos } from "@/component/templates"
 
 function Page() {
-  return <Projetos/>
+  return (
+    <>
+      <Projetos />
+    </>
+  )
 }
 export default Page
