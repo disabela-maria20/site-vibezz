@@ -99,6 +99,7 @@
 	.slide {
 		overflow: visible !important;
 		position: relative;
+		margin-bottom: 100px;
 
 		img {
 			width: 100%;
@@ -149,7 +150,7 @@
 		.cardHover {
 			display: none;
 		}
-		
+
 		p {
 			color: $secondary-color-gray;
 			font-weight: 300;
@@ -159,6 +160,75 @@
 
 			@include media(lg) {
 				font-size: 2.1rem;
+			}
+		}
+	}
+
+	.slide .cardHover.active {
+		display: block;
+		position: absolute;
+		top: 0;
+		background-image: url('/images/bg/bg-sobre.png');
+		color: $primary-lingh-color !important;
+		border-radius: 50px;
+		height: 100%;
+		
+		@include media(lg) {
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+		}
+
+		.areaImg {
+			display: flex;
+			align-content: stretch;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-end;
+			img {
+				display: none;
+
+				@include media(lg) {
+					max-width: 400px;
+					border-radius: 0;
+					max-height: 300px;
+					border-top-right-radius: 50px;
+					display: block;
+				}
+			}
+			svg {
+				background-color: $tertiary-colors;
+				box-sizing: content-box;
+				padding: 5px;
+				font-size: 30px;
+				border-radius: 30px;
+				transition: all 200ms ease-in;
+				cursor: pointer;
+				margin: 20px;
+				&:hover {
+					background-color: darken($tertiary-colors, 10%);
+				}
+			}
+		}
+
+		.area {
+			padding: 20px;
+
+			h2 {
+				font-size: 2.8rem;
+				color: $primary-lingh-color;
+				margin-bottom: 10px;
+			}
+
+			h3 {
+				font-size: 1.5rem;
+				font-weight: 400;
+				color: $primary-lingh-color;
+			}
+
+			p {
+				color: $primary-lingh-color;
+				text-align: left;
+				font-size: 1.8rem;
 			}
 		}
 	}
