@@ -57,7 +57,7 @@ const Footer = () => {
                     scale: 1.13,
                     transition: { duration: 0.9 }
                   }}>
-                  <a href="https://www.linkedin.com/company/vibezz/mycompany/">
+                  <a aria-label="linkedin" href="https://www.linkedin.com/company/vibezz/mycompany/">
                     <LiaLinkedinIn />
                   </a>
                 </motion.li>
@@ -70,7 +70,7 @@ const Footer = () => {
                     scale: 1.13,
                     transition: { duration: 0.9 }
                   }}>
-                  <a href="https://www.instagram.com/vibezz_oficial/">
+                  <a aria-label="instagram" href="https://www.instagram.com/vibezz_oficial/">
                     <LiaInstagram />
                   </a>
                 </motion.li>
