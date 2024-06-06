@@ -14,6 +14,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/navigation';
 import { useState } from 'react';
 import { motion } from "framer-motion";
+import { Fade } from 'react-awesome-reveal';
 
 interface SlideData {
   id: number;
@@ -71,35 +72,39 @@ const Projetos: React.FC = () => {
         {PROJETOS.map((data: ProjectData) => (
           <div key={data.id}>
             <div className="container">
-              <Slide.Title className={Style.title}>{data.title}</Slide.Title>
-              <Slide.Content className={Style.slide} swiperOptions={slideProjetos}>
-                {data.data.map((item: SlideData) => (
-                  <div key={item.id}>
-                    <img src={item.img} alt={item.title} />
-                    <div className={Style.card}>
-                      <div className={Style.cardTitle}>
-                        <motion.div>
-                          <h2>{item.title}</h2>
-                          <h3>{item.subtitle}</h3>
-                        </motion.div>
-                        {openSlideId === item.id ? (
-                          <CgMathMinus role="button" onClick={() => handleToggleSlide(item.id)} />
-                        ) : (
-                          <CgMathPlus role="button" onClick={() => handleToggleSlide(item.id)} />
-                        )}
-                      </div>
-                      <div className={`${Style.cardHover} ${openSlideId === item.id ? Style.active : ''}`}>
-                        <div className={Style.area}>
-                          <h2>{item.title}</h2>
-                          <h3>{item.subtitle}</h3>
-                          <p>{item.text}</p>
+              <Fade direction='up'>
+                <Slide.Title className={Style.title}>{data.title}</Slide.Title>
+              </Fade>
+              <Fade direction='up'>
+                <Slide.Content className={Style.slide} swiperOptions={slideProjetos}>
+                  {data.data.map((item: SlideData) => (
+                    <div key={item.id}>
+                      <img src={item.img} alt={item.title} />
+                      <div className={Style.card}>
+                        <div className={Style.cardTitle}>
+                          <motion.div>
+                            <h2>{item.title}</h2>
+                            <h3>{item.subtitle}</h3>
+                          </motion.div>
+                          {openSlideId === item.id ? (
+                            <CgMathMinus role="button" onClick={() => handleToggleSlide(item.id)} />
+                          ) : (
+                            <CgMathPlus role="button" onClick={() => handleToggleSlide(item.id)} />
+                          )}
                         </div>
-                        <img src={item.img} alt={item.title} />
+                        <div className={`${Style.cardHover} ${openSlideId === item.id ? Style.active : ''}`}>
+                          <div className={Style.area}>
+                            <h2>{item.title}</h2>
+                            <h3>{item.subtitle}</h3>
+                            <p>{item.text}</p>
+                          </div>
+                          <img src={item.img} alt={item.title} />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </Slide.Content>
+                  ))}
+                </Slide.Content>
+              </Fade>
             </div>
           </div>
         ))}
@@ -108,38 +113,43 @@ const Projetos: React.FC = () => {
         {INTELIGENCIA.map((data: ProjectData) => (
           <div key={data.id}>
             <div className="container">
-              <Slide.Title className={Style.title}>{data.title}</Slide.Title>
-              <Slide.Content className={Style.slide} swiperOptions={slideInteligencia}>
-                {data.data.map((item: SlideData) => (
-                  <div key={item.id}>
-                    <img src={item.img} alt={item.title} />
-                    <div className={Style.card}>
-                      <div className={Style.cardTitle}>
-                        <motion.div>
-                          <h2>{item.title}</h2>
-                          <h3>{item.subtitle}</h3>
-                        </motion.div>
-                        {openSlideId === item.id ? (
-                          <CgMathMinus role="button" onClick={() => handleToggleSlide(item.id)} />
-                        ) : (
-                          <CgMathPlus role="button" onClick={() => handleToggleSlide(item.id)} />
-                        )}
-                      </div>
-                      <div className={`${Style.cardHover} ${openSlideId === item.id ? Style.active : ''}`}>
-                        <div className={Style.area}>
-                          <h2>{item.title}</h2>
-                          <h3>{item.subtitle}</h3>
-                          <p>{item.text}</p>
+              <Fade direction='up'>
+                <Slide.Title className={Style.title}>{data.title}</Slide.Title>
+              </Fade>
+              <Fade direction='up'>
+                <Slide.Content className={Style.slide} swiperOptions={slideInteligencia}>
+                  {data.data.map((item: SlideData) => (
+                    <div key={item.id}>
+                      <img src={item.img} alt={item.title} />
+                      <div className={Style.card}>
+                        <div className={Style.cardTitle}>
+                          <motion.div>
+                            <h2>{item.title}</h2>
+                            <h3>{item.subtitle}</h3>
+                          </motion.div>
+                          {openSlideId === item.id ? (
+                            <CgMathMinus role="button" onClick={() => handleToggleSlide(item.id)} />
+                          ) : (
+                            <CgMathPlus role="button" onClick={() => handleToggleSlide(item.id)} />
+                          )}
                         </div>
-                        <div className={Style.areaImg}>
-                          <img src={item.img} alt={item.title} />
-                          <CgMathMinus role="button" onClick={() => handleToggleSlide(item.id)} />
+                        <div className={`${Style.cardHover} ${openSlideId === item.id ? Style.active : ''}`}>
+                          <div className={Style.area}>
+                            <h2>{item.title}</h2>
+                            <h3>{item.subtitle}</h3>
+                            <p>{item.text}</p>
+                          </div>
+                          <div className={Style.areaImg}>
+                            <img src={item.img} alt={item.title} />
+                            <CgMathMinus role="button" onClick={() => handleToggleSlide(item.id)} />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </Slide.Content>
+                  ))}
+                </Slide.Content>
+              </Fade>
+
             </div>
           </div>
         ))}

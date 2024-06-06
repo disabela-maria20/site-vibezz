@@ -6,6 +6,7 @@ import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition';
 import Style from "./Seguimentos.module.scss";
 import { SEGMENTOS } from './array';
+import { Fade } from 'react-awesome-reveal';
 
 function Seguimentos() {
   return (
@@ -16,8 +17,11 @@ function Seguimentos() {
           {SEGMENTOS.map((data) => (
             <div key={data.id}>
               <Title>{data.title}</Title>
-              <p>{data.text}</p>
-              <div className={Style.gridSeguimentos}>
+              <Fade direction='up'>
+                <p>{data.text}</p>
+              </Fade>
+              <Fade direction='up'>
+                <div className={Style.gridSeguimentos}>
                 {data.data.map((data) => (
                   <div key={data.id} className={Style.card}>
                     <img src={data.img} alt={data.title} />
@@ -32,6 +36,8 @@ function Seguimentos() {
                   </div>
                 ))}
               </div>
+              </Fade>
+              
             </div>
           ))}
         </div>

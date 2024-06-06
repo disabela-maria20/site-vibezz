@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal"
 import S from "./title.module.scss"
 
 type Props = {
@@ -6,8 +7,9 @@ type Props = {
 
 const Title = ({ children }: Props) => {
   return (
-    <h1 className={S.title} >{children}</h1>
-
+    <Fade direction="up" duration={1600} delay={0.6}>
+      <h1 className={S.title} >{children}</h1>
+    </Fade>
   )
 }
 

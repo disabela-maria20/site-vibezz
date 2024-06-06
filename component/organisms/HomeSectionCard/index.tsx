@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import {  motion  } from "framer-motion";
+import { Fade } from "react-awesome-reveal";
 import Style from "./HomeSectionCard.module.scss";
-import { useRef } from "react";
-import { useView } from "@/utilities/hooks/useView";
+
 
 const HomeSectionCard = () => {
   const arrayCard = [
@@ -35,52 +34,57 @@ const HomeSectionCard = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
   ];
-  const containerMark = useRef(null);
-  const marketing = useView(containerMark);
-
-  const containerMercado = useRef(null);
-  const mercado = useView(containerMercado);
-
   return (
     <>
-      <section className={Style.marketing} ref={containerMark}>
+      <section className={Style.marketing}>
         <div className={Style.grid}>
-          <h2 className={Style.title}>
-          <span>Núcleo</span>
-          <strong>Marketing</strong>
-        </h2>
-        <ul className={Style.gridCard}>
-          {arrayCard.map((data) => (
-            <li className={Style.card} key={data.id}>
-              <i>
-                <img src={`/images/${data.icon}.svg`} alt="" />
-              </i>
-              <h3>{data.title}</h3>
-              <hr />
-              <p>{data.description}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section >
-      <section className={Style.mercado} ref={containerMercado}>
+          <Fade direction="left" className={Style.title}>
+            <h2>
+              <span>Núcleo</span>
+              <strong>Marketing</strong>
+            </h2>
+          </Fade>
+          <Fade direction="up" cascade damping={0.3}>
+            <ul className={Style.gridCard}>
+              {arrayCard.map((data) => (
+                <li>
+                  <div className={Style.card} key={data.id}>
+                    <i>
+                      <img src={`/images/${data.icon}.svg`} alt="" />
+                    </i>
+                    <h3>{data.title}</h3>
+                    <hr />
+                    <p>{data.description}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </Fade>
+
+        </div>
+      </section>
+      <section className={Style.mercado}>
         <div className={Style.grid}>
-          <ul className={Style.gridCard}>
-            {arrayCard.map((data) => (
-              <li className={Style.card} key={data.id}>
-                <i>
-                  <img src={`/images/${data.icon}.svg`} alt="" />
-                </i>
-                <h3>{data.title}</h3>
-                <hr />
-                <p>{data.description}</p>
-              </li>
-            ))}
-          </ul>
-          <h2 className={Style.title}>
-            <span>Núcleo</span>
-            <strong>Marketing</strong>
-          </h2>
+          <Fade direction="up" cascade damping={0.3}>
+            <ul className={Style.gridCard}>
+              {arrayCard.map((data) => (
+                <li className={Style.card} key={data.id}>
+                  <i>
+                    <img src={`/images/${data.icon}.svg`} alt="" />
+                  </i>
+                  <h3>{data.title}</h3>
+                  <hr />
+                  <p>{data.description}</p>
+                </li>
+              ))}
+            </ul>
+          </Fade>
+          <Fade direction="right" className={Style.title}>
+            <h2>
+              <span>Núcleo</span>
+              <strong>Marketing</strong>
+            </h2>
+          </Fade>
         </div>
       </section>
     </>

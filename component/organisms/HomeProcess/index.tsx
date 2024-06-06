@@ -4,6 +4,7 @@
 import { Title } from "@/component/atoms"
 import Style from "./HomeProcess.module.scss"
 import './style.scss'
+import { Fade } from "react-awesome-reveal"
 
 const PROCESS = [
   {
@@ -39,7 +40,7 @@ const PROCESS = [
 ]
 
 
-  
+
 const HomeProcess = () => {
   return (
     <section className={Style.processArea}>
@@ -50,18 +51,20 @@ const HomeProcess = () => {
           </Title>
         </div>
         <div className={Style.process}>
-          {PROCESS.map((data) => (
-            <div
-              key={data.id}
-              id={data.style}
-              className={Style.areaProcess}>
-              <span>{data.id}</span>
-              <div>
-                <h2>{data.name}</h2>
-                <p>{data.paragraph}</p>
+          <Fade direction='up' cascade  damping={0.5}>
+            {PROCESS.map((data) => (
+              <div
+                key={data.id}
+                id={data.style}
+                className={Style.areaProcess}>
+                <span>{data.id}</span>
+                <div>
+                  <h2>{data.name}</h2>
+                  <p>{data.paragraph}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </Fade>
         </div>
       </div>
     </section>

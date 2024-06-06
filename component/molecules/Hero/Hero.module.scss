@@ -69,6 +69,7 @@
       left: -8px;
       @include media(lg) {
         width: 200px;
+        top: 176px;
       }
     }
 
@@ -77,6 +78,10 @@
       display: block;
       margin-left: auto;
       width: 100%;
+
+      @include media(lg){
+        padding-top: 180px;
+      }
     }
 
     .calendar {

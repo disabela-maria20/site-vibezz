@@ -18,6 +18,12 @@
       grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
+    @include media(lg){
+      display: grid;
+      grid-template-columns: auto;
+      gap: 20px;
+    }
+    
     .areaProcess{
       display: grid;
       grid-template-columns: 1fr 3fr;

@@ -10,7 +10,9 @@ import { Title } from "../../atoms"
 import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
+
 import { useRef } from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 const SlideClientes = () => {
 
@@ -28,7 +30,7 @@ const SlideClientes = () => {
     <section className={Style.SlideClientes} >
       <Title>Clientes</Title>
       <div className="container" ref={container}>
-        <div>
+        <Fade duration={1700} cascade direction="up" delay={0.5} >
           <Swiper
             spaceBetween={30}
             hashNavigation={{
@@ -65,10 +67,9 @@ const SlideClientes = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-
+        </Fade>
       </div>
-    </section >
+    </section>
   )
 }
 

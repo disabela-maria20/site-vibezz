@@ -55,30 +55,11 @@
 				width: 100%;
 				position: absolute;
 				left: 0;
-				bottom: 0;
+				bottom: -40px;
 				z-index: -1;
 			}
 
 			.cardFlex {
-				display: flex;
-				flex-wrap: nowrap;
-				overflow-x: auto;
-				gap: 20px;
-				scrollbar-width: none;
-				position: relative;
-				bottom: 45px;
-				
-
-				@include media(md) {
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					align-items: center;
-				}
-
-				@include media(xl) {
-					grid-template-columns: 1fr 1fr 1fr 1fr;
-				}
-
 				.card {
 					color: $primary-lingh-color;
 					transition: all 1s ease-in-out;
@@ -146,12 +127,13 @@
 		.gridMercado {
 			display: grid;
 			gap: 20px;
-			padding: 45px 0 45px 0;
+			padding: 90px 0 45px 0;
 
 			@include media(lg) {
 				grid-template-columns: repeat(2, 1fr);
 				align-items: center;
 				gap: 45px;
+				padding: 120px 0 45px 0;
 			}
 
 			h2 {
@@ -192,30 +174,11 @@
 				width: 100%;
 				position: absolute;
 				left: 0;
-				bottom: 0;
-				z-index: -1;
+				bottom: -40px;
+    		z-index: -1;
 			}
 
 			.cardFlex {
-				display: flex;
-				flex-wrap: nowrap;
-				overflow-x: auto;
-				gap: 20px;
-				scrollbar-width: none;
-				position: relative;
-				bottom: 45px;
-				
-
-				@include media(md) {
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					align-items: center;
-				}
-
-				@include media(xl) {
-					grid-template-columns: 1fr 1fr 1fr 1fr;
-				}
-
 				.card {
 					color: $primary-lingh-color;
 					transition: all 1s ease-in-out;

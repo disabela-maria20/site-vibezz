@@ -17,6 +17,7 @@
     }
 
     .gridCard {
+      list-style-type: none;
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -189,7 +190,7 @@
       @include media(xl) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 100vh;
-        padding: 0;
+        padding-left: 10%;
       }
 
       .card {

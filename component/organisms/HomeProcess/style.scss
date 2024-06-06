@@ -1,6 +1,6 @@
 #ideia {
   @include media(xl) {
-    left: 20%;
+    left: 10%;
     top: -5%;
   }
 }
@@ -8,7 +8,7 @@
 #pesquisa {
   @include media(xl) {
     right: 0;
-    top: 5%;
+    bottom: 39%;
   }
 
 }
@@ -19,21 +19,21 @@
     top: 30%;
   }
   @include media(xxl) {
-    left: 35%;
-    top: 40%;
+    left: 36%;
+    top: -20%;
   }
 }
 
 #execucao {
   @include media(xl) {
-    bottom: 5%;
+    bottom: -45%;
     left: 10%;
   }
 }
 
 #analise {
   @include media(xl) {
-    bottom: -10%;
+    bottom: -50%;
     right: 0%;
   }
 }
