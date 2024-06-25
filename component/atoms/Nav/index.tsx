@@ -37,7 +37,7 @@ const Nav: React.FC<NavProps> = ({ open }) => {
                 scale: 1.13,
                 transition: { duration: 0.9 }
               }}>
-              <a href="https://share.hsforms.com/1_4sN2ZJnTU6t-kDVn7w75Qqy07h" target="_blank"> Vamos Conversar</a>
+              <Link href="/contato"> Vamos Conversar</Link>
             </motion.div>
           </li>
         </ul>

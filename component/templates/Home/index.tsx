@@ -1,5 +1,5 @@
 "use client"
-import { HubspotForm } from '@/component/atoms';
+
 import { Footer, SlideClientes } from '@/component/molecules';
 import Hero from '@/component/molecules/Hero';
 import { Header, HomeProcess, HomeSectionCard } from '@/component/organisms';
@@ -17,7 +17,6 @@ import transition from '@/utilities/transition'
         <HomeProcess />
       </main>
       <Footer />
-      <HubspotForm />
     </>
   );
 }

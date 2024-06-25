@@ -4,7 +4,7 @@ import { Footer, Slide } from '@/component/molecules';
 import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition'
 import Style from "./Times.module.scss";
-import { HubspotForm, Title } from '@/component/atoms';
+import { Title } from '@/component/atoms';
 import { MARKETING, MERCADO } from './array';
 import { SwiperOptions } from 'swiper/types';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -124,7 +124,6 @@ function Times() {
         </div>
       </section>
       <Footer />
-      <HubspotForm />
     </>
   );
 }
