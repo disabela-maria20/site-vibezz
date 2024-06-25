@@ -2,6 +2,13 @@
 
 import React, { useEffect } from 'react';
 
+declare global {
+  interface Window {
+    hbspt: any;
+  }
+}
+
+
 const HubspotForm: React.FC = () => {
   useEffect(() => {
     const script = document.createElement('script');
