@@ -47,15 +47,13 @@ const HomeSectionCard = () => {
           <Fade direction="up" cascade damping={0.3}>
             <ul className={Style.gridCard}>
               {arrayCard.map((data) => (
-                <li key={data.id}>
-                  <div className={Style.card} key={data.id}>
-                    <i>
-                      <img src={`/images/${data.icon}.svg`} alt="" />
-                    </i>
-                    <h3>{data.title}</h3>
-                    <hr />
-                    <p>{data.description}</p>
-                  </div>
+                <li className={Style.card} key={data.id}>
+                  <i>
+                    <img src={`/images/${data.icon}.svg`} alt="" />
+                  </i>
+                  <h3>{data.title}</h3>
+                  <hr />
+                  <p>{data.description}</p>
                 </li>
               ))}
             </ul>
