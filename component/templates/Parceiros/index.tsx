@@ -1,6 +1,6 @@
 "use client"
 
-import { Title } from '@/component/atoms';
+import { HubspotForm, Title } from '@/component/atoms';
 import { Footer } from '@/component/molecules';
 import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition'
@@ -49,6 +49,7 @@ function Parceiros() {
         </section>
       </main>
       <Footer />
+      <HubspotForm />
     </>
   );
 }

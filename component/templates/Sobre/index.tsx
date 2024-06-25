@@ -1,6 +1,6 @@
 "use client"
 
-import { Title } from '@/component/atoms';
+import { HubspotForm, Title } from '@/component/atoms';
 import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition';
 import { timeline } from "./timeline";
@@ -147,6 +147,7 @@ function Sobre() {
         </section>
       </main >
       <Footer />
+      <HubspotForm />
     </>
   );
 }

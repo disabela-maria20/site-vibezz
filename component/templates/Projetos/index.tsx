@@ -1,6 +1,6 @@
 "use client"
 
-import { Title } from '@/component/atoms';
+import { HubspotForm, Title } from '@/component/atoms';
 import { Footer, Slide } from '@/component/molecules';
 import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition';
@@ -155,6 +155,7 @@ const Projetos: React.FC = () => {
         ))}
       </section>
       <Footer />
+      <HubspotForm />
     </>
   );
 }
