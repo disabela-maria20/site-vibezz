@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { Footer, Slide } from '@/component/molecules';
@@ -40,14 +42,14 @@ function Times() {
         <div className={Style.Marketing}>
           <div className='container'>
             <div className={Style.gridMarketing}>
-              {MARKETING.map((data) => (
+              {MARKETING.map((data, i) => (
                 <>
-                  <div>
+                  <div key={i}>
                     <Fade direction='left' delay={1} cascade>
                       <img src={data.img} />
                     </Fade>
                   </div>
-                  <div>
+                  <div key={i}>
                     <Fade direction='right' delay={1} cascade damping={0.1}>
                       <h2>{data.title}</h2>
                       <p>{data.text}</p>
@@ -62,8 +64,8 @@ function Times() {
               <div key={data.text} className={Style.bgMarketing}>
                 <div className="container">
                   <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions}>
-                    {data.data.map((data) => (
-                      <div className={Style.card} key={data.id}>
+                    {data.data.map((data, i) => (
+                      <div className={Style.card} key={i}>
                         <div className={Style.img}>
                           <img src={data.img} />
                         </div>
@@ -82,14 +84,14 @@ function Times() {
         <div className={Style.Mercado}>
           <div className='container'>
             <div className={Style.gridMercado}>
-              {MERCADO.map((data) => (
+              {MERCADO.map((data, i) => (
                 <>
-                  <div>
+                  <div key={i}>
                     <Fade direction='left' delay={1} cascade>
                       <img src={data.img} />
                     </Fade>
                   </div>
-                  <div>
+                  <div key={i}>
                     <Fade direction='right' delay={1} cascade damping={0.1}>
                       <h2>{data.title}</h2>
                       <p>{data.text}</p>
