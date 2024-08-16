@@ -2,19 +2,21 @@ export const SEGMENTOS = [
   {
     id: 0,
     title: 'segmentos',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed nulla eleifend, imperdiet arcu sed, sollicitudin tellus. Pellentesque augue mauris, sollicitudin quis ante a, pretium posuere est. ',
+    text: 'Partindo da premissa que nos conectamos com os indicadores chave do nosso cliente, nossos times são focados em diferentes mercados para cada vez mais nos especializarmos nesses segmentos e ao mesmo tempo usar de experiencia de outros para retroalimentar iniciativas. ',
     data: [
       {
         id: 0,
         title: 'Cinema',
         img: '/images/fotos/cinema.jpg',
         text: [
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet'
+          'Cinema',
+          'Estratégia',
+          'Canais',
+          'Conteúdos',
+          'Performance ',
+          'Coleta de dados',
+          'Gestão de dados', 
+          'Análise de dados'
         ]
       },
       {
@@ -22,12 +24,11 @@ export const SEGMENTOS = [
         title: 'Varejo',
         img: '/images/fotos/varejo.jpg',
         text: [
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet'
+          'Planejamento',
+          'Estratégia ',
+          'Canais',
+          'Performance',
+          'Conteúdos',
         ]
       },
       {
@@ -35,12 +36,10 @@ export const SEGMENTOS = [
         title: 'Streaming',
         img: '/images/fotos/streaming.jpg',
         text: [
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet'
+          'Planejamento',
+          'Gestão de dados',
+          'Análise de dados',
+          'Produtos personalizados',
         ]
       },
       {
@@ -48,12 +47,10 @@ export const SEGMENTOS = [
         title: 'Bebidas',
         img: '/images/fotos/bebidas.png',
         text: [
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet',
-          'Lorem ipsum dolor sit amet'
+          'Planejamento',
+          'Estratégia ',
+          'Canais ',
+          'Performance ',
         ]
       }
     ]

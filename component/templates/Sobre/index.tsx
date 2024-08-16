@@ -81,10 +81,8 @@ function Sobre() {
               <Fade direction='left'>
                 <div>
                   <Title>A vibezz</Title>
-                  <p>A Vibezz é um parceiro que entrega
-                    a melhor <strong>Inteligência de dados</strong> sobre seu negócio, para aprimorar e <strong>executar
-                      a sua estratégia</strong> de marketing
-                    e <strong>qualificar os seus resultados.</strong> </p>
+                  <p>Somos uma agência Full Service atuando em Marketing e Engenharia de Dados. Nascemos e crescemos a partir de um propósito: Conectar tudo o que pensávamos e fazíamos para os canais de comunicação de forma construtiva e objetiva aos nossos parceiros. A partir disso formamos uma estrutura de dados que se conecta aos segmentos, construindo um ecossistema que se retroalimenta e constrói novas iniciativas a partir do cruzamento desses polos.</p>
+                  <p>E assim nos propormos a criar empoderamento estratégico, tático e operacional por meio da conexão com os dados.</p>
                 </div>
               </Fade>
               <Fade direction='right'>
@@ -94,7 +92,7 @@ function Sobre() {
           </div>
         </section>
         <section className={Style.timeline}>
-          <Title>nossa evolução</Title>
+          <Title>nossa evolução desde 2019 até 2023</Title>
           <div className="container">
             <ul className={Style.flex} ref={scope}>
               {timeline.map((data, index) => (

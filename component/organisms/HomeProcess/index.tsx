@@ -9,32 +9,32 @@ import { Fade } from "react-awesome-reveal"
 const PROCESS = [
   {
     id: 1,
-    name: 'Ideia',
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: 'Conexão de dados',
+    paragraph: 'Para validarmos nossas hipóteses e alternativas de execução, conexão com os dados são primordiais. Pesquisas podem ser feitas a partir de grupos focais, bem como análise de base de dados de diferentes canais, sejam de comunicação, mídia, vendas, internos, etc.',
     style: 'ideia'
   },
   {
     id: 2,
-    name: 'Pesquisa',
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: 'Iniciativa',
+    paragraph: ' A partir da imersão nos dados, as iniciativas surgem ou podem ser validadas, a partir disso diretrizes são definidas, bem como os nossos objetivos e o que precisamos de fato encarar como resultados.',
     style: 'pesquisa'
   },
   {
     id: 3,
     name: 'Planejamento',
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    paragraph: 'A partir das hipóteses e dados validados, partimos para o que de fato queremos executar, buscando métodos que conectem a esfera estratégica, passando pela tática e operacional.',
     style: 'planejamento'
   },
   {
     id: 4,
     name: 'Execução',
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    paragraph: 'Entra em jogo todo o time que encara a rotina, os canais, e todas as suas singularidades para conectar todo o fluxo do que queremos fazer e como faremos isso acontecer. ',
     style: 'execucao'
   },
   {
     id: 5,
     name: 'Análise',
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    paragraph: ' fluxo e dados gerados parte para toda a cadeia que se repete e se retroalimenta, assim, buscando otimizar toda a estratégia e planejamento. ',
     style: 'analise'
   }
 ]

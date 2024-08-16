@@ -4,34 +4,65 @@ import Style from "./HomeSectionCard.module.scss";
 
 
 const HomeSectionCard = () => {
-  const arrayCard = [
+  const Marketing  = [
     {
       id: 1,
-      title: "title",
+      title: "Planejamento de marca",
       icon: "icon",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Desvende seu diferencial competitivo e domine seu nicho de mercado, construindo uma marca autêntica e memorável que conquista clientes.",
     },
     {
       id: 2,
-      title: "title2",
+      title: "Plano de canais omnichannel",
       icon: "icon",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Mapeie a jornada do cliente e alcance-o em cada etapa e onde quer que ele esteja, criando um plano personalizado para impulsionar as métricas ideias de cada canal e/ou audiência.",
     },
     {
       id: 3,
-      title: "title3",
+      title: "Design 360º",
       icon: "icon",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Criamos histórias que atraem, educam e convertem seu público, exploramos diversos conceitos e formatos para atender às diferentes necessidades das audiências em suas diferentes jornadas. ",
     },
     {
       id: 4,
-      title: "title4",
+      title: "Planejamento de Mídia",
       icon: "icon",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Base de todo o nosso racional é a performance do produto, respeitando suas características e enxergando oportunidades, equalizamos os canais a partir da jornada e funil, criando modelos de atribuição de acordo com nossa estratégia",
+    },
+  ];
+
+  const Dados = [
+    {
+      id: 1,
+      title: "Coleta e análise de Dados",
+      icon: "icon",
+      description:
+        "A partir de inúmeras coletas vindas de diferentes fontes, mapeamos os dados referentes a consumo e comportamento de vendas. Assim, podemos buscar um entendimento 360, dos seus usuários e até mesmo mercado.",
+    },
+    {
+      id: 2,
+      title: "Data Fusion e Insights Integrados",
+      icon: "icon",
+      description:
+        "Unificamos bases de dados de diferentes canais e as cruzamos, a partir de tratamento desses dados, interpretamos suas funções, características e como podem se complementar.",
+    },
+    {
+      id: 3,
+      title: "Construção, Aplicação e Análise de Pesquisa",
+      icon: "icon",
+      description:
+        "A partir de diferentes oportunidades, que vão desde a descoberta de potenciais públicos, ou até mesmo seu aprofundamento, até a validação de campanhas e produtos, buscamos conectar aplicações de pesquisas a dados.",
+    },
+    {
+      id: 4,
+      title: "Gestão e Arquitetura de Banco de Dados",
+      icon: "icon",
+      description:
+        "A quantidade de dados que são gerados por sistemas e diferentes ambientes muitas vezes precisam ser geridos da melhor forma em diversos pontos de vista. Para isso nosso time apoia em toda essa camada de gestão de Data Warehouse para que dados sejam ágeis, fáceis e seguros.",
     },
   ];
   return (
@@ -46,7 +77,7 @@ const HomeSectionCard = () => {
           </Fade>
           <Fade direction="up" cascade damping={0.3}>
             <ul className={Style.gridCard}>
-              {arrayCard.map((data) => (
+              {Marketing.map((data) => (
                 <li className={Style.card} key={data.id}>
                   <i>
                     <img src={`/images/${data.icon}.svg`} alt="" />
@@ -64,7 +95,7 @@ const HomeSectionCard = () => {
         <div className={Style.grid}>
           <Fade direction="up" cascade damping={0.3}>
             <ul className={Style.gridCard}>
-              {arrayCard.map((data) => (
+              {Dados.map((data) => (
                 <li className={Style.card} key={data.id}>
                   <i>
                     <img src={`/images/${data.icon}.svg`} alt="" />
@@ -79,7 +110,7 @@ const HomeSectionCard = () => {
           <Fade direction="right" className={Style.title}>
             <h2>
               <span>Núcleo</span>
-              <strong>Marketing</strong>
+              <strong>Data e Tech</strong>
             </h2>
           </Fade>
         </div>

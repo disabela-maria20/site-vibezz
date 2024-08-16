@@ -19,7 +19,7 @@ function Parceiros() {
             <Title>Parceiros</Title>
             <div className={Style.grid}>
               {cardParceiros.map((data) => (
-                <Fade direction='up' cascade damping={0.7}>
+                <Fade direction='up' cascade damping={0.7} key={data.id}>
                   <motion.div
                     whileHover={{
                       scale: 1.13,
@@ -30,8 +30,8 @@ function Parceiros() {
                       transition: { duration: 0.9 }
                     }}
                     className={Style.card}
-                    key={data.id}>
-                    <>
+                    >
+                    
                       <div className={Style.img}>
                         <img src={data.img} alt="logo" />
                       </div>
@@ -39,7 +39,7 @@ function Parceiros() {
                         <h2>{data.nome}</h2>
                         <p>{data.text}</p>
                       </div>
-                    </>
+           
                   </motion.div>
                 </Fade>
 

@@ -38,33 +38,46 @@ const SwiperOptions = {
 export const MARKETING = [
   {
     title: 'Marketing',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed nulla eleifend, imperdiet arcu sed, sollicitudin tellus. Pellentesque augue mauris, sollicitudin quis ante a, pretium posuere est. ",
+    text: "<p>Nossa vertical de marketing está preparada para ter uma imersão completa em múltiplos segmentos e negócios, mapeando o propósito do cliente, bem como seus indicadores-chave, para assim conectar a estratégia de comunicação e como ela e sua operação serão efetivas para o resultado do nosso cliente.</p><p>Com metodologias ágeis e abordando diferentes conceitos de growth, buscamos aplicar, testar e compreender todas as nossas iniciativas para buscar um ciclo contínuo de melhorias em todas as frentes.</p>",
     img: "/images/fotos/marketing.png",
     data: [
       {
         id: 0,
-        title: "Atendimento",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Planejamento de marca de Marca",
+        text: "Desvende seu diferencial competitivo e domine seu nicho de mercado, construindo uma marca autêntica e memorável que conquista clientes.",
         img: "/images/fotos/pl.png",
       },
       {
         id: 1,
-        title: "Criação",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Plano de canais omnichannel:",
+        text: "Mapeie a jornada do cliente e alcance-o em cada etapa e onde quer que ele esteja, criando um plano personalizado para impulsionar as métricas ideias de cada canal e/ou audiência.",
         img: "/images/fotos/pl.png",
       },
       {
         id: 2,
-        title: "Conteúdo",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Design 360º",
+        text: "Soluções criativas para diferentes necessidades, que busca uma metodologia de conexão para as múltiplas necessidades e canais, indo desde o objetivo, as audiências e resultados que precisamos ter com o conteúdo. ",
         img: "/images/fotos/pl.png",
       },
       {
         id: 3,
-        title: "Mídia",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Social Media ",
+        text: "Criamos histórias que atraem, educam e convertem seu público, exploramos diversos conceitos e formatos para atender às diferentes necessidades das audiências em suas diferentes jornadas.",
         img: "/images/fotos/pl.png",
-      }
+      },
+      {
+        id: 4,
+        title: "Planejamento de Mídia",
+        text: "Base de todo o nosso racional é a performance do produto, respeitando suas características e enxergando oportunidades, equalizamos os canais a partir da jornada e funil, criando modelos de atribuição de acordo com nossa estratégia ",
+        img: "/images/fotos/pl.png",
+      },
+      {
+        id: 4,
+        title: "Digital Analytics ",
+        text: "Com a visão macro de toda a estratégia, funcionamento dos canais e execução, nosso time visa buscar os principais insights de todas as frentes e conectá-las diretamente ao negócio.",
+        img: "/images/fotos/pl.png",
+      },
+
     ]
   }
 ]
@@ -88,7 +101,9 @@ function PageMarketing() {
               <div key={i}>
                 <Fade direction='right' delay={1} cascade damping={0.1}>
                   <h2>{data.title}</h2>
-                  <p>{data.text}</p>
+                  <div>
+                    <p dangerouslySetInnerHTML={{__html: data.text}}/>
+                  </div>
                 </Fade>
               </div>
             ))}
