@@ -4,7 +4,7 @@ import { Title } from '@/component/atoms';
 import { Footer } from '@/component/molecules';
 import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition';
-import Style from "./segmentos.module.scss";
+import Style from "./Segmentos.module.scss";
 import { SEGMENTOS } from './array';
 import { Fade } from 'react-awesome-reveal';
 
