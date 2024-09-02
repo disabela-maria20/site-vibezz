@@ -25,7 +25,7 @@ export const cardParceiros = [
   },
   {
     id: 4, 
-    nome: "Sony Pectures", 
+    nome: "Sony Pictures", 
     img: "/images/clientes/sony-pictures.png",
     text: "A Sony Pictures é uma das maiores empresas de entretenimento do mundo, responsável por produzir e distribuir filmes, programas de televisão, animações e outros conteúdos."
   },
