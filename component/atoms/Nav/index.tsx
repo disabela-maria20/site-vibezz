@@ -29,8 +29,8 @@ const Nav: React.FC<NavProps> = ({ open }) => {
         { title: "Dados", path: "/times/dados" }
       ]
     },
-    { id: 4, path: "/seguimentos" },
-    { id: 5, path: "/projetos" }
+    { id: 4, path: "/segmentos" },
+    // { id: 5, path: "/projetos" }
   ];
   return (
     <nav className={`${Style.navBar}`}>

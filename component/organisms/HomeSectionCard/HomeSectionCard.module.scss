@@ -30,14 +30,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        padding: 105px 0;
+        
         margin-right: 10%;
       }
 
       @include media(xl) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 100vh;
-        padding: 0;
+        padding: 105px 0;
       }
 
       .card {
@@ -52,6 +52,7 @@
         list-style-type: none;
         @include media(md) {
           width: 100%;
+          height: 450px;
         }
         h3 {
           font-size: 21px;
@@ -183,14 +184,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        padding: 105px 0;
-        margin-left: 10%;
+        padding-left: 10%;
       }
 
       @include media(xl) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 100vh;
         padding-left: 10%;
+        padding: 105px 0;
       }
 
       .card {
@@ -206,6 +207,7 @@
 
         @include media(md) {
           width: 100%;
+          height: 515px;
         }
         h3 {
           font-size: 21px;

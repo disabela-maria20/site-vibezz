@@ -1,20 +1,20 @@
 export const cardParceiros = [
   {
     id: 0, 
-    nome: "apas", 
+    nome: "Apas", 
     img: "/images/clientes/apas.png",
     text: " É a entidade representativa do setor supermercadista no estado de São Paulo. Além de estar a frente a várias interlocuções com esses supermercados, é responsável pelo APAS SHOW, o maior evento de alimentos e bebidas das Américas e a maior feira supermercadista do mundo."
   }, 
   {
     id: 1, 
     nome: "Sony", 
-    img: "/images/clientes/Cinemark.png",
+    img: "/images/logo.webp",
     text: "A Sony Pictures é uma das maiores empresas de entretenimento do mundo, responsável por produzir e distribuir filmes, programas de televisão, animações e outros conteúdos."
   },
   {
     id: 2, 
     nome: "Paramount", 
-    img: "/images/clientes/cinesystem-logo.png",
+    img: "/images/logo.webp",
     text: "A Paramount Pictures é um dos estúdios de cinema mais antigos e renomados do mundo. Fundada em 1912, nos Estados Unidos, ela é considerada um dos maiores estúdios de Hollywood."
   },
   {
@@ -38,7 +38,7 @@ export const cardParceiros = [
   {
     id: 6, 
     nome: "Paris Filmes", 
-    img: "/images/clientes/velox.png",
+    img: "/images/logo.webp",
     text: "A Paris Filmes é a maior distribuidora brasileira independente e atua no mercado de distribuição de filmes no Brasil e na América Latina, destacando-se pela alta qualidade cinematográfica."
   },
 ]

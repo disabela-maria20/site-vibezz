@@ -43,13 +43,13 @@ export const MARKETING = [
     data: [
       {
         id: 0,
-        title: "Planejamento de marca de Marca",
+        title: "Marca",
         text: "Desvende seu diferencial competitivo e domine seu nicho de mercado, construindo uma marca autêntica e memorável que conquista clientes.",
         img: "/images/fotos/pl.png",
       },
       {
         id: 1,
-        title: "Plano de canais omnichannel:",
+        title: "omnichannel",
         text: "Mapeie a jornada do cliente e alcance-o em cada etapa e onde quer que ele esteja, criando um plano personalizado para impulsionar as métricas ideias de cada canal e/ou audiência.",
         img: "/images/fotos/pl.png",
       },

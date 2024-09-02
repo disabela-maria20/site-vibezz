@@ -7,14 +7,14 @@ const HomeSectionCard = () => {
   const Marketing  = [
     {
       id: 1,
-      title: "Planejamento de marca",
+      title: "marca",
       icon: "icon",
       description:
         "Desvende seu diferencial competitivo e domine seu nicho de mercado, construindo uma marca autêntica e memorável que conquista clientes.",
     },
     {
       id: 2,
-      title: "Plano de canais omnichannel",
+      title: "omnichannel",
       icon: "icon",
       description:
         "Mapeie a jornada do cliente e alcance-o em cada etapa e onde quer que ele esteja, criando um plano personalizado para impulsionar as métricas ideias de cada canal e/ou audiência.",
@@ -28,7 +28,7 @@ const HomeSectionCard = () => {
     },
     {
       id: 4,
-      title: "Planejamento de Mídia",
+      title: "Mídia",
       icon: "icon",
       description:
         "Base de todo o nosso racional é a performance do produto, respeitando suas características e enxergando oportunidades, equalizamos os canais a partir da jornada e funil, criando modelos de atribuição de acordo com nossa estratégia",

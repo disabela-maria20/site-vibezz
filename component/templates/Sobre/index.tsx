@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Title } from '@/component/atoms';
 import { Header } from '@/component/organisms';
@@ -46,29 +46,23 @@ function Sobre() {
   const scope = useMenuAnimation(openTimelineIndexes);
 
   const toggleTimelineIndex = (index: number) => {
-    const newIndexes = [...openTimelineIndexes];
-    const indexPosition = newIndexes.indexOf(index);
-    if (indexPosition !== -1) {
-      newIndexes.splice(indexPosition, 1);
+    if (openTimelineIndexes.includes(index)) {
+      setOpenTimelineIndexes([]); // Fechar o item se já estiver aberto
     } else {
-      newIndexes.push(index);
+      setOpenTimelineIndexes([index]); // Abrir apenas o item clicado
     }
-    setOpenTimelineIndexes(newIndexes);
   };
 
   const toggleEstadoIndex = (index: string) => {
-    const newIndexes = [...openEstadoIndexes];
-    const indexPosition = newIndexes.indexOf(index);
-    if (indexPosition !== -1) {
-      newIndexes.splice(indexPosition, 1);
+    if (openEstadoIndexes.includes(index)) {
+      setOpenEstadoIndexes([]); // Fechar o item se já estiver aberto
     } else {
-      newIndexes.push(index);
+      setOpenEstadoIndexes([index]); // Abrir apenas o item clicado
     }
-    setOpenEstadoIndexes(newIndexes);
   };
 
   const handleLocal = (index: string) => {
-    setOpenEstadoIndexes([index])
+    setOpenEstadoIndexes([index]);
   };
 
   return (
