@@ -13,32 +13,12 @@
       display: grid;
       grid-template-columns: 1fr 2.3fr;
       gap: 55px;
-
+      height: 100vh;
+      align-items: center;
     }
 
-    .gridCard {
-      list-style-type: none;
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      gap: 20px;
-      padding: 40px 20px 40px 20px;
-      scrollbar-width: none;
-      align-items: center;
-      
-      @include media(md) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        
-        margin-right: 10%;
-      }
-
-      @include media(xl) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        height: 100vh;
-        padding: 105px 0;
-      }
+    .itemSlide {
+      padding: 15px;
 
       .card {
         background-color: $primary-lingh-color;
@@ -47,13 +27,12 @@
         box-shadow: -6px 5px 12px 2px #e9e9e9;
         color: $primary-color-gray;
         transition: all 1s ease-in-out;
-        flex: 0 0 auto;
-        width: calc(100% - 90px);
-        list-style-type: none;
+
         @include media(md) {
           width: 100%;
-          height: 450px;
+          height: 315 px;
         }
+
         h3 {
           font-size: 21px;
         }
@@ -82,13 +61,16 @@
           font-size: 14px;
           margin-top: 21px;
         }
-        hr{
+
+        hr {
           margin-top: 10px;
         }
       }
     }
 
+
     .title {
+
       position: relative;
       margin: 0;
       color: $primary-lingh-color;
@@ -97,11 +79,12 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding: 25px 0;
+      padding: 25px;
       margin: 55px 0 35px;
 
       @include media(md) {
         margin: 0;
+        height: 100vh;
       }
 
       span {
@@ -170,29 +153,12 @@
       display: grid;
       grid-template-columns: 2.3fr 1fr;
       gap: 55px;
-
+      height: 100vh;
+      align-items: center;
     }
 
-    .gridCard {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      gap: 20px;
-      padding: 40px 20px 40px 20px;
-      scrollbar-width: none;
-      @include media(md) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        padding-left: 10%;
-      }
-
-      @include media(xl) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        height: 100vh;
-        padding-left: 10%;
-        padding: 105px 0;
-      }
+    .itemSlide {
+      padding: 15px;
 
       .card {
         background-color: $primary-lingh-color;
@@ -201,14 +167,12 @@
         box-shadow: -6px 5px 12px 2px #e9e9e9;
         color: $primary-color-gray;
         transition: all 1s ease-in-out;
-        flex: 0 0 auto;
-        width: calc(100% - 90px);
-        scrollbar-width: none;
 
         @include media(md) {
           width: 100%;
-          height: 515px;
+          height: 355px;
         }
+
         h3 {
           font-size: 21px;
         }
@@ -234,15 +198,18 @@
             margin-bottom: 20px;
           }
         }
-        hr{
+
+        hr {
           margin-top: 10px;
         }
+
         p {
           font-size: 14px;
           margin-top: 21px;
         }
       }
     }
+
 
     .title {
       position: relative;
@@ -258,6 +225,7 @@
       z-index: 2;
 
       @include media(md) {
+        height: 100vh;
         margin: 0;
       }
 

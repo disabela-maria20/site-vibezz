@@ -41,30 +41,7 @@ export const MERCADO = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed nulla eleifend, imperdiet arcu sed, sollicitudin tellus. Pellentesque augue mauris, sollicitudin quis ante a, pretium posuere est. ",
     img: "/images/fotos/marketing.png",
     data: [
-      {
-        id: 0,
-        title: "Atendimento",
-        img: "/images/fotos/atendimento.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        id: 1,
-        title: "Criação",
-        img: "/images/fotos/criação.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        id: 2,
-        title: "Conteúdo",
-        img: "/images/fotos/conteudo.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        id: 3,
-        title: "Mídia",
-        img: "/images/fotos/midia.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      }, 
+      
       {
         id: 4,
         title: "Análise",

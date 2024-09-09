@@ -25,8 +25,6 @@ const SlideClientes = () => {
     "Cinemark.png",
     "Disney.png",
     "coca-cola.png", 
-    "meta.png", 
-    "MS_Startups_FH_lockup_hrz_OnLght_RGB.png"
   ]
   return (
     <section className={Style.SlideClientes} >

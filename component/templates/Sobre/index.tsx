@@ -34,7 +34,7 @@ function useMenuAnimation(openIndexes: number[]) {
     ));
 
     animate(menuAnimations as any);
-  }, [openIndexes]);
+  }, [animate, openIndexes]);
 
   return scope;
 }
@@ -96,8 +96,11 @@ function Sobre() {
                       <motion.h2
                         whileTap={{ scale: 0.97 }}
                         onClick={() => toggleTimelineIndex(index)}>
-                        <i className={`${Style.icon} ${openTimelineIndexes.includes(index) ? Style.active : ''}`}></i>
-                        {data.data}
+                        {openTimelineIndexes.includes(index) ?
+                          <i className={`${Style.icon} ${openTimelineIndexes.includes(index) ? Style.active : ''}`}>+</i> : <i className={`${Style.icon} ${openTimelineIndexes.includes(index) ? Style.active : ''}`}>-</i>
+                        }
+                        <span>{data.data}</span>
+                        
                       </motion.h2>
                       {openTimelineIndexes.includes(index) && <p>{data.paragraph}</p>}
                     </div>
