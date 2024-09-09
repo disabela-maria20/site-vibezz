@@ -83,17 +83,18 @@
 					}
 
 					.text {
+						width: 100%;
 						transition: all 700ms ease-in-out;
 						background-color: rgba(0, 0, 0, 0.726);
 						font-family: $font-family;
 						padding: 20px;
 						border-radius: 50px;
-						transform: translateY(65%);
+						transform: translateY(15%);
 						position: absolute;
 						bottom: 0;
 
 						@include media(lg){
-							transform: translateY(70%);
+							transform: translateY(20%);
 						}
 						h3 {
 							font-size: 22px;
@@ -103,6 +104,7 @@
 
 						p {
 							font-size: 1.5rem;
+							display: none;
 						}
 					}
 
@@ -115,6 +117,10 @@
 						bottom: 0;
 						height: 100%;
 						transform: translateY(0);
+
+						p{
+							display: block;
+						}
 					}
 				}
 			}

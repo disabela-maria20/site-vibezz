@@ -41,31 +41,50 @@ export const MERCADO = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed nulla eleifend, imperdiet arcu sed, sollicitudin tellus. Pellentesque augue mauris, sollicitudin quis ante a, pretium posuere est. ",
     img: "/images/fotos/marketing.png",
     data: [
-      
+
+      {
+        id: 0,
+        title: "Coleta e análise de Dados ",
+        img: "/images/fotos/Coleta-e-análise-de-Dados.jpg",
+        text: "A partir de inúmeras coletas vindas de diferentes fontes, mapeamos os dados referentes a consumo e comportamento de vendas. Assim, podemos buscar um entendimento 360, dos seus usuários e até mesmo mercado."
+      },
+      {
+        id: 1,
+        title: "Data Fusion e Insights Integrados",
+        img: "/images/fotos/Data-Fusion-e-Insights-Integrados.jpg",
+        text: "Unificamos bases de dados de diferentes canais e as cruzamos, a partir de tratamento desses dados, interpretamos suas funções, características e como podem se complementar."
+      },
+      {
+        id: 2,
+        title: "Construção, Aplicação e Análise de Pesquisa",
+        img: "/images/fotos/Construcao-Aplicacao-Analise-de-Pesquisa.jpg",
+        text: "A partir de diferentes oportunidades, que vão desde a descoberta de potenciais publicos, ou até mesmo seu aprofundamento, até a validação de campanhas e produtos, buscamos conectar aplicações de pesquisas a dados."
+      },
+      {
+        id: 3,
+        title: "Gestão e Arquitetura de Banco de Dados",
+        img: "/images/fotos/coleta.jpg",
+        text: "A quantidade de dados que são gerados por sistemas e diferentes ambientes muitas vezes precisam ser geridos da melhor forma em diversos pontos de vista. Para isso nosso time apoia em toda essa camada de gestão de Data Warehouse para que dados sejam ágeis, fáceis e seguros."
+      },
       {
         id: 4,
-        title: "Análise",
-        img: "/images/fotos/analise.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title: "Desenvolvimento de Data Products",
+        img: "/images/fotos/Desenvolvimento-de-Data-Products.jpg",
+        text: "A partir dos negócios e propósito dos nossos clientes, temos times habilitados a desenvolver diferentes produtos de análise de dados para múltiplos objetivos e canais"
       },
       {
         id: 5,
-        title: "Coleta",
-        img: "/images/fotos/coleta.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        id: 5,
-        title: "Transformação",
-        img: "/images/fotos/transformação.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title: "Implementação de Data Lakes",
+        img: "/images/fotos/Implementacao-de-Data-Lakes.jpg",
+        text: "Toda a arquitetura, implantação e governança de big data passa por nosso time que escala todos esses bancos e os conecta a um data lake."
       },
       {
         id: 6,
-        title: "Visualização",
-        img: "/images/fotos/visualização.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title: "Storytelling com Dados",
+        img: "/images/fotos/Storytelling-com-Dados.jpg",
+        text: "Quanto mais dados temos, mais históricas precisamos construir e interpretar. Pensando nisso temos times especial."
       }
+    
     ]
   }
 ]

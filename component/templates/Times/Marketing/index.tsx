@@ -43,28 +43,40 @@ export const MARKETING = [
     data: [
       {
         id: 0,
-        title: "Atendimento",
-        img: "/images/fotos/atendimento.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title: "Planejamento de Marca",
+        img: "/images/fotos/planejamento-de-marca.jpg",
+        text: "Desvende seu diferencial competitivo e domine seu nicho de mercado, construindo uma marca autêntica e memorável que conquista clientes."
       },
       {
         id: 1,
-        title: "Criação",
-        img: "/images/fotos/criação.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title: "Plano de canais omnichannel",
+        img: "/images/fotos/canais-omnichannel.jpg",
+        text: "Mapeie a jornada do cliente e alcance-o em cada etapa e onde quer que ele esteja, criando um plano personalizado para impulsionar as métricas ideias de cada canal e/ou audiência."
       },
       {
         id: 2,
-        title: "Conteúdo",
-        img: "/images/fotos/conteudo.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title: "Design 360º",
+        img: "/images/fotos/Design-360.jpg",
+        text: "Criamos histórias que atraem, educam e convertem seu público, exploramos diversos conceitos e formatos para atender às diferentes necessidades das audiências em suas diferentes jornadas."
       },
       {
         id: 3,
-        title: "Mídia",
-        img: "/images/fotos/midia.jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      }, 
+        title: "Social Media",
+        img: "/images/fotos/SocialMedia.jpg",
+        text: "Criamos histórias que atraem, educam e convertem seu público, exploramos diversos conceitos e formatos para atender às diferentes necessidades das audiências em suas diferentes jornadas."
+      },
+      {
+        id: 4,
+        title: "Planejamento de Mídia",
+        img: "/images/fotos/Planejamento-de-Mídia.jpg",
+        text: "Base de todo o nosso racional é a performance do produto, respeitando suas características e enxergando oportunidades, equalizamos os canais a partir da jornada e funil, criando modelos de atribuição de acordo com nossa estratégia "
+      },
+      {
+        id: 5,
+        title: "Digital Analytics",
+        img: "/images/fotos/Digital-Analytics.jpg",
+        text: "Com a visão macro de toda a estratégia, funcionamento dos canais e execução, nosso time visa buscar os principais insights de todas as frentes e conectá-las diretamente ao negócio."
+      }
 
     ]
   }
