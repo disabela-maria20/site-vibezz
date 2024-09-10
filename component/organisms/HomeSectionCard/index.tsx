@@ -1,12 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import { Fade } from "react-awesome-reveal";
 import Style from "./HomeSectionCard.module.scss";
-import { Navigation, Pagination } from "swiper/modules";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import { ColetaAnaliseDados, ConstrucaoAplicacaoAnalisePesquisa, DataFusionInsightsIntegrados, DesenvolvimentoDataProducts, Design360, DigitalAnalytics, GestaoArquiteturaBancoDados, ImplementacaoDataLakes, PlanejamentoMarca, PlanejamentoMidia, PlanejamentoOmnichannel, SocialMedia, StorytellingDados } from "@/component/atoms";
+
 
 
 const HomeSectionCard = () => {
+
   const [ref] = useKeenSlider<HTMLDivElement>({
     breakpoints: {
       "(min-width: 400px)": {
@@ -28,31 +30,45 @@ const HomeSectionCard = () => {
   const Marketing = [
     {
       id: 1,
-      title: "marca",
-      icon: "icon",
+      title: "Planejamento de marca de Marca",
+      icon: <PlanejamentoMarca />,
       description:
         "Desvende seu diferencial competitivo e domine seu nicho de mercado, construindo uma marca autêntica e memorável que conquista clientes.",
     },
     {
       id: 2,
-      title: "omnichannel",
-      icon: "icon",
+      title: "Plano de canais omnichannel",
+      icon: <PlanejamentoOmnichannel />,
       description:
         "Mapeie a jornada do cliente e alcance-o em cada etapa e onde quer que ele esteja, criando um plano personalizado para impulsionar as métricas ideias de cada canal e/ou audiência.",
     },
     {
       id: 3,
       title: "Design 360º",
-      icon: "icon",
+      icon: <Design360 />,
       description:
-        "Criamos histórias que atraem, educam e convertem seu público, exploramos diversos conceitos e formatos para atender às diferentes necessidades das audiências em suas diferentes jornadas. ",
+        "Soluções criativas para diferentes necessidades, que busca uma metodologia de conexão para as múltiplas necessidades e canais, indo desde o objetivo, as audiências e resultados que precisamos ter com o conteúdo."
     },
     {
       id: 4,
-      title: "Mídia",
-      icon: "icon",
+      title: "Social Media",
+      icon: <SocialMedia />,
       description:
-        "Base de todo o nosso racional é a performance do produto, respeitando suas características e enxergando oportunidades, equalizamos os canais a partir da jornada e funil, criando modelos de atribuição de acordo com nossa estratégia",
+        "Criamos histórias que atraem, educam e convertem seu público, exploramos diversos conceitos e formatos para atender às diferentes necessidades das audiências em suas diferentes jornadas."
+    },
+    {
+      id: 5,
+      title: "Planejamento de Mídia",
+      icon: <PlanejamentoMidia />,
+      description:
+        "Base de todo o nosso racional é a performance do produto, respeitando suas características e enxergando oportunidades, equalizamos os canais a partir da jornada e funil, criando modelos de atribuição de acordo com nossa estratégia"
+    },
+    {
+      id: 6,
+      title: "Digital Analytics",
+      icon: <DigitalAnalytics />,
+      description:
+        "Com a visão macro de toda a estratégia, funcionamento dos canais e execução, nosso time visa buscar os principais insights de todas as frentes e conectá-las diretamente ao negócio. "
     },
   ];
 
@@ -60,30 +76,51 @@ const HomeSectionCard = () => {
     {
       id: 1,
       title: "Coleta e análise de Dados",
-      icon: "icon",
+      icon: <ColetaAnaliseDados />,
       description:
         "A partir de inúmeras coletas vindas de diferentes fontes, mapeamos os dados referentes a consumo e comportamento de vendas. Assim, podemos buscar um entendimento 360, dos seus usuários e até mesmo mercado.",
     },
     {
       id: 2,
       title: "Data Fusion e Insights Integrados",
-      icon: "icon",
+      icon: <DataFusionInsightsIntegrados />,
       description:
         "Unificamos bases de dados de diferentes canais e as cruzamos, a partir de tratamento desses dados, interpretamos suas funções, características e como podem se complementar.",
     },
     {
       id: 3,
       title: "Construção, Aplicação e Análise de Pesquisa",
-      icon: "icon",
+      icon: <ConstrucaoAplicacaoAnalisePesquisa />,
       description:
         "A partir de diferentes oportunidades, que vão desde a descoberta de potenciais públicos, ou até mesmo seu aprofundamento, até a validação de campanhas e produtos, buscamos conectar aplicações de pesquisas a dados.",
     },
     {
       id: 4,
       title: "Gestão e Arquitetura de Banco de Dados",
-      icon: "icon",
+      icon: <GestaoArquiteturaBancoDados />,
       description:
         "A quantidade de dados que são gerados por sistemas e diferentes ambientes muitas vezes precisam ser geridos da melhor forma em diversos pontos de vista. Para isso nosso time apoia em toda essa camada de gestão de Data Warehouse para que dados sejam ágeis, fáceis e seguros.",
+    },
+    {
+      id: 5,
+      title: "Desenvolvimento de Data Products",
+      icon: <DesenvolvimentoDataProducts />,
+      description:
+        "A quantidade de dados que são gerados por sistemas e diferentes ambientes muitas vezes precisam ser geridos da melhor forma em diversos pontos de vista. Para isso nosso time apoia em toda essa camada de gestão de Data Warehouse para que dados sejam ágeis, fáceis e seguros.",
+    },
+    {
+      id: 6,
+      title: "Implementação de Data Lakes:",
+      icon: <ImplementacaoDataLakes />,
+      description:
+        "Toda a arquitetura, implantação e governança de big data passa por nosso time que escala todos esses bancos e os conecta a um data lake. "
+    },
+    {
+      id: 7,
+      title: "Storytelling com Dados",
+      icon: <StorytellingDados />,
+      description:
+        'Quanto mais dados temos, mais históricas precisamos construir e interpretar. Pensando nisso temos times especializados em data view para essa construção de dashboards. '
     },
   ];
 
@@ -102,7 +139,7 @@ const HomeSectionCard = () => {
               <div className={`keen-slider__slide ${Style.itemSlide}`} key={data.id}>
                 <div className={Style.card} >
                   <i>
-                    <img src={`/images/${data.icon}.svg`} alt="" />
+                    {data.icon}
                   </i>
                   <h3>{data.title}</h3>
                   <hr />
@@ -120,7 +157,7 @@ const HomeSectionCard = () => {
               <div className={`keen-slider__slide ${Style.itemSlide}`} key={data.id}>
                 <div className={Style.card} >
                   <i>
-                    <img src={`/images/${data.icon}.svg`} alt="" />
+                    {data.icon}
                   </i>
                   <h3>{data.title}</h3>
                   <hr />
