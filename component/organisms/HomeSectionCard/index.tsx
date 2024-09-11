@@ -175,6 +175,7 @@ const HomeSectionCard = () => {
 
               <button
                 onClick={(e: any) => e.stopPropagation() || instanceRef.current?.next()}
+                // @ts-ignore
                 disabled={currentSlide === instanceRef.current.options.slides.perView}
               >
                 <BiRightArrowAlt />
@@ -209,7 +210,8 @@ const HomeSectionCard = () => {
               </button>
               <button
                 onClick={(e: any) => e.stopPropagation() || dadosInstanceRef.current?.next()}
-                disabled={currentSlideDados === dadosInstanceRef.current.options.slides.perView }>
+                // @ts-ignore
+                disabled={currentSlideDados === dadosInstanceRef.current.options.slides.perView}>
                 <BiRightArrowAlt />
               </button>
             </div>}
