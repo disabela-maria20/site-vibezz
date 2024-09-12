@@ -35,9 +35,9 @@ const Footer = () => {
             <li>
               <Link href={'/segmentos'}>segmentos</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href={'/projetos'}>Projetos</Link>
-            </li>
+            </li> */}
           </ul>
           <div className={Style.entreEmcontato}>
             <div className={Style.flex}>

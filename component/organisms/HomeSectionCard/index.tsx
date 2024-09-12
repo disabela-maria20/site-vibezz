@@ -135,8 +135,7 @@ const HomeSectionCard = () => {
       id: 5,
       title: "Desenvolvimento de Data Products",
       icon: <DesenvolvimentoDataProducts />,
-      description:
-        "A quantidade de dados que são gerados por sistemas e diferentes ambientes muitas vezes precisam ser geridos da melhor forma em diversos pontos de vista. Para isso nosso time apoia em toda essa camada de gestão de Data Warehouse para que dados sejam ágeis, fáceis e seguros.",
+      description: "A partir dos negócios e propósito dos nossos clientes, temos times habilitados a desenvolver diferentes produtos de análise de dados para múltiplos objetivos e canais"
     },
     {
       id: 6,
