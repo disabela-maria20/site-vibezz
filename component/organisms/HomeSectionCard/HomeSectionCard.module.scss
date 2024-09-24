@@ -50,7 +50,7 @@
 
           i {
             svg {
-              fill: $primary-lingh-color;
+              fill: $primary-lingh-color !important;
             }
           }
         }
@@ -62,7 +62,7 @@
           margin-bottom: 60px;
 
           svg {
-            fill: $primary-color-gray;
+            fill: $primary-color-gray !important;
           }
         }
 
@@ -201,7 +201,7 @@
 
           i {
             svg {
-              fill: $primary-lingh-color;
+              fill: $primary-lingh-color !important;
             }
           }
         }
@@ -213,7 +213,7 @@
           margin-bottom: 60px;
 
           svg {
-            fill: $primary-color-gray;
+            fill: $primary-color-gray !important;
           }
         }
 
@@ -314,7 +314,7 @@
     background: transparent;
 
     svg {
-      fill: $secondary-color-gray;
+      fill: $secondary-color-gray !important;
       font-size: 35px;
     }
 

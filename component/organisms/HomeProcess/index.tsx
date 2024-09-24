@@ -82,6 +82,7 @@ const HomeProcess = () => {
             //   transform: `rotate(-${rotation}deg)`,
             //   transition: 'transform 0.6s ease-in-out',
             // }}
+            className="circulo"
           >
             <Ciculo />
           </div>

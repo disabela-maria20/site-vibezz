@@ -94,41 +94,41 @@ export const Ciculo = () => {
   return <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 542 545">
   <defs>
     <style>
-    {`  .cls-1 {
+    {` .circulo .cls-1 {
         fill: #3b7fab;
       }
 
-      .cls-2, .cls-3, .cls-4 {
+     .circulo .cls-2,.circulo .cls-3, .circulo .cls-4 {
         isolation: isolate;
       }
 
-      .cls-5 {
+      .circulo .cls-5 {
         fill: #2f6294;
       }
 
-      .cls-6 {
+      .circulo .cls-6 {
         fill: #479bc3;
       }
 
-      .cls-7 {
+      .circulo .cls-7 {
         fill: #53b8da;
       }
 
-      .cls-8 {
+      .circulo .cls-8 {
         fill: #23457d;
       }
 
-      .cls-3 {
+      .circulo .cls-3 {
         font-size: 21px;
       }
 
-      .cls-3, .cls-4 {
+      .circulo .cls-3, .circulo .cls-4 {
         fill: #fff;
         font-family: Arial-BoldMT, Arial;
         font-weight: 700;
       }
 
-      .cls-4 {
+      .circulo .cls-4 {
         font-size: 30px;
       }`}
     </style>
