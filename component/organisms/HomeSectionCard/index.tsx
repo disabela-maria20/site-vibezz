@@ -4,7 +4,7 @@ import Style from "./HomeSectionCard.module.scss";
 
 import { ColetaAnaliseDados, ConstrucaoAplicacaoAnalisePesquisa, DataFusionInsightsIntegrados, DesenvolvimentoDataProducts, Design360, DigitalAnalytics, GestaoArquiteturaBancoDados, ImplementacaoDataLakes, PlanejamentoMarca, PlanejamentoMidia, PlanejamentoOmnichannel, SocialMedia, StorytellingDados } from "@/component/atoms";
 import { useState } from "react";
-import { BiArrowBack, BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
