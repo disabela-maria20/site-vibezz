@@ -44,15 +44,21 @@ const HomeProcess = () => {
   const [rotation, setRotation] = useState(0);
   const [isPending, startTransition] = useTransition();
 
+  const ROTATIONS: any = {
+    1: -182, // Conexão
+    2: -252, // Iniciativa
+    3: -329, // Planejamento
+    4: -397, // Execução
+    5: -110, // Análise
+  };
+
   const handlePathClick = useCallback((index: number) => {
-    
     startTransition(() => {
-      setComponente(PROCESS[index -1]);
-      const targetRotation = index * 72; // Cada parte representa 72°
-      const newRotation = (targetRotation * index); 
+      setComponente(PROCESS[index - 1]);
+      const newRotation = ROTATIONS[index];
       setRotation(newRotation);
     });
-  }, [])
+  }, []);
 
   useEffect(() => {
     const paths = circulo.current?.querySelectorAll(".cls-2");
@@ -69,6 +75,8 @@ const HomeProcess = () => {
     }
   }, [handlePathClick, rotation]);
 
+
+
   return (
     <section className={Style.processArea}>
       <div className="container">
@@ -82,6 +90,10 @@ const HomeProcess = () => {
             //   transform: `rotate(-${rotation}deg)`,
             //   transition: 'transform 0.6s ease-in-out',
             // }}
+            style={{
+              transform: `rotate(${rotation}deg)`,
+              transition: 'transform 0.6s ease-in-out',
+            }}
             className="circulo"
           >
             <Ciculo />
