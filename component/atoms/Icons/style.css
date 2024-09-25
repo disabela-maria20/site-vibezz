@@ -2,6 +2,10 @@
   fill: #3b7fab;
 }
 
+.circulo .cls-2{
+  cursor: pointer;
+}
+
 .circulo .cls-2,
 .circulo .cls-3,
 .circulo .cls-4 {

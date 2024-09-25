@@ -93,6 +93,7 @@ const HomeProcess = () => {
             style={{
               transform: `rotate(${rotation}deg)`,
               transition: 'transform 0.6s ease-in-out',
+              width: '90%'
             }}
             className="circulo"
           >
