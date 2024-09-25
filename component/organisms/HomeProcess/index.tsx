@@ -10,32 +10,42 @@ export interface DataItem {
   paragraph: string;
 }
 
+const ROTATIONS: any = {
+  0: 250, // Análise
+  1: 178, // Conexão
+  2: 105, // Iniciativa
+  3: 35, // Planejamento
+  4: 320, // Execução
+};
+
 const PROCESS: DataItem[] = [
+  {
+    id: 0,
+    name: 'Análise',
+    paragraph: 'O fluxo e dados gerados parte para toda a cadeia que se repete e se retroalimenta, assim, buscando otimizar toda a estratégia e planejamento.',
+
+  },
   {
     id: 1,
     name: 'Conexão de dados',
     paragraph: 'Para validarmos nossas hipóteses e alternativas de execução, conexão com os dados são primordiais. Pesquisas podem ser feitas a partir de grupos focais, bem como análise de base de dados de diferentes canais, sejam de comunicação, mídia, vendas, internos, etc.',
   },
   {
-    id: 1,
+    id: 2,
     name: 'Iniciativa',
     paragraph: 'A partir da imersão nos dados, as iniciativas surgem ou podem ser validadas, a partir disso diretrizes são definidas, bem como os nossos objetivos e o que precisamos de fato encarar como resultados.',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Planejamento',
     paragraph: 'A partir das hipóteses e dados validados, partimos para o que de fato queremos executar, buscando métodos que conectem a esfera estratégica, passando pela tática e operacional.',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Execução',
     paragraph: 'Entra em jogo todo o time que encara a rotina, os canais, e todas as suas singularidades para conectar todo o fluxo do que queremos fazer e como faremos isso acontecer.',
   },
-  {
-    id: 4,
-    name: 'Análise',
-    paragraph: 'O fluxo e dados gerados parte para toda a cadeia que se repete e se retroalimenta, assim, buscando otimizar toda a estratégia e planejamento.',
-  },
+
 ];
 
 const HomeProcess = () => {
@@ -44,25 +54,17 @@ const HomeProcess = () => {
   const [rotation, setRotation] = useState(0);
   const [isPending, startTransition] = useTransition();
 
-  const ROTATIONS: any = {
-    1: -182, // Conexão
-    2: -252, // Iniciativa
-    3: -329, // Planejamento
-    4: -397, // Execução
-    5: -110, // Análise
-  };
-
   const handlePathClick = useCallback((index: number) => {
     startTransition(() => {
-      setComponente(PROCESS[index - 1]);
+      setComponente(PROCESS[index]);
       const newRotation = ROTATIONS[index];
       setRotation(newRotation);
+      console.log('New rotation:', newRotation);
     });
-  }, []);
+  }, [ROTATIONS]);
 
   useEffect(() => {
-    const paths = circulo.current?.querySelectorAll(".cls-2");
-
+    const paths = circulo.current?.querySelectorAll("#Layer_1 g path");
     if (paths) {
       paths.forEach((item, index) => {
         const handleClick = () => handlePathClick(index);

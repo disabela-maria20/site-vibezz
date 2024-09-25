@@ -23,7 +23,10 @@
 
 
     .areaProcess {
-
+      margin-top: 35px;
+      @include media(lg){
+        margin-top: 0;
+      }
       span {
         font-family: 'Gantari', sans-serif;
         font-weight: 900;
