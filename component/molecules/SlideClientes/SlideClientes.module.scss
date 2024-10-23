@@ -1,20 +1,72 @@
-.SlideClientes{
+.SlideClientes {
     padding: 90px 0 45px 0;
-    @include media(lg){
-        padding: 180px 0 90px;
+
+    @include media(lg) {
+        padding: 90px 0 90px;
     }
-    .Swiper{
+
+    .Swiper {
         margin-top: 50px;
-        @include media(lg){
+
+        @include media(lg) {
             margin-top: 100px;
         }
-        .logo{
+
+        .logo {
             width: 100%;
             aspect-ratio: 5 / 3;
             object-fit: contain;
             filter: grayscale(1);
             transition: all 200ms ease;
-            &:hover{
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+
+        .logoCertificacoes {
+            width: 100%;
+            display: block;
+            max-width: 150px;
+            margin: 0 auto;
+            aspect-ratio: 5 / 3;
+            object-fit: contain;
+            filter: grayscale(1);
+            transition: all 200ms ease;
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+.SlideCertificacao {
+    padding-bottom: 45px;
+    width: 450px;
+    margin: 0 auto;
+    @include media(lg) {
+        padding-bottom: 90px;
+    }
+
+    .Swiper {
+        margin-top: 50px;
+
+        @include media(lg) {
+            margin-top: 100px;
+        }
+
+        .logoCertificacoes {
+            width: 100%;
+            display: block;
+            max-width: 150px;
+            margin: 0 auto;
+            aspect-ratio: 5 / 3;
+            object-fit: contain;
+            filter: grayscale(1);
+            transition: all 200ms ease;
+
+            &:hover {
                 filter: grayscale(0);
             }
         }

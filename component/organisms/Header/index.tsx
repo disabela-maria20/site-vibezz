@@ -10,7 +10,7 @@ type Props = {
 const Header = ({ children }: Props) => {
   const pathname = usePathname()
   
-  const verificarHome =  pathname != '/' ? true : false
+  const verificarHome = pathname !== '/sobre'
 
   return (
     <>

@@ -5,7 +5,7 @@ import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition';
 import { timeline } from "./timeline";
 import Style from "./Sobre.module.scss";
-import { Footer } from '@/component/molecules';
+import { Footer, HEro } from '@/component/molecules';
 import { useEffect, useState } from 'react';
 import { motion, useAnimate } from 'framer-motion';
 import Mapa from '@/utilities/svg/mapa';
@@ -47,17 +47,17 @@ function Sobre() {
 
   const toggleTimelineIndex = (index: number) => {
     if (openTimelineIndexes.includes(index)) {
-      setOpenTimelineIndexes([]); // Fechar o item se já estiver aberto
+      setOpenTimelineIndexes([]);
     } else {
-      setOpenTimelineIndexes([index]); // Abrir apenas o item clicado
+      setOpenTimelineIndexes([index]);
     }
   };
 
   const toggleEstadoIndex = (index: string) => {
     if (openEstadoIndexes.includes(index)) {
-      setOpenEstadoIndexes([]); // Fechar o item se já estiver aberto
+      setOpenEstadoIndexes([]); 
     } else {
-      setOpenEstadoIndexes([index]); // Abrir apenas o item clicado
+      setOpenEstadoIndexes([index]);
     }
   };
 
@@ -67,7 +67,9 @@ function Sobre() {
 
   return (
     <>
-      <Header />
+      <Header>
+        <HEro/>
+      </Header>
       <main>
         <section className={Style.sobre}>
           <div className="container">

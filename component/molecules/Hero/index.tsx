@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Style from "./Hero.module.scss"
 import { Fade } from "react-awesome-reveal";
 

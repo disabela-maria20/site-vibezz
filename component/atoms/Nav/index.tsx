@@ -20,7 +20,7 @@ const Nav: React.FC<NavProps> = ({ open }) => {
   const pathname = usePathname()
   const nav: NavItem[] = [
     { id: 1, path: "/sobre" },
-    { id: 2, path: "/parceiros" },
+    { id: 2, path: "/clientes" },
     {
       id: 3,
       path: "/times",

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Title } from "@/component/atoms";
 import Style from "./HomeProcess.module.scss";
 import './style.scss';
@@ -14,7 +15,7 @@ const ROTATIONS: any = {
   0: 250, // Análise
   1: 178, // Conexão
   2: 105, // Iniciativa
-  3: 35, // Planejamento
+  3: -42, // Planejamento
   4: 320, // Execução
 };
 
@@ -23,7 +24,6 @@ const PROCESS: DataItem[] = [
     id: 0,
     name: 'Análise',
     paragraph: 'O fluxo e dados gerados parte para toda a cadeia que se repete e se retroalimenta, assim, buscando otimizar toda a estratégia e planejamento.',
-
   },
   {
     id: 1,
@@ -45,7 +45,6 @@ const PROCESS: DataItem[] = [
     name: 'Execução',
     paragraph: 'Entra em jogo todo o time que encara a rotina, os canais, e todas as suas singularidades para conectar todo o fluxo do que queremos fazer e como faremos isso acontecer.',
   },
-
 ];
 
 const HomeProcess = () => {
@@ -53,21 +52,28 @@ const HomeProcess = () => {
   const [componente, setComponente] = useState<DataItem>(PROCESS[0]);
   const [rotation, setRotation] = useState(0);
   const [isPending, startTransition] = useTransition();
+  const [activeItem, setActiveItem] = useState<Element | null>(null); 
 
-  const handlePathClick = useCallback((index: number) => {
+  const handlePathClick = useCallback((item: Element, index: number) => {
     startTransition(() => {
       setComponente(PROCESS[index]);
       const newRotation = ROTATIONS[index];
       setRotation(newRotation);
-      console.log('New rotation:', newRotation);
+
+      if (activeItem) {
+        activeItem.classList.remove('active');
+      }
+
+      item.classList.add('active');
+      setActiveItem(item); 
     });
-  }, [ROTATIONS]);
+  }, [activeItem]);
 
   useEffect(() => {
     const paths = circulo.current?.querySelectorAll("#Layer_1 g path");
     if (paths) {
       paths.forEach((item, index) => {
-        const handleClick = () => handlePathClick(index);
+        const handleClick = () => handlePathClick(item, index);
         item.addEventListener('click', handleClick);
 
         return () => {
@@ -75,9 +81,7 @@ const HomeProcess = () => {
         };
       });
     }
-  }, [handlePathClick, rotation]);
-
-
+  }, [handlePathClick]);
 
   return (
     <section className={Style.processArea}>
@@ -86,20 +90,21 @@ const HomeProcess = () => {
           <Title>apoiamos você desde o início</Title>
         </div>
         <div className={Style.process}>
-          <div
-            ref={circulo}
-            // style={{
-            //   transform: `rotate(-${rotation}deg)`,
-            //   transition: 'transform 0.6s ease-in-out',
-            // }}
-            style={{
-              transform: `rotate(${rotation}deg)`,
-              transition: 'transform 0.6s ease-in-out',
-              width: '90%'
-            }}
-            className="circulo"
-          >
-            <Ciculo />
+          <div className="area-circulo">
+            <div
+              ref={circulo}
+              style={{
+                transform: `rotate(${rotation}deg)`,
+                transition: 'transform 0.6s ease-in-out',
+                width: '90%',
+              }}
+              className="circulo"
+            >
+              <Ciculo />
+            </div>
+            <div className="img-icon">
+              <img src="/images/illustration/vibezz-icon.svg" alt="Icone Vibezz" />
+            </div>
           </div>
           {componente && (
             <div className={Style.areaProcess}>

@@ -16,10 +16,10 @@ const Footer = () => {
             <address>
               Av. Caxingui, 234 - Butantã - São Paulo
             </address>
-            <div>
+            {/* <div>
               <img src="/images/clientes/meta.png" alt="" width={55} />
               <img src="/images/clientes/MS_Startups_FH_lockup_hrz_OnLght_RGB.png" alt="" width={100} />
-            </div>
+            </div> */}
 
           </div>
           <ul className={Style.link}>

@@ -1,182 +1,208 @@
-.circulo {
-  #Layer_1 {
-    text{
-      cursor: pointer;
-      pointer-events: none;
+.area-circulo {
+  position: relative;
+
+  .img-icon{ 
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    
+    img {
+      width: 150px;
+      height: 150px;
     }
-    g {
-      path {
+  }
+  .circulo {
+
+    display: block;
+    margin: 0 auto;
+    #Layer_1 {
+      text {
         cursor: pointer;
+        pointer-events: none;
+      }
+
+      g {
+        path {
+          cursor: pointer;
+        }
+        path.active{
+          fill: #1f417a;
+        }
       }
     }
-  }
 
-  .cls-1 {
-    font-size: 21px;
-  }
+    .cls-1 {
+      font-size: 21px;
+    }
 
-  .cls-1,
-  .cls-2,
-  .cls-3,
-  .cls-4,
-  .cls-5,
-  .cls-6,
-  .cls-7,
-  .cls-8,
-  .cls-9,
-  .cls-10,
-  .cls-11,
-  .cls-12,
-  .cls-13,
-  .cls-14,
-  .cls-15,
-  .cls-16,
-  .cls-17,
-  .cls-18,
-  .cls-19,
-  .cls-20,
-  .cls-21,
-  .cls-22,
-  .cls-23,
-  .cls-24,
-  .cls-25,
-  .cls-26,
-  .cls-27,
-  .cls-28 {
-    fill: #fff;
-    font-family: ArialMT, Arial;
-    isolation: isolate;
-  }
+    .cls-1,
+    .cls-2,
+    .cls-3,
+    .cls-4,
+    .cls-5,
+    .cls-6,
+    .cls-7,
+    .cls-8,
+    .cls-9,
+    .cls-10,
+    .cls-11,
+    .cls-12,
+    .cls-13,
+    .cls-14,
+    .cls-15,
+    .cls-16,
+    .cls-17,
+    .cls-18,
+    .cls-19,
+    .cls-20,
+    .cls-21,
+    .cls-22,
+    .cls-23,
+    .cls-24,
+    .cls-25,
+    .cls-26,
+    .cls-27,
+    .cls-28 {
+      fill: #fff;
+      font-family: ArialMT, Arial;
+      isolation: isolate;
+    }
 
-  .cls-2 {
-    font-size: 21px;
-  }
+    .cls-2 {
+      font-size: 21px;
+    }
 
-  .cls-3 {
-    font-size: 21px;
-  }
+    .cls-3 {
+      font-size: 21px;
+    }
 
-  .cls-4 {
-    font-size: 21px;
-  }
+    .cls-4 {
+      font-size: 21px;
+    }
 
-  .cls-5 {
-    font-size: 21px;
-  }
+    .cls-5 {
+      font-size: 21px;
+    }
 
-  .cls-6 {
-    font-size: 21px;
-  }
+    .cls-6 {
+      font-size: 21px;
+    }
 
-  .cls-7 {
-    font-size: 21px;
-  }
+    .cls-7 {
+      font-size: 21px;
+    }
 
-  .cls-29 {
-    fill: #3b7fab;
-  }
+    .cls-29 {
+      fill: #3b7fab;
+    }
 
-  .cls-8 {
-    font-size: 21px;
-  }
+    .cls-8 {
+      font-size: 21px;
+    }
 
-  .cls-9 {
-    font-size: 21px;
-  }
+    .cls-9 {
+      font-size: 21px;
+    }
 
-  .cls-10 {
-    font-size: 21px;
-  }
+    .cls-10 {
+      font-size: 21px;
+    }
 
-  .cls-30 {
-    fill: #e0e0e0;
-  }
+    .cls-30 {
+      fill: #e0e0e0;
+    }
 
-  .cls-11 {
-    font-size: 21px;
-  }
+    .cls-11 {
+      font-size: 21px;
+    }
 
-  .cls-12 {
-    font-size: 21px;
-  }
+    .cls-12 {
+      font-size: 21px;
+    }
 
-  .cls-13 {
-    font-size: 21px;
-  }
+    .cls-13 {
+      font-size: 21px;
+    }
 
-  .cls-14 {
-    font-size: 21px;
-  }
+    .cls-14 {
+      font-size: 21px;
+    }
 
-  .cls-15 {
-    font-size: 21px;
-  }
+    .cls-15 {
+      font-size: 21px;
+    }
 
-  .cls-16 {
-    font-size: 21px;
-  }
+    .cls-16 {
+      font-size: 21px;
+    }
 
-  .cls-17 {
-    font-size: 21px;
-  }
+    .cls-17 {
+      font-size: 21px;
+    }
 
-  .cls-31 {
-    fill: #2f6294;
-  }
+    .cls-31 {
+      fill: #3b7fab;
+    }
 
-  .cls-18 {
-    font-size: 21px;
-  }
+    .cls-18 {
+      font-size: 21px;
+    }
 
-  .cls-32 {
-    fill: #479bc3;
-  }
+    .cls-32 {
+      fill: #3b7fab;
+    }
 
-  .cls-19 {
-    font-size: 21px;
-  }
+    .cls-19 {
+      font-size: 21px;
+    }
 
-  .cls-33 {
-    fill: #53b8da;
-  }
+    .cls-33 {
+      fill: #3b7fab;
+    }
 
-  .cls-20 {
-    font-size: 21px;
-  }
+    .cls-20 {
+      font-size: 21px;
+    }
 
-  .cls-21 {
-    font-size: 21px;
-  }
+    .cls-21 {
+      font-size: 21px;
+    }
 
-  .cls-22 {
-    font-size: 21px;
-  }
+    .cls-22 {
+      font-size: 21px;
+    }
 
-  .cls-23 {
-    font-size: 21px;
-  }
+    .cls-23 {
+      font-size: 21px;
+    }
 
-  .cls-24 {
-    font-size: 21px;
-  }
+    .cls-24 {
+      font-size: 21px;
+    }
 
-  .cls-34 {
-    fill: #23457d;
-  }
+    .cls-34 {
+      fill: #3b7fab;
+    }
 
-  .cls-25 {
-    font-size: 21px;
-  }
+    .cls-25 {
+      font-size: 21px;
+    }
 
-  .cls-26 {
-    font-size: 21px;
-  }
+    .cls-26 {
+      font-size: 21px;
+    }
 
-  .cls-27 {
-    font-size: 21px;
-  }
+    .cls-27 {
+      font-size: 21px;
+    }
 
-  .cls-28 {
-    font-size: 21px;
+    .cls-28 {
+      font-size: 21px;
+    }
   }
 }
