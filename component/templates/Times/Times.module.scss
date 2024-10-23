@@ -1,8 +1,9 @@
 .times {
-	padding: 45px 0 45px 0;
-	overflow: hidden;
+	padding: 45px 0;
+
 	@include media(lg) {
-		padding: 90px 0;
+		padding-top: 90px;
+		padding-bottom: 0;
 	}
 
 	.Marketing {
@@ -39,10 +40,10 @@
 		}
 
 		.bgMarketing {
-			position: relative;
 			margin-top: 45px;
+
 			@include media(lg) {
-				margin-top: 90px;
+				padding-bottom: 90px;
 			}
 
 			&::after {
@@ -55,7 +56,7 @@
 				width: 100%;
 				position: absolute;
 				left: 0;
-				bottom: -40px;
+				bottom: -66px;
 				z-index: -1;
 			}
 

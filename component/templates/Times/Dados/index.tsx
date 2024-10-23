@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { Title } from "@/component/atoms";
@@ -39,7 +40,7 @@ export const MERCADO = [
   {
     title: 'Inteligência de Mercado',
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed nulla eleifend, imperdiet arcu sed, sollicitudin tellus. Pellentesque augue mauris, sollicitudin quis ante a, pretium posuere est. ",
-    img: "/images/fotos/marketing.png",
+    img: "/images/fotos/close-up-caucasian-man-s-portrait-isolated-blue-studio-neon-light.png",
     data: [
 
       {
@@ -84,12 +85,21 @@ export const MERCADO = [
         img: "/images/fotos/Storytelling-com-Dados.jpg",
         text: "Quanto mais dados temos, mais históricas precisamos construir e interpretar. Pensando nisso temos times especial."
       }
-    
+
     ]
   }
 ]
 
 function PageMarketing() {
+  const empresas = [
+    'AmazonAds.png',
+    'Google Ads2.png',
+    'Google Analyticsv.png',
+    'Google Tag Manager.png',
+    'meta.png',
+    'Power BI.png',
+    'SendGrid.png',
+  ]
   return <>
     <Header />
     <section className={Style.times}>
@@ -114,6 +124,15 @@ function PageMarketing() {
                 </Fade>
               </div>
             ))}
+          </div>
+        </div>
+        <div className={Style.slideTime}>
+          <div className="container">
+            <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions}>
+              {empresas.map(data => (
+                <img src={`/images/clientes/${data}`} key={data} alt="" />
+              ))}
+            </Slide.Content>
           </div>
         </div>
         <Fade direction='up'>

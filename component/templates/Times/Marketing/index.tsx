@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { Title } from "@/component/atoms";
@@ -83,6 +84,14 @@ export const MARKETING = [
 ]
 
 function PageMarketing() {
+  const logo = [
+    'Pinterest.png',
+    'Spotify_Full_Logo_RGB_Green.png',
+    'TikTok.png',
+    'Tinder.png',
+    'YouTube.png'
+
+  ]
   return <>
     <Header />
     <section className={Style.times}>
@@ -90,48 +99,59 @@ function PageMarketing() {
       <div className={Style.Marketing}>
         <div className='container'>
           <div className={Style.gridMarketing}>
-            {MARKETING.map((data, i) => ( 
-                <div key={i}>
-                  <Fade direction='left' delay={1} cascade>
-                    <img src={data.img} />
-                  </Fade>
-                </div>
+            {MARKETING.map((data, i) => (
+              <div key={i}>
+                <Fade direction='left' delay={1} cascade>
+                  <img src={data.img} />
+                </Fade>
+              </div>
             ))}
             {MARKETING.map((data, i) => (
               <div key={i}>
                 <Fade direction='right' delay={1} cascade damping={0.1}>
                   <h2>{data.title}</h2>
                   <div>
-                    <p dangerouslySetInnerHTML={{__html: data.text}}/>
+                    <p dangerouslySetInnerHTML={{ __html: data.text }} />
                   </div>
                 </Fade>
               </div>
             ))}
           </div>
         </div>
+
         <Fade direction='up'>
-          {MARKETING.map((data) => (
-            <div key={data.text} className={Style.bgMarketing}>
+          <section>
+            <div className={Style.slideTime}>
               <div className="container">
                 <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions}>
-                  {data.data.map((data, i) => (
-                    <div className={Style.card} key={i}>
-                      <div className={Style.img}>
-                        <img src={data.img} />
-                      </div>
-                      <div className={Style.text}>
-                        <h3>{data.title}</h3>
-                        <p>{data.text}</p>
-                      </div>
-                    </div>
+                  {logo.map(data => (
+                    <img src={`/images/clientes/${data}`} key={data} alt="" />
                   ))}
                 </Slide.Content>
               </div>
             </div>
-          ))}
+            {MARKETING.map((data) => (
+              <div key={data.text} className={Style.bgMarketing}>
+                <div className="container">
+                  <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions}>
+                    {data.data.map((data, i) => (
+                      <div className={Style.card} key={i}>
+                        <div className={Style.img}>
+                          <img src={data.img} />
+                        </div>
+                        <div className={Style.text}>
+                          <h3>{data.title}</h3>
+                          <p>{data.text}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </Slide.Content>
+                </div>
+              </div>
+            ))}
+          </section>
         </Fade>
       </div>
-
     </section>
     <Footer />
   </>

@@ -1,0 +1,20 @@
+.cta {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0;
+  a {
+    background-image: linear-gradient(90deg, $primary-colors, $secondary-colors);
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.9rem;
+
+    color: $primary-lingh-color;
+    font-family: 'Gantari', sans-serif;
+		font-size: 1.6rem;
+
+    @include media(lg){
+      font-size: 2.4rem;
+    }
+  }
+}

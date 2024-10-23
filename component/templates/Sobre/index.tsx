@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { Title } from '@/component/atoms';
+import { Cta, Title } from '@/component/atoms';
 import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition';
 import { timeline } from "./timeline";
@@ -55,7 +56,7 @@ function Sobre() {
 
   const toggleEstadoIndex = (index: string) => {
     if (openEstadoIndexes.includes(index)) {
-      setOpenEstadoIndexes([]); 
+      setOpenEstadoIndexes([]);
     } else {
       setOpenEstadoIndexes([index]);
     }
@@ -68,7 +69,7 @@ function Sobre() {
   return (
     <>
       <Header>
-        <HEro/>
+        <HEro />
       </Header>
       <main>
         <section className={Style.sobre}>
@@ -85,8 +86,12 @@ function Sobre() {
                 <img src="../../images/illustration/card-sobre.png" alt="" />
               </Fade>
             </div>
+            <Cta>
+          Vamos Conversar
+        </Cta>
           </div>
         </section>
+        
         <section className={Style.timeline}>
           <Title>nossa evolução desde 2019 até 2023</Title>
           <div className="container">
@@ -102,7 +107,7 @@ function Sobre() {
                           <i className={`${Style.icon} ${openTimelineIndexes.includes(index) ? Style.active : ''}`}>+</i> : <i className={`${Style.icon} ${openTimelineIndexes.includes(index) ? Style.active : ''}`}>-</i>
                         }
                         <span>{data.data}</span>
-                        
+
                       </motion.h2>
                       {openTimelineIndexes.includes(index) && <p>{data.paragraph}</p>}
                     </div>
@@ -112,6 +117,7 @@ function Sobre() {
             </ul>
           </div>
         </section>
+
         <section className={Style.mapa}>
           <div className="container">
             <div className={Style.grid}>

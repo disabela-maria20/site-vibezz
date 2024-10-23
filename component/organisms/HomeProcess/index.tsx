@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Title } from "@/component/atoms";
+import { Cta, Title } from "@/component/atoms";
 import Style from "./HomeProcess.module.scss";
 import './style.scss';
 import { Ciculo } from "@/component/atoms/Icons";
@@ -114,6 +114,9 @@ const HomeProcess = () => {
           )}
         </div>
       </div>
+      <Cta>
+        Vamos Conversar
+      </Cta>
     </section>
   );
 };

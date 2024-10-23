@@ -1,8 +1,9 @@
 .times {
-	padding: 45px 0 45px 0;
-	overflow: hidden;
+	padding: 45px 0;
+
 	@include media(lg) {
-		padding: 90px 0;
+		padding-top: 90px;
+		padding-bottom: 0;
 	}
 
 	.Mercado {
@@ -15,7 +16,7 @@
 				grid-template-columns: repeat(2, 1fr);
 				align-items: center;
 				gap: 45px;
-				padding: 120px 0 45px 0;
+				padding: 90px 0 45px 0;
 			}
 
 			h2 {
@@ -42,7 +43,7 @@
 			position: relative;
 			margin-top: 45px;
 			@include media(lg) {
-				margin-top: 90px;
+				padding-bottom: 90px;
 			}
 
 			&::after {
@@ -55,8 +56,12 @@
 				width: 100%;
 				position: absolute;
 				left: 0;
-				bottom: -40px;
+				bottom: -66px;
     		z-index: -1;
+
+				@include media(xxl){
+					bottom: -106px;
+				}
 			}
 
 			.cardFlex {
@@ -126,6 +131,24 @@
 				}
 			}
 
+		}
+	}
+}
+
+.slideTime {
+	padding: 45px 0;
+	img {
+		width: 100%;
+		display: block;
+		max-width: 150px;
+		margin: 0 auto;
+		aspect-ratio: 5 / 3;
+		object-fit: contain;
+		filter: grayscale(1);
+		transition: all 200ms ease;
+
+		&:hover {
+			filter: grayscale(0);
 		}
 	}
 }

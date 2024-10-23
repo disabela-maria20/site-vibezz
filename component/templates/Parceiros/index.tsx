@@ -1,6 +1,6 @@
 "use client"
 
-import { Title } from '@/component/atoms';
+import { Cta, Title } from '@/component/atoms';
 import { Footer } from '@/component/molecules';
 import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition'
@@ -30,23 +30,24 @@ function Parceiros() {
                       transition: { duration: 0.9 }
                     }}
                     className={Style.card}
-                    >
-                    
-                      <div className={Style.img}>
-                        <img src={data.img} alt="logo" />
-                      </div>
-                      <div className={Style.text}>
-                        <h2>{data.nome}</h2>
-                        <p>{data.text}</p>
-                      </div>
-           
+                  >
+
+                    <div className={Style.img}>
+                      <img src={data.img} alt="logo" />
+                    </div>
+                    <div className={Style.text}>
+                      <h2>{data.nome}</h2>
+                      <p>{data.text}</p>
+                    </div>
                   </motion.div>
                 </Fade>
-
               ))}
             </div>
           </div>
         </section>
+        <Cta>
+          Vamos Conversar
+        </Cta>
       </main>
       <Footer />
     </>
