@@ -68,9 +68,7 @@ function Sobre() {
 
   return (
     <>
-      <Header>
-        <HEro />
-      </Header>
+      <Header/>
       <main>
         <section className={Style.sobre}>
           <div className="container">

@@ -15,7 +15,7 @@ const ROTATIONS: any = {
   0: 250, // Análise
   1: 178, // Conexão
   2: 105, // Iniciativa
-  3: -42, // Planejamento
+  3: 395, // Planejamento
   4: 320, // Execução
 };
 
