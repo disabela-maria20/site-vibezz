@@ -1,8 +1,9 @@
 .hero {
-  padding: 40px 0;
+  padding: 59px 0 110px;
   overflow: hidden;
+
   @include media(lg) {
-    padding-top: 0;
+    padding-bottom: 40px 0;
     overflow: initial;
   }
 
@@ -10,13 +11,13 @@
     @include media(lg) {
       display: grid;
       gap: 126px;
-      grid-template-columns: 1fr 1.2fr;
+      grid-template-columns: 1fr;
       grid-auto-rows: 350px;
       gap: 40px;
       align-items: center;
     }
 
-    @include media(xxl){
+    @include media(xxl) {
       grid-template-rows: calc(100% - 150px);
     }
   }
@@ -28,16 +29,21 @@
       line-height: 4rem;
       font-family: $font-family;
       font-weight: 400;
+      max-width: 670px;
+      margin: 0 auto;
+      text-align: center;
 
       @include media(md) {
         font-size: 4.6rem;
         line-height: 5rem;
+        margin: 0 auto 75px;
       }
 
       @include media(xxl) {
         font-size: 5.4rem;
         line-height: 6rem;
       }
+
       strong {
         font-weight: 900;
       }
@@ -49,7 +55,8 @@
     width: 200px;
     height: 200px;
   }
-  .atropos{
+
+  .atropos {
     transform: scale(1.2) translate(21px, 10px);
     overflow: hidden;
 
@@ -57,6 +64,7 @@
       transform: initial;
     }
   }
+
   .illustration {
     position: relative;
     top: 25%;
@@ -67,6 +75,7 @@
       width: 141px;
       z-index: 1;
       left: -8px;
+
       @include media(lg) {
         width: 200px;
         top: 176px;
@@ -79,7 +88,7 @@
       margin-left: auto;
       width: 100%;
 
-      @include media(lg){
+      @include media(lg) {
         padding-top: 180px;
       }
     }
@@ -87,7 +96,7 @@
     .calendar {
       position: absolute;
       padding: 0px;
-      bottom:0;
+      bottom: 0;
       width: 100px;
 
       @include media(lg) {
