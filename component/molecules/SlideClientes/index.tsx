@@ -19,7 +19,6 @@ import {cardParceiros} from './cardParceiros'
 const SlideClientes = () => {
   const container = useRef(null)
   const logo = [
-    "./images/clientes/apas.png",
     "./images/clientes/kisspng-logo.png",
   ]
   const certificacoes = [
