@@ -47,7 +47,7 @@ function Parceiros() {
         </section>
         <Fade direction='up' cascade damping={0.7} delay={200}>
         <Cta>
-          Vamos Conversar
+          Vamos Conversar?
         </Cta>
         </Fade>
         

@@ -248,3 +248,9 @@ template {
   border: 0 none;
   outline: 0;
 } 
+
+
+
+.swiper-button-prev, .swiper-button-next{
+  color: #494949 !important;
+}

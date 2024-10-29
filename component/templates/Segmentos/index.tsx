@@ -38,7 +38,7 @@ function segmentos() {
               </div>
               </Fade>
               <Cta>
-        Vamos Conversar
+        Vamos Conversar?
       </Cta>
             </div>
           ))}

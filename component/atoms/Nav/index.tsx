@@ -74,7 +74,7 @@ const Nav: React.FC<NavProps> = ({ open }) => {
                 scale: 1.13,
                 transition: { duration: 0.9 }
               }}>
-              <Link href="/contato"> Vamos Conversar</Link>
+              <Link href="/contato"> Vamos Conversar?</Link>
             </motion.div>
           </li>
         </ul>

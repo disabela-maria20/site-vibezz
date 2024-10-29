@@ -36,6 +36,28 @@ const SwiperOptions = {
   }
 }
 
+const SwiperOptions1 = {
+  slidesPerView: 1,
+  pagination: false,
+  navigation: true,
+  modules: [Navigation, Pagination],
+  spaceBetween: 20,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    990: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    }
+  }
+}
+
 export const MERCADO = [
   {
     title: 'Inteligência de Mercado',
@@ -128,7 +150,7 @@ function PageMarketing() {
         <div className={Style.slideTime}>
           <>
             <div className="container">
-              <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions}>
+              <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions1}>
                 {empresas.map(data => (
                   <img src={`/images/clientes/${data}`} key={data} alt="" />
                 ))}
