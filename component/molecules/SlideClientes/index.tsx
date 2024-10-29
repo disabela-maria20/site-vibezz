@@ -21,9 +21,6 @@ const SlideClientes = () => {
   const logo = [
     "./images/clientes/apas.png",
     "./images/clientes/kisspng-logo.png",
-    "./images/clientes/Cinemark.png",
-    "./images/clientes/Disney.png",
-    "./images/clientes/coca-cola.png", 
   ]
   const certificacoes = [
     "MS_Startups_FH_lockup_hrz_OnLght_RGB.png",
