@@ -1,6 +1,6 @@
 "use client"
 
-import { Title } from '@/component/atoms';
+import { Cta, Title } from '@/component/atoms';
 import { Footer } from '@/component/molecules';
 import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition';
@@ -37,10 +37,14 @@ function segmentos() {
                 ))}
               </div>
               </Fade>
+              <Cta>
+        Vamos Conversar
+      </Cta>
             </div>
           ))}
         </div>
       </section>
+      
       <Footer />
     </>
   );

@@ -12,9 +12,9 @@ function Home() {
         <Hero />
       </Header>
       <main>
+      <SlideClientes />
+        <HomeSectionCard />       
         <HomeProcess />
-        <HomeSectionCard />
-        <SlideClientes />
       </main>
       <Footer />
     </>

@@ -85,17 +85,17 @@ export const MARKETING = [
 
 function PageMarketing() {
   const logo = [
-    'Pinterest.png',
-    'Spotify_Full_Logo_RGB_Green.png',
+    'MBPBadge-Darkbackground.jpg',
     'TikTok.png',
-    'Tinder.png',
-    'YouTube.png'
-
+    'Google Analyticsv.png',
+    'YouTube.png',
+    'Spotify_Full_Logo_RGB_Green.png',
+    'Pinterest.png',
+    'Tinder.png'
   ]
   return <>
     <Header />
     <section className={Style.times}>
-      <Title>marketing</Title>
       <div className={Style.Marketing}>
         <div className='container'>
           <div className={Style.gridMarketing}>
@@ -119,10 +119,12 @@ function PageMarketing() {
           </div>
         </div>
 
-        <Fade direction='up'>
-          <section>
+        <section>
+          <Title>Nossos times utilizam</Title>
+          <>
             <div className={Style.slideTime}>
               <div className="container">
+
                 <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions}>
                   {logo.map(data => (
                     <img src={`/images/clientes/${data}`} key={data} alt="" />
@@ -130,6 +132,8 @@ function PageMarketing() {
                 </Slide.Content>
               </div>
             </div>
+          </>
+          <>
             {MARKETING.map((data) => (
               <div key={data.text} className={Style.bgMarketing}>
                 <div className="container">
@@ -149,8 +153,9 @@ function PageMarketing() {
                 </div>
               </div>
             ))}
-          </section>
-        </Fade>
+          </>
+
+        </section>
       </div>
     </section>
     <Footer />

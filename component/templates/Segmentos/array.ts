@@ -9,7 +9,6 @@ export const SEGMENTOS = [
         title: 'Cinema',
         img: '/images/fotos/cinema.jpg',
         text: [
-          'Cinema',
           'Estratégia',
           'Canais',
           'Conteúdos',

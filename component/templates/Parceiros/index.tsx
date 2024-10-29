@@ -45,9 +45,12 @@ function Parceiros() {
             </div>
           </div>
         </section>
+        <Fade direction='up' cascade damping={0.7} delay={200}>
         <Cta>
           Vamos Conversar
         </Cta>
+        </Fade>
+        
       </main>
       <Footer />
     </>

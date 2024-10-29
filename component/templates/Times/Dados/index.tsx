@@ -92,19 +92,17 @@ export const MERCADO = [
 
 function PageMarketing() {
   const empresas = [
-    'AmazonAds.png',
-    'Google Ads2.png',
+    'Power BI.png',
     'Google Analyticsv.png',
     'Google Tag Manager.png',
-    'meta.png',
-    'Power BI.png',
     'SendGrid.png',
+    'AmazonAds.png',
+    'Google Ads2.png',
+    'meta.png',
   ]
   return <>
     <Header />
     <section className={Style.times}>
-      <Title>Dados</Title>
-
       <div className={Style.Mercado}>
         <div className='container'>
           <div className={Style.gridMercado}>
@@ -126,16 +124,20 @@ function PageMarketing() {
             ))}
           </div>
         </div>
+        <Title>Nossos times utilizam</Title>
         <div className={Style.slideTime}>
-          <div className="container">
-            <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions}>
-              {empresas.map(data => (
-                <img src={`/images/clientes/${data}`} key={data} alt="" />
-              ))}
-            </Slide.Content>
-          </div>
+          <>
+            <div className="container">
+              <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions}>
+                {empresas.map(data => (
+                  <img src={`/images/clientes/${data}`} key={data} alt="" />
+                ))}
+              </Slide.Content>
+            </div>
+          </>
+
         </div>
-        <Fade direction='up'>
+        <>
           {MERCADO.map((data) => (
             <div key={data.text} className={Style.bgMercado}>
               <div className="container">
@@ -155,7 +157,7 @@ function PageMarketing() {
               </div>
             </div>
           ))}
-        </Fade>
+        </>
 
       </div>
     </section>
