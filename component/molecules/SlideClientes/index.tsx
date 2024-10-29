@@ -14,20 +14,23 @@ import "swiper/css/navigation"
 
 import { useRef } from 'react';
 import { Fade } from 'react-awesome-reveal';
+import {cardParceiros} from './cardParceiros'
 
 const SlideClientes = () => {
   const container = useRef(null)
   const logo = [
-    "apas.png",
-    "kisspng-logo.png",
-    "Cinemark.png",
-    "Disney.png",
-    "coca-cola.png", 
+    "./images/clientes/apas.png",
+    "./images/clientes/kisspng-logo.png",
+    "./images/clientes/Cinemark.png",
+    "./images/clientes/Disney.png",
+    "./images/clientes/coca-cola.png", 
   ]
   const certificacoes = [
     "MS_Startups_FH_lockup_hrz_OnLght_RGB.png",
     "MBPBadge-Darkbackground.jpg"
   ]
+
+  const clientes =  [...logo, ...cardParceiros.map(data => data.img)]
   return (
     <>
      <section className={Style.SlideClientes} >
@@ -39,12 +42,12 @@ const SlideClientes = () => {
             hashNavigation={{
               watchState: false
             }}
-            pagination={{
-              clickable: false
-            }}
-            navigation={false}
+          
+            navigation={true}
+            pagination={false}
             modules={[Pagination, Navigation, HashNavigation]}
             className={Style.Swiper}
+           
             breakpoints={{
               640: {
                 slidesPerView: 2,
@@ -55,15 +58,15 @@ const SlideClientes = () => {
                 spaceBetween: 40
               },
               1024: {
-                slidesPerView: 6,
+                slidesPerView: 5,
                 spaceBetween: 50
               }
             }}
           >
-            {logo.map((logo) => (
+            {clientes.map((logo) => (
               <SwiperSlide data-hash="slide1" key={logo}>
                 <img
-                  src={`./images/clientes/${logo}`}
+                  src={logo}
                   alt=""
                   className={Style.logo}
                 />
