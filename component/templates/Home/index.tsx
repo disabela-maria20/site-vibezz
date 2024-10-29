@@ -12,8 +12,8 @@ function Home() {
         <Hero />
       </Header>
       <main>
-      <SlideClientes />
-        <HomeSectionCard />       
+        <SlideClientes />
+        <HomeSectionCard />
         <HomeProcess />
       </main>
       <Footer />

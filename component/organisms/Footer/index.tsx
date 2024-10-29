@@ -83,7 +83,7 @@ const Footer = () => {
               </ul>
 
             </div>
-            <p>Copyright © 2023 Vibezz | Mezzetech Tecnologia da Informação e Marketing LTDA</p>
+            <p>Copyright © {new Date().getFullYear()} Vibezz | Mezzetech Tecnologia da Informação e Marketing LTDA</p>
           </div>
         </div>
       </div>

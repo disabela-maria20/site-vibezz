@@ -26,7 +26,7 @@ const SlideClientes = () => {
   ]
   const certificacoes = [
     "MS_Startups_FH_lockup_hrz_OnLght_RGB.png",
-    "meta.png"
+    "MBPBadge-Darkbackground.jpg"
   ]
   return (
     <>
