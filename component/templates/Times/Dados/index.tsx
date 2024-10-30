@@ -144,19 +144,7 @@ function PageMarketing() {
             ))}
           </div>
         </div>
-        <Title>Nossos times utilizam</Title>
-        <div className={Style.slideTime}>
-          <>
-            <div className="container">
-              <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions1}>
-                {empresas.map(data => (
-                  <img src={`/images/clientes/${data}`} key={data} alt="" />
-                ))}
-              </Slide.Content>
-            </div>
-          </>
-
-        </div>
+       
         <>
           {MERCADO.map((data) => (
             <div key={data.text} className={Style.bgMercado}>
@@ -179,6 +167,20 @@ function PageMarketing() {
           ))}
         </>
 
+       
+        <div className={Style.slideTime}>
+           <Title>Nossos times utilizam</Title>
+          <>
+            <div className="container">
+              <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions1}>
+                {empresas.map(data => (
+                  <img src={`/images/clientes/${data}`} key={data} alt="" />
+                ))}
+              </Slide.Content>
+            </div>
+          </>
+
+        </div>
       </div>
     </section>
     <Footer />

@@ -1,8 +1,6 @@
 .times {
 	padding: 45px 0;
 
-
-
 	@include media(lg) {
 		padding-top: 90px;
 		padding-bottom: 0;
@@ -141,7 +139,16 @@
 }
 
 .slideTime {
-	padding: 45px 0;
+	padding: 130px 0 0px;
+
+	@include media(lg) {
+		padding: 130px 0 45px;
+	}
+
+	h1 {
+		margin-bottom: 35px;
+	}
+
 	img {
 		width: 100%;
 		display: block;

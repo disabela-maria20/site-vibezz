@@ -56,7 +56,7 @@ function Home() {
                 {certificacoes.map((logo) => (
                   <SwiperSlide data-hash="slide1" key={logo}>
                     <img
-                      src={`./images/clientes/${logo}`}
+                      src={`/images/clientes/${logo}`}
                       alt=""
                       className={Style.logoCertificacoes}
                     />

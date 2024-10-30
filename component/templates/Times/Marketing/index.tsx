@@ -143,19 +143,7 @@ function PageMarketing() {
         </div>
 
         <section>
-          <Title>Nossos times utilizam</Title>
-          <>
-            <div className={Style.slideTime}>
-              <div className="container">
 
-                <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions1}>
-                  {logo.map(data => (
-                    <img src={`/images/clientes/${data}`} key={data} alt="" />
-                  ))}
-                </Slide.Content>
-              </div>
-            </div>
-          </>
           <>
             {MARKETING.map((data) => (
               <div key={data.text} className={Style.bgMarketing}>
@@ -178,6 +166,19 @@ function PageMarketing() {
             ))}
           </>
 
+          <>
+            <div className={Style.slideTime}>
+              <Title>Nossos times utilizam</Title>
+              <div className="container">
+
+                <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions1}>
+                  {logo.map(data => (
+                    <img src={`/images/clientes/${data}`} key={data} alt="" />
+                  ))}
+                </Slide.Content>
+              </div>
+            </div>
+          </>
         </section>
       </div>
     </section>

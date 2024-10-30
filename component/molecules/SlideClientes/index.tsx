@@ -19,7 +19,7 @@ import { cardParceiros } from './cardParceiros'
 const SlideClientes = () => {
   const container = useRef(null)
   const logo = [
-    "./images/clientes/kisspng-logo.png",
+    "/images/clientes/kisspng-logo.png",
   ]
  
   const clientes = [...logo, ...cardParceiros.map(data => data.img)]
