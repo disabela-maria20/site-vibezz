@@ -35,7 +35,7 @@ const SlideClientes = () => {
               }}
 
               navigation={true}
-              pagination={true}
+              pagination={false}
               modules={[Pagination, Navigation, HashNavigation]}
               className={Style.Swiper}
 

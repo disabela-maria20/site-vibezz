@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const SwiperOptions = {
   slidesPerView: 1,
   pagination: false,
-  navigation: false,
+  navigation: true,
   modules: [Navigation, Pagination],
   spaceBetween: 20,
   breakpoints: {
@@ -38,7 +38,7 @@ const SwiperOptions = {
 
 const SwiperOptions1 = {
   slidesPerView: 1,
-  pagination: false,
+  pagination: true,
   navigation: true,
   modules: [Navigation, Pagination],
   spaceBetween: 20,
