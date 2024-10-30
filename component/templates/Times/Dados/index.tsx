@@ -118,9 +118,7 @@ function PageMarketing() {
     'Google Analyticsv.png',
     'Google Tag Manager.png',
     'SendGrid.png',
-    'AmazonAds.png',
-    'Google Ads2.png',
-    'meta.png',
+   
   ]
   return <>
     <Header />

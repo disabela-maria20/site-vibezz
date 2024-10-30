@@ -1,7 +1,7 @@
 export const cardParceiros = [
   {
     id: 0,
-    nome: 'Apas',
+    nome: 'APAS',
     img: '/images/clientes/apas.png',
     text: ' É a entidade representativa do setor supermercadista no estado de São Paulo. Além de estar a frente a várias interlocuções com esses supermercados, é responsável pelo APAS SHOW, o maior evento de alimentos e bebidas das Américas e a maior feira supermercadista do mundo.'
   },
@@ -13,13 +13,13 @@ export const cardParceiros = [
   // },
   {
     id: 2,
-    nome: 'Paramount',
+    nome: 'Paramount Pictures',
     img: '/images/clientes/paramount.png',
     text: 'A Paramount Pictures é um dos estúdios de cinema mais antigos e renomados do mundo. Fundada em 1912, nos Estados Unidos, ela é considerada um dos maiores estúdios de Hollywood.'
   },
   {
     id: 3,
-    nome: 'Imax',
+    nome: 'IMAX',
     img: '/images/clientes/IMAX.svg.png',
     text: 'A IMAX é a tecnologia cinematográfica mais avançada do mundo, oferecendo uma experiência única e imersiva. Se você busca uma experiência cinematográfica de alta qualidade, o IMAX é a escolha perfeita. As salas IMAX estão presentes em dezenas de países, desde os Estados Unidos, onde a tecnologia teve origem, até países da Europa, Ásia, América Latina e Oceania.'
   },
