@@ -92,7 +92,7 @@ export const MARKETING = [
       {
         id: 4,
         title: "Planejamento de Mídia",
-        img: "/images/fotos/Planejamento-de-Mídia.jpg",
+        img: "/images/fotos/Planejamento-de-Midia.jpg",
         text: "Base de todo o nosso racional é a performance do produto, respeitando suas características e enxergando oportunidades, equalizamos os canais a partir da jornada e funil, criando modelos de atribuição de acordo com nossa estratégia "
       },
       {
@@ -110,7 +110,7 @@ function PageMarketing() {
   const logo = [
     'MBPBadge-Darkbackground.jpg',
     'TikTok.png',
-    'Google Analyticsv.png',
+    'GoogleAnalyticsv.png',
     'YouTube.png',
     'Spotify_Full_Logo_RGB_Green.png',
     'Pinterest.png',

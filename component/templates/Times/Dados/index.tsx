@@ -68,7 +68,7 @@ export const MERCADO = [
       {
         id: 0,
         title: "Coleta e análise de Dados ",
-        img: "/images/fotos/Coleta-e-análise-de-Dados.jpg",
+        img: "/images/fotos/Coleta-e-analise-de-Dados.jpg",
         text: "A partir de inúmeras coletas vindas de diferentes fontes, mapeamos os dados referentes a consumo e comportamento de vendas. Assim, podemos buscar um entendimento 360, dos seus usuários e até mesmo mercado."
       },
       {
@@ -114,9 +114,9 @@ export const MERCADO = [
 
 function PageMarketing() {
   const empresas = [
-    'Power BI.png',
-    'Google Analyticsv.png',
-    'Google Tag Manager.png',
+    'PowerBI.png',
+    'GoogleAnalyticsv.png',
+    'GoogleTagManager.png',
     'SendGrid.png',
    
   ]
