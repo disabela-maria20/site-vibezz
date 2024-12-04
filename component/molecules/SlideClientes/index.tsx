@@ -21,11 +21,11 @@ const SlideClientes = () => {
   const logo = [
     "/images/clientes/kisspng-logo.png",
   ]
- 
+
   const clientes = [...logo, ...cardParceiros.map(data => data.img)]
   return (
     <>
-      <section className={Style.SlideClientes} >
+      <section className={Style.SlideClientes}>
         <Title>Clientes</Title>
         <div className="container" ref={container}>
           <Fade duration={1700} cascade direction="up" delay={0.5} >
@@ -42,7 +42,7 @@ const SlideClientes = () => {
               breakpoints={{
                 640: {
                   slidesPerView: 2,
-              
+
                 },
                 768: {
                   slidesPerView: 4,

@@ -68,7 +68,7 @@ function Sobre() {
 
   return (
     <>
-      <Header/>
+      <Header />
       <main>
         <section className={Style.sobre}>
           <div className="container">
@@ -76,7 +76,7 @@ function Sobre() {
               <Fade direction='left'>
                 <div>
                   <Title>A vibezz</Title>
-                  <p>Somos uma agência Full Service atuando em Marketing e Engenharia de Dados. Nascemos e crescemos a partir de um propósito: Conectar tudo o que pensávamos e fazíamos para os canais de comunicação de forma construtiva e objetiva aos nossos parceiros. A partir disso formamos uma estrutura de dados que se conecta aos segmentos, construindo um ecossistema que se retroalimenta e constrói novas iniciativas a partir do cruzamento desses polos.</p>
+                  <p>Somos uma agência Full Service atuante em Marketing. Nascemos e crescemos com um propósito: conectar tudo o que pensamos e fazemos aos canais de comunicação de forma construtiva e objetiva para nossos parceiros. A partir disso, formamos uma estrutura de dados que se conecta aos segmentos, construindo um ecossistema que se retroalimenta e gera novas iniciativas a partir do cruzamento desses polos.</p>
                   <p>E assim nos propormos a criar empoderamento estratégico, tático e operacional por meio da conexão com os dados.</p>
                 </div>
               </Fade>
@@ -85,11 +85,11 @@ function Sobre() {
               </Fade>
             </div>
             <Cta>
-          Vamos Conversar?
-        </Cta>
+              Vamos Conversar?
+            </Cta>
           </div>
         </section>
-        
+
         <section className={Style.timeline}>
           <Title>nossa evolução desde 2019 até 2023</Title>
           <div className="container">

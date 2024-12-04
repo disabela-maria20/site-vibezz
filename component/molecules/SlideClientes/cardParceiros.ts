@@ -23,12 +23,12 @@ export const cardParceiros = [
     img: '/images/clientes/IMAX.svg.png',
     text: 'A IMAX é a tecnologia cinematográfica mais avançada do mundo, oferecendo uma experiência única e imersiva. Se você busca uma experiência cinematográfica de alta qualidade, o IMAX é a escolha perfeita. As salas IMAX estão presentes em dezenas de países, desde os Estados Unidos, onde a tecnologia teve origem, até países da Europa, Ásia, América Latina e Oceania.'
   },
-  {
-    id: 4,
-    nome: 'Sony Pictures',
-    img: '/images/clientes/sony-pictures.png',
-    text: 'A Sony Pictures é uma das maiores empresas de entretenimento do mundo, responsável por produzir e distribuir filmes, programas de televisão, animações e outros conteúdos.'
-  },
+  // {
+  //   id: 4,
+  //   nome: 'Sony Pictures',
+  //   img: '/images/clientes/sony-pictures.png',
+  //   text: 'A Sony Pictures é uma das maiores empresas de entretenimento do mundo, responsável por produzir e distribuir filmes, programas de televisão, animações e outros conteúdos.'
+  // },
   {
     id: 5,
     nome: 'Diamond Films',
