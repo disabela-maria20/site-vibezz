@@ -76,8 +76,9 @@ function Sobre() {
               <Fade direction='left'>
                 <div>
                   <Title>A vibezz</Title>
-                  <p>Somos uma agência Full Service atuante em Marketing. Nascemos e crescemos com um propósito: conectar tudo o que pensamos e fazemos aos canais de comunicação de forma construtiva e objetiva para nossos parceiros. A partir disso, formamos uma estrutura de dados que se conecta aos segmentos, construindo um ecossistema que se retroalimenta e gera novas iniciativas a partir do cruzamento desses polos.</p>
-                  <p>E assim nos propormos a criar empoderamento estratégico, tático e operacional por meio da conexão com os dados.</p>
+                  <p>Somos uma agência Full Service atuante em Marketing e Dados. Nascemos e crescemos com um propósito: conectar tudo o que pensamos e fazemos aos canais de comunicação de forma construtiva e objetiva para nossos parceiros. A partir disso, formamos uma estrutura de dados que se conecta aos segmentos, construindo um ecossistema que se retroalimenta e gera novas iniciativas a partir do cruzamento desses polos.
+                  </p>
+                  <p>E assim nos propormos a criar empoderamento estratégico, tático e operacional por meio da conexão com os dados.</p>
                 </div>
               </Fade>
               <Fade direction='right'>
