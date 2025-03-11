@@ -61,7 +61,7 @@ const SwiperOptions1 = {
 export const MERCADO = [
   {
     title: 'Inteligência de Mercado',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed nulla eleifend, imperdiet arcu sed, sollicitudin tellus. Pellentesque augue mauris, sollicitudin quis ante a, pretium posuere est. ",
+    text: "",
     img: "/images/fotos/close-up-caucasian-man-s-portrait-isolated-blue-studio-neon-light.png",
     data: [
 
@@ -118,7 +118,7 @@ function PageMarketing() {
     'GoogleAnalyticsv.png',
     'GoogleTagManager.png',
     'SendGrid.png',
-   
+
   ]
   return <>
     <Header />
@@ -144,7 +144,7 @@ function PageMarketing() {
             ))}
           </div>
         </div>
-       
+
         <>
           {MERCADO.map((data) => (
             <div key={data.text} className={Style.bgMercado}>
@@ -167,9 +167,9 @@ function PageMarketing() {
           ))}
         </>
 
-       
+
         <div className={Style.slideTime}>
-           <Title>Nossos times utilizam</Title>
+          <Title>Nossos times utilizam</Title>
           <>
             <div className="container">
               <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions1}>
