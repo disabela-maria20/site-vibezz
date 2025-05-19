@@ -13,7 +13,8 @@ import Style from "./Home.module.scss"
 function Home() {
   const certificacoes = [
     "MS_Startups_FH_lockup_hrz_OnLght_RGB.png",
-    "MBPBadge-Darkbackground.jpg"
+    "MBPBadge-Darkbackground.jpg",
+    "SELO_ASSOCIADO_IAB_BRASIL.png"
   ]
 
   return (
@@ -48,7 +49,7 @@ function Home() {
 
                   },
                   1024: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
 
                   }
                 }}
