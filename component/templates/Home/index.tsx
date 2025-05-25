@@ -10,7 +10,9 @@ import { Fade } from 'react-awesome-reveal';
 import { HashNavigation, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Style from "./Home.module.scss"
+import { useTranslations } from 'next-intl';
 function Home() {
+  const t = useTranslations('inicio');
   const certificacoes = [
     "MS_Startups_FH_lockup_hrz_OnLght_RGB.png",
     "MBPBadge-Darkbackground.jpg",
@@ -27,7 +29,7 @@ function Home() {
         <HomeSectionCard />
         <HomeProcess />
         <section className={Style.SlideCertificacao} >
-          <Title>Certificações</Title>
+          <Title>{t('areaCertificacoes.Certificacoes')}</Title>
           <div className="container">
             <Fade duration={1700} cascade direction="up" delay={0.5} >
               <Swiper

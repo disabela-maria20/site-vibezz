@@ -9,16 +9,16 @@ type Props = {
 
 const Header = ({ children }: Props) => {
   const pathname = usePathname()
-  
-  const verificarHome = pathname !== '/'
+  const l = ['/', 'en', 'pt']
+  const verificarHome = l.includes(pathname)
 
   return (
     <>
-      <header className={Style.bg_header} style={{backgroundPositionY: verificarHome ? 'center': 'bottom'}}>
+      <header className={Style.bg_header} style={{ backgroundPositionY: verificarHome ? 'center' : 'bottom' }}>
         <Menu />
         {children}
       </header>
-     {verificarHome && <div className={Style.border}></div>} 
+      {verificarHome && <div className={Style.border}></div>}
     </>
   )
 }

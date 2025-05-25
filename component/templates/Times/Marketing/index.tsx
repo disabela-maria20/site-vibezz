@@ -9,6 +9,7 @@ import { Fade } from "react-awesome-reveal";
 import Style from "./marketing.module.scss";
 import { Navigation, Pagination } from "swiper/modules";
 import { fail } from "assert";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: 'Times de Marketing | Vibezz',
@@ -59,54 +60,9 @@ const SwiperOptions1 = {
   }
 }
 
-export const MARKETING = [
-  {
-    title: 'Marketing',
-    text: "<p>Nossa vertical de marketing está preparada para ter uma imersão completa em múltiplos segmentos e negócios, mapeando o propósito do cliente, bem como seus indicadores-chave, para assim conectar a estratégia de comunicação e como ela e sua operação serão efetivas para o resultado do nosso cliente.</p><p>Com metodologias ágeis e abordando diferentes conceitos de growth, buscamos aplicar, testar e compreender todas as nossas iniciativas para buscar um ciclo contínuo de melhorias em todas as frentes.</p>",
-    img: "/images/fotos/marketing.png",
-    data: [
-      {
-        id: 0,
-        title: "Planejamento de Marca",
-        img: "/images/fotos/planejamento-de-marca.jpg",
-        text: "Desvende seu diferencial competitivo e domine seu nicho de mercado, construindo uma marca autêntica e memorável que conquista clientes."
-      },
-      {
-        id: 1,
-        title: "Plano de canais omnichannel",
-        img: "/images/fotos/canais-omnichannel.jpg",
-        text: "Mapeie a jornada do cliente e alcance-o em cada etapa e onde quer que ele esteja, criando um plano personalizado para impulsionar as métricas ideias de cada canal e/ou audiência."
-      },
-      {
-        id: 2,
-        title: "Design 360º",
-        img: "/images/fotos/Design-360.jpg",
-        text: "Criamos histórias que atraem, educam e convertem seu público, exploramos diversos conceitos e formatos para atender às diferentes necessidades das audiências em suas diferentes jornadas."
-      },
-      {
-        id: 3,
-        title: "Social Media",
-        img: "/images/fotos/SocialMedia.jpg",
-        text: "Criamos histórias que atraem, educam e convertem seu público, exploramos diversos conceitos e formatos para atender às diferentes necessidades das audiências em suas diferentes jornadas."
-      },
-      {
-        id: 4,
-        title: "Planejamento de Mídia",
-        img: "/images/fotos/Planejamento-de-Midia.jpg",
-        text: "Base de todo o nosso racional é a performance do produto, respeitando suas características e enxergando oportunidades, equalizamos os canais a partir da jornada e funil, criando modelos de atribuição de acordo com nossa estratégia "
-      },
-      {
-        id: 5,
-        title: "Digital Analytics",
-        img: "/images/fotos/Digital-Analytics.jpg",
-        text: "Com a visão macro de toda a estratégia, funcionamento dos canais e execução, nosso time visa buscar os principais insights de todas as frentes e conectá-las diretamente ao negócio."
-      }
-
-    ]
-  }
-]
 
 function PageMarketing() {
+  const t = useTranslations('Marketing');
   const logo = [
     'MBPBadge-Darkbackground.jpg',
     'TikTok.png',
@@ -116,8 +72,57 @@ function PageMarketing() {
     'Pinterest.png',
     'Tinder.png'
   ]
+  const MARKETING = [
+    {
+      title: t('titulo'),
+      text1: t('texto1'),
+      text2: t('texto2'),
+      img: "/images/fotos/marketing.png",
+      data: [
+        {
+          id: 0,
+          title: t('card.titulo1'),
+          img: "/images/fotos/planejamento-de-marca.jpg",
+          text: t('card.texto1'),
+        },
+        {
+          id: 1,
+          title: t('card.titulo2'),
+          img: "/images/fotos/canais-omnichannel.jpg",
+          text: t('card.texto2'),
+        },
+        {
+          id: 2,
+          title: t('card.titulo3'),
+          img: "/images/fotos/Design-360.jpg",
+          text: t('card.texto3'),
+        },
+        {
+          id: 3,
+          title: t('card.titulo4'),
+          img: "/images/fotos/SocialMedia.jpg",
+          text: t('card.texto4'),
+        },
+        {
+          id: 4,
+          title: t('card.titulo5'),
+          img: "/images/fotos/Planejamento-de-Midia.jpg",
+          text: t('card.texto5'),
+        },
+        {
+          id: 5,
+          title: t('card.titulo6'),
+          img: "/images/fotos/Digital-Analytics.jpg",
+          text: t('card.texto6'),
+        }
+
+      ]
+    }
+  ]
+
   return <>
     <Header />
+
     <section className={Style.times}>
       <div className={Style.Marketing}>
         <div className='container'>
@@ -134,7 +139,8 @@ function PageMarketing() {
                 <Fade direction='right' delay={1} cascade damping={0.1}>
                   <h2>{data.title}</h2>
                   <div>
-                    <p dangerouslySetInnerHTML={{ __html: data.text }} />
+                    <p>{data.text1}</p>
+                    <p>{data.text2}</p>
                   </div>
                 </Fade>
               </div>
@@ -145,8 +151,8 @@ function PageMarketing() {
         <section>
 
           <>
-            {MARKETING.map((data) => (
-              <div key={data.text} className={Style.bgMarketing}>
+            {MARKETING.map((data, i) => (
+              <div key={i} className={Style.bgMarketing}>
                 <div className="container">
                   <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions}>
                     {data.data.map((data, i) => (
@@ -168,7 +174,7 @@ function PageMarketing() {
 
           <>
             <div className={Style.slideTime}>
-              <Title>Nossos times utilizam</Title>
+              <Title>{t('card.areaNossostimesutilizam.titulo')}</Title>
               <div className="container">
 
                 <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions1}>

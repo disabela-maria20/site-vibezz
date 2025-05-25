@@ -1,15 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
+import { useTranslations } from "next-intl";
 import Style from "./Hero.module.scss"
 import { Fade } from "react-awesome-reveal";
+
 const Hero = () => {
+  const t = useTranslations('inicio');
   return (
     <section className={Style.hero}>
       <div className="container">
         <div className={Style.grid}>
           <Fade duration={1500} direction="left" delay={0.5} className={Style.areaTitle}>
             <h1>
-              A parceira conectada ao seu&nbsp;
-              <strong>planejamento e resultados.</strong>
+              {t('titulo')}&nbsp;
+              <strong>{t('titulo2')}</strong>
             </h1>
           </Fade>
           <Fade duration={1500} direction="right" delay={0.5}>

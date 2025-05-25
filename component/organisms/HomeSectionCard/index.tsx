@@ -8,8 +8,10 @@ import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import { useTranslations } from "next-intl";
 
 const HomeSectionCard = () => {
+  const t = useTranslations('inicio');
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
@@ -60,97 +62,80 @@ const HomeSectionCard = () => {
   const Marketing = [
     {
       id: 1,
-      title: "Planejamento de marca de Marca",
+      title: t('areaMarketing.card.titulo1'),
       icon: <PlanejamentoMarca />,
-      description:
-        "Desvende seu diferencial competitivo e domine seu nicho de mercado, construindo uma marca autêntica e memorável que conquista clientes.",
+      description: t('areaMarketing.card.texto1'),
     },
     {
       id: 2,
-      title: "Plano de canais omnichannel",
+      title: t('areaMarketing.card.titulo2'),
       icon: <PlanejamentoOmnichannel />,
-      description:
-        "Mapeie a jornada do cliente e alcance-o em cada etapa e onde quer que ele esteja, criando um plano personalizado para impulsionar as métricas ideias de cada canal e/ou audiência.",
+      description: t('areaMarketing.card.texto2'),
     },
     {
       id: 3,
-      title: "Design 360º",
+      title: t('areaMarketing.card.titulo3'),
       icon: <Design360 />,
-      description:
-        "Soluções criativas para diferentes necessidades, que busca uma metodologia de conexão para as múltiplas necessidades e canais, indo desde o objetivo, as audiências e resultados que precisamos ter com o conteúdo."
+      description: t('areaMarketing.card.texto3'),
     },
     {
       id: 4,
-      title: "Social Media",
+      title: t('areaMarketing.card.titulo4'),
       icon: <SocialMedia />,
-      description:
-        "Criamos histórias que atraem, educam e convertem seu público, exploramos diversos conceitos e formatos para atender às diferentes necessidades das audiências em suas diferentes jornadas."
+      description: t('areaMarketing.card.texto4'),
     },
     {
       id: 5,
-      title: "Planejamento de Mídia",
+      title: t('areaMarketing.card.titulo5'),
       icon: <PlanejamentoMidia />,
-      description:
-        "Base de todo o nosso racional é a performance do produto, respeitando suas características e enxergando oportunidades, equalizamos os canais a partir da jornada e funil, criando modelos de atribuição de acordo com nossa estratégia"
+      description: t('areaMarketing.card.texto5'),
     },
     {
       id: 6,
-      title: "Digital Analytics",
+      title: t('areaMarketing.card.titulo6'),
       icon: <DigitalAnalytics />,
-      description:
-        "Com a visão macro de toda a estratégia, funcionamento dos canais e execução, nosso time visa buscar os principais insights de todas as frentes e conectá-las diretamente ao negócio. "
+      description: t('areaMarketing.card.texto6'),
     },
   ];
 
   const Dados = [
     {
       id: 1,
-      title: "Coleta e análise de Dados",
+      title: t('areaDataeTech.card.titulo1'),
       icon: <ColetaAnaliseDados />,
-      description:
-        "A partir de inúmeras coletas vindas de diferentes fontes, mapeamos os dados referentes a consumo e comportamento de vendas. Assim, podemos buscar um entendimento 360, dos seus usuários e até mesmo mercado.",
+      description: t('areaDataeTech.card.texto1'),
     },
     {
       id: 2,
-      title: "Data Fusion e Insights Integrados",
+      title: t('areaDataeTech.card.titulo2'),
       icon: <DataFusionInsightsIntegrados />,
-      description:
-        "Unificamos bases de dados de diferentes canais e as cruzamos, a partir de tratamento desses dados, interpretamos suas funções, características e como podem se complementar.",
+      description: t('areaDataeTech.card.texto2'),
     },
     {
       id: 3,
-      title: "Construção, Aplicação e Análise de Pesquisa",
+      title: t('areaDataeTech.card.titulo3'),
       icon: <ConstrucaoAplicacaoAnalisePesquisa />,
-      description:
-        "A partir de diferentes oportunidades, que vão desde a descoberta de potenciais públicos, ou até mesmo seu aprofundamento, até a validação de campanhas e produtos, buscamos conectar aplicações de pesquisas a dados.",
+      description: t('areaDataeTech.card.texto3'),
     },
     {
       id: 4,
-      title: "Gestão e Arquitetura de Banco de Dados",
+      title: t('areaDataeTech.card.titulo4'),
       icon: <GestaoArquiteturaBancoDados />,
-      description:
-        "A quantidade de dados que são gerados por sistemas e diferentes ambientes muitas vezes precisam ser geridos da melhor forma em diversos pontos de vista. Para isso nosso time apoia em toda essa camada de gestão de Data Warehouse para que dados sejam ágeis, fáceis e seguros.",
+      description: t('areaDataeTech.card.texto4'),
     },
     {
       id: 5,
-      title: "Desenvolvimento de Data Products",
+      title: t('areaDataeTech.card.titulo5'),
       icon: <DesenvolvimentoDataProducts />,
-      description: "A partir dos negócios e propósito dos nossos clientes, temos times habilitados a desenvolver diferentes produtos de análise de dados para múltiplos objetivos e canais"
+      description: t('areaDataeTech.card.texto5'),
     },
     {
       id: 6,
-      title: "Implementação de Data Lakes:",
+      title: t('areaDataeTech.card.titulo6'),
       icon: <ImplementacaoDataLakes />,
-      description:
-        "Toda a arquitetura, implantação e governança de big data passa por nosso time que escala todos esses bancos e os conecta a um data lake. "
+      description: t('areaDataeTech.card.texto6'),
     },
-    {
-      id: 7,
-      title: "Storytelling com Dados",
-      icon: <StorytellingDados />,
-      description:
-        'Quanto mais dados temos, mais históricas precisamos construir e interpretar. Pensando nisso temos times especializados em data view para essa construção de dashboards. '
-    },
+
   ];
 
 
@@ -160,8 +145,8 @@ const HomeSectionCard = () => {
         <div className={Style.grid}>
           <Fade direction="left" className={Style.title}>
             <h2>
-              <span>Núcleo</span>
-              <strong>Marketing</strong>
+              <span>{t('areaMarketing.titulo')}</span>
+              <strong>{t('areaMarketing.subTitulo')}</strong>
             </h2>
           </Fade>
           <div className={Style.navigation}>
@@ -232,8 +217,8 @@ const HomeSectionCard = () => {
 
           <Fade direction="right" className={Style.title}>
             <h2>
-              <span>Núcleo</span>
-              <strong>Data e Tech</strong>
+              <span>{t('areaDataeTech.titulo')}</span>
+              <strong>{t('areaDataeTech.subTitulo')}</strong>
             </h2>
           </Fade>
         </div>

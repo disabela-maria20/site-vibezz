@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import '@/utilities/styles/sass/globals.scss';
-import Head from 'next/head';
 
 export default function RootLayout({
   children,

@@ -4,14 +4,14 @@
 import { Cta, Title } from '@/component/atoms';
 import { Header } from '@/component/organisms';
 import transition from '@/utilities/transition';
-import { timeline } from "./timeline";
+
 import Style from "./Sobre.module.scss";
 import { Footer, HEro } from '@/component/molecules';
 import { useEffect, useState } from 'react';
 import { motion, useAnimate } from 'framer-motion';
 import Mapa from '@/utilities/svg/mapa';
-import { estados } from './estados';
 import { Fade } from 'react-awesome-reveal';
+import { useTranslations } from 'next-intl';
 
 interface Estado {
   id: number;
@@ -41,6 +41,82 @@ function useMenuAnimation(openIndexes: number[]) {
 }
 
 function Sobre() {
+  const t = useTranslations('avibezz');
+  const b = useTranslations('btn');
+  const timeline = [
+    {
+      id: 1,
+      data: '2019',
+      paragraph: t('areanossaevolucaodesde2019ate2023.texto1')
+    },
+    {
+      id: 2,
+      data: '2020',
+      paragraph: t('areanossaevolucaodesde2019ate2023.texto2')
+    },
+    {
+      id: 3,
+      data: '2021',
+      paragraph: t('areanossaevolucaodesde2019ate2023.texto3')
+    },
+    {
+      id: 4,
+      data: '2022',
+      paragraph: t('areanossaevolucaodesde2019ate2023.texto4')
+    },
+    {
+      id: 5,
+      data: '2023',
+      paragraph: t('areanossaevolucaodesde2019ate2023.texto5')
+    },
+  ]
+  const estados: Estado[] = [
+    {
+      id: 0,
+      data: t('areaSOLUCOESEMDIFERENTESTERRITORIOS.titulo1'),
+      paragraph: [
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto1'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto2'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto3'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto4'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto5'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto6'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto7'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto8'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto9'),
+      ]
+    },
+    {
+      id: 1,
+      data: t('areaSOLUCOESEMDIFERENTESTERRITORIOS.titulo2'),
+      paragraph: [
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto10'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto11'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto12'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto13'),
+      ]
+    },
+    {
+      id: 2,
+      data: t('areaSOLUCOESEMDIFERENTESTERRITORIOS.titulo3'),
+      paragraph: [
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto14'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto15'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto16'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto17'),
+      ]
+    },
+    {
+      id: 3,
+      data: t('areaSOLUCOESEMDIFERENTESTERRITORIOS.titulo4'),
+      paragraph: [
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto18'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto19'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto20'),
+        t('areaSOLUCOESEMDIFERENTESTERRITORIOS.texto21'),
+      ]
+    },
+  ];
   const [openTimelineIndexes, setOpenTimelineIndexes] = useState<number[]>([4]);
   const [openEstadoIndexes, setOpenEstadoIndexes] = useState<string[]>(["Brasil"]);
 
@@ -75,19 +151,16 @@ function Sobre() {
             <div className={Style.grid}>
               <Fade direction='left'>
                 <div>
-                  <Title>A vibezz</Title>
-                  <p>Somos uma agência Full Service atuante em Marketing e Dados. Nascemos e crescemos com um propósito: conectar tudo o que pensamos e fazemos aos canais de comunicação de forma construtiva e objetiva para nossos parceiros. A partir disso, formamos uma estrutura de dados que se conecta aos segmentos, construindo um ecossistema que se retroalimenta e gera novas iniciativas a partir do cruzamento desses polos.
-                  </p>
-                  <p>E assim nos propormos a criar empoderamento estratégico, tático e operacional por meio da conexão com os dados.</p>
+                  <Title>{t('areaavibezz.titulo')}</Title>
+                  <p>{t('areaavibezz.texto1')}</p>
+                  <p>{t('areaavibezz.texto2')}</p>
                 </div>
               </Fade>
               <Fade direction='right'>
                 <img src="../../images/illustration/card-sobre.png" alt="" />
               </Fade>
             </div>
-            <Cta>
-              Vamos Conversar?
-            </Cta>
+            <Cta>{b('cta')}</Cta>
           </div>
         </section>
 

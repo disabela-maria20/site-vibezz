@@ -15,8 +15,10 @@ import "swiper/css/navigation"
 import { useRef } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { cardParceiros } from './cardParceiros'
+import { useTranslations } from 'next-intl';
 
 const SlideClientes = () => {
+  const t = useTranslations('inicio');
   const container = useRef(null)
   const logo = [
     "/images/clientes/kisspng-logo.png",
@@ -26,7 +28,7 @@ const SlideClientes = () => {
   return (
     <>
       <section className={Style.SlideClientes}>
-        <Title>Clientes</Title>
+        <Title>{t('clientes')}</Title>
         <div className="container" ref={container}>
           <Fade duration={1700} cascade direction="up" delay={0.5} >
             <Swiper

@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 const path = require("path")
+const createNextIntlPlugin = require("next-intl/plugin")
+
 const nextConfig = {
+
   sassOptions: {
     includePaths: [path.join(__dirname, 'utilities', 'styles', "sass")],
     prependData: `
@@ -10,7 +13,8 @@ const nextConfig = {
   },
   reactStrictMode: true,
 
-  output: 'export',
+  //output: 'export',
 }
 
-module.exports = nextConfig
+const withNextIntl = createNextIntlPlugin();
+module.exports = withNextIntl(nextConfig);
