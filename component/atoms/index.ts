@@ -2,6 +2,7 @@ export { default as Title } from "./title"
 export { default as Nav } from "./Nav"
 export { default as Logo } from "./Logo"
 export { default as Cta} from './Cta'
+export { default as LocaleSwitcher} from './LocaleSwitcher'
 
 export { PlanejamentoMarca } from "./Icons"
 export { PlanejamentoOmnichannel } from "./Icons"

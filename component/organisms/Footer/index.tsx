@@ -5,8 +5,11 @@ import Link from "next/link"
 import { LiaInstagram } from "react-icons/lia";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations('footer');
+
   return (
     <footer className={Style.bgFooter}>
       <div className="container">
@@ -24,14 +27,14 @@ const Footer = () => {
           </div>
           <ul className={Style.link}>
             <li>
-              <Link href={'/'}>A vibezz</Link>
+              <Link href={'/'}>{t('link.vibezz')}</Link>
             </li>
             <li>
-              <Link href={'/parceiros'}>Parceiro</Link>
+              <Link href={'/parceiros'}>{t('link.segmentos')}</Link>
             </li>
 
             <li>
-              <Link href={'/segmentos'}>Segmentos</Link>
+              <Link href={'/segmentos'}>{t('link.parceiro')}</Link>
             </li>
             {/* <li>
               <Link href={'/projetos'}>Projetos</Link>
@@ -39,7 +42,8 @@ const Footer = () => {
           </ul>
           <div className={Style.entreEmcontato}>
             <div className={Style.flex}>
-              <h2>Vamos Conversar?
+              <h2>
+                {t('texto1')}
                 <motion.div whileHover={{
                   scale: 1.13,
                   transition: { duration: 0.25 }
@@ -48,7 +52,7 @@ const Footer = () => {
                     scale: 1.13,
                     transition: { duration: 0.9 }
                   }}>
-                  <Link href="/contato">Vamos!</Link>
+                  <Link href="/contato">{t('texto2')}</Link>
                 </motion.div>
               </h2>
               <ul>

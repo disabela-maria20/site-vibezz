@@ -217,5 +217,23 @@
   },
   "btn": {
     "cta": "Let's talk?"
+  },
+  "menu": {
+    "vibezz": "Vibezz",
+    "clientes": "customers",
+    "marketing": "marketing",
+    "dados": "data",
+    "times": "service",
+    "segmentos": "segments"
+  },
+
+  "footer": {
+    "texto1": "Let's Talk?",
+    "texto2": "Let's Go!",
+    "link": {
+      "vibezz": "Vibezz",
+      "segmentos": "Segments",
+      "parceiro": "Partners"
+    }
   }
 }

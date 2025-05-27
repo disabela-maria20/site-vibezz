@@ -9,16 +9,20 @@ type Props = {
 
 const Header = ({ children }: Props) => {
   const pathname = usePathname()
-  const l = ['/', 'en', 'pt']
-  const verificarHome = l.includes(pathname)
+  const isHome = pathname === '/' ||
+    pathname === '/en' ||
+    pathname === '/pt' ||
+    pathname === '/en/' ||
+    pathname === '/pt/'
+
 
   return (
     <>
-      <header className={Style.bg_header} style={{ backgroundPositionY: verificarHome ? 'center' : 'bottom' }}>
+      <header className={Style.bg_header} style={{ backgroundPositionY: !isHome ? 'center' : 'bottom' }}>
         <Menu />
         {children}
       </header>
-      {verificarHome && <div className={Style.border}></div>}
+      {!isHome && <div className={Style.border}></div>}
     </>
   )
 }

@@ -76,7 +76,7 @@
       "titulo5": "2023",
       "texto5": "Expansão para outros segmentos e áreas de atuação, mantendo o foco na obtenção do maior número de informação possível para a tomada de decisão."
     },
-    "areaSOLUÇÕESEMDIFERENTESTERRITÓRIOS": {
+    "areaSOLUCOESEMDIFERENTESTERRITORIOS": {
       "titulo": "SOLUÇÕES EM DIFERENTES TERRITÓRIOS",
       "titulo1": "brasil",
       "texto1": "Planejamento de posicionamento de marca",
@@ -214,5 +214,22 @@
   },
   "btn": {
     "cta": "Vamos Conversar?"
+  },
+  "menu": {
+    "vibezz": "A Vibezz",
+    "clientes": "clientes",
+    "marketing": "Marketing",
+    "dados": "Dados",
+    "times": "Times",
+    "segmentos": "segmentos"
+  },
+  "footer": {
+    "texto1": "Vamos Conversar?",
+    "texto2": "Vamos!",
+    "link": {
+      "vibezz": "A Vibezz",
+      "segmentos": "Segmentos",
+      "parceiro": "Parceiros"
+    }
   }
 }

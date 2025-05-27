@@ -201,7 +201,7 @@ function Sobre() {
               <div>
                 <Fade direction="right" >
                   <div>
-                    <h2>SOLUÇÕES EM DIFERENTES TERRITÓRIOS</h2>
+                    <h2>{t('areaSOLUCOESEMDIFERENTESTERRITORIOS.titulo')}</h2>
                     <ul>
                       {estados.map((data, index) => (
                         <li key={data.id} >

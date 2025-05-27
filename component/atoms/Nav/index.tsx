@@ -1,10 +1,12 @@
 'use client'
 
-import { motion, stagger, useAnimate } from "framer-motion"
+import { motion } from "framer-motion"
 import Style from "./Nav.module.scss"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
 import { CgChevronDown } from "react-icons/cg"
+import { useTranslations } from "next-intl"
+import LocaleSwitcher from "../LocaleSwitcher"
 
 interface NavProps {
   open: boolean
@@ -13,24 +15,29 @@ interface NavProps {
 interface NavItem {
   id: number;
   path: string;
-  submenu?: { title: string; path: string }[];
+  name?: string;
+  submenu?: { path: string, name: string }[];
 }
 
 const Nav: React.FC<NavProps> = ({ open }) => {
+  const t = useTranslations('menu');
+  const b = useTranslations('btn');
+
   const pathname = usePathname()
+
   const nav: NavItem[] = [
-    { id: 1, path: "/sobre" },
-    { id: 2, path: "/clientes" },
+    { id: 1, path: "/sobre", name: t('vibezz') },
+    { id: 2, path: "/clientes", name: t('clientes') },
     {
       id: 3,
+      name: t('times'),
       path: "/times",
       submenu: [
-        { title: "Marketing", path: "/times/marketing" },
-        { title: "Dados", path: "/times/dados" }
+        { path: "/times/marketing", name: t('marketing') },
+        { path: "/times/dados", name: t('dados') },
       ]
     },
-    { id: 4, path: "/segmentos" },
-    // { id: 5, path: "/projetos" }
+    { id: 4, path: "/segmentos", name: t('segmentos') },
   ];
   return (
     <nav className={`${Style.navBar}`}>
@@ -43,27 +50,28 @@ const Nav: React.FC<NavProps> = ({ open }) => {
             >
               {link.path !== "/times" ? (
                 <Link href={link.path}>
-                  {link.path === "/" || link.path === "/sobre" ? "A Vibezz" : link.path.slice(1)}
+                  {link.name}
                 </Link>
               ) : (
                 <>
                   <span>
-                    Times
+                    {t('times')}
                     <CgChevronDown />
                   </span>
-                  {link.submenu && (
+                  {link.submenu ? (
                     <ul className={Style.submenu}>
                       {link.submenu.map((sublink) => (
                         <li key={sublink.path}>
-                          <Link href={sublink.path}>{sublink.title}</Link>
+                          <Link href={sublink.path}>{sublink.name}</Link>
                         </li>
                       ))}
                     </ul>
-                  )}
+                  ) : null}
                 </>
               )}
             </li>
           ))}
+          <li><LocaleSwitcher /></li>
           <li className={Style.cta}>
             <motion.div
               whileHover={{
@@ -74,7 +82,7 @@ const Nav: React.FC<NavProps> = ({ open }) => {
                 scale: 1.13,
                 transition: { duration: 0.9 }
               }}>
-              <Link href="/contato"> Vamos Conversar?</Link>
+              <Link href="/contato">{b('cta')}</Link>
             </motion.div>
           </li>
         </ul>
