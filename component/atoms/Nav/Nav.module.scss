@@ -53,7 +53,7 @@
 
         li {
             position: relative;
-            span{
+            span {
                 display: flex;
                 align-items: center;
                 gap: 10px;
@@ -62,16 +62,15 @@
 
                 background-color: transparent;
             }
-            ul{
+            ul {
                 border-radius: 35px;
-            
+
                 background-color: rgba(255, 255, 255, 0.137);
                 padding: 10px 20px;
             }
         }
 
         li:not(.redes li, .submenu) {
-
             list-style-type: none;
             text-align: center;
             padding: 20px 0;
@@ -92,10 +91,10 @@
                 background-color: rgba(255, 255, 255, 0.137);
                 padding: 10px 20px;
             }
-            
+
             a,
             span {
-                font-family: 'Gantari', sans-serif;
+                font-family: "Gantari", sans-serif;
                 text-transform: capitalize;
                 font-weight: 400;
                 font-size: 1.4rem;
@@ -133,7 +132,7 @@
                 left: 0;
                 backdrop-filter: blur(5px);
                 border-radius: 25px;
-
+                width: 220px;
                 li {
                     text-align: left;
                     a,
@@ -142,7 +141,6 @@
                         &:hover {
                             background-color: transparent;
                             color: $primary-colors;
-
                         }
                     }
                 }
@@ -165,12 +163,10 @@
             }
 
             a {
-
                 span {
                     position: absolute;
                     right: -9999px;
                     visibility: hidden;
-
                 }
             }
         }

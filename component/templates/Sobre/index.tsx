@@ -69,6 +69,12 @@ function Sobre() {
       data: '2023',
       paragraph: t('areanossaevolucaodesde2019ate2023.texto5')
     },
+    {
+      id: 6,
+      data: '2024',
+      paragraph: t('areanossaevolucaodesde2019ate2023.texto6')
+    },
+
   ]
   const estados: Estado[] = [
     {
@@ -117,7 +123,7 @@ function Sobre() {
       ]
     },
   ];
-  const [openTimelineIndexes, setOpenTimelineIndexes] = useState<number[]>([4]);
+  const [openTimelineIndexes, setOpenTimelineIndexes] = useState<number[]>([timeline.length - 1]);
   const [openEstadoIndexes, setOpenEstadoIndexes] = useState<string[]>(["Brasil"]);
 
   const scope = useMenuAnimation(openTimelineIndexes);
@@ -165,7 +171,7 @@ function Sobre() {
         </section>
 
         <section className={Style.timeline}>
-          <Title>nossa evolução desde 2019 até 2023</Title>
+          <Title>{t('areaSOLUCOESEMDIFERENTESTERRITORIOS.titulo')}</Title>
           <div className="container">
             <ul className={Style.flex} ref={scope}>
               {timeline.map((data, index) => (

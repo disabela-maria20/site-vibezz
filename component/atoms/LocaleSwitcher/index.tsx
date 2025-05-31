@@ -2,11 +2,14 @@
 'use client'
 
 import { usePathname, useRouter } from "@/i18n/navigation"
+import { useLocale } from "next-intl"
 import { Locale } from "next-intl"
 import Style from './LocaleSwitcher.module.scss'
 export default function LocaleSwitcher() {
+
   const router = useRouter()
   const pathname = usePathname()
+  const currentLocale = useLocale()
   const locales = [
     {
       code: 'pt',
@@ -28,12 +31,12 @@ export default function LocaleSwitcher() {
     <div className={Style.localeSwitcher}>
       {locales.map((locale) => (
         <button
-          className={Style.btnCode}
+          className={`${Style.btnCode} ${currentLocale === locale.code ? Style.active : ''}`}
           key={locale.code}
           onClick={() => switchLocale(locale.code)}
           aria-label={`Switch to ${locale.name}`}
         >
-          <img src={`${locale.flag}`} alt={locale.name} />
+          <span>{locale.code}</span>
         </button>
       ))}
     </div>

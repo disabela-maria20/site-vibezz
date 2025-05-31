@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import { Fade } from "react-awesome-reveal";
 import Style from "./marketing.module.scss";
 import { Navigation, Pagination } from "swiper/modules";
-import { fail } from "assert";
+
 import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const SwiperOptions = {
   slidesPerView: 1,
   pagination: false,
-  navigation: false,
+  navigation: true,
   modules: [Navigation, Pagination],
   spaceBetween: 20,
   breakpoints: {

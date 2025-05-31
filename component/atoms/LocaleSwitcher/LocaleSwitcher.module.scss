@@ -7,9 +7,13 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    img {
-      width: 30px;
-      height: 30px;
+    span {
+      text-transform: uppercase !important;
+    }
+    &.active {
+      span {
+        font-weight: bold;
+      }
     }
   }
 }

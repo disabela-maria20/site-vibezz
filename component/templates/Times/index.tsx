@@ -21,15 +21,15 @@ function Times() {
     spaceBetween: 20,
     breakpoints: {
       640: {
-        slidesPerView: 2,
+        slidesPerView: 10,
         spaceBetween: 20
       },
       990: {
-        slidesPerView: 3,
+        slidesPerView: 10,
         spaceBetween: 10
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 7,
         spaceBetween: 10
       }
     }
