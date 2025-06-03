@@ -71,7 +71,6 @@ const Nav: React.FC<NavProps> = ({ open }) => {
               )}
             </li>
           ))}
-          <li><LocaleSwitcher /></li>
           <li className={Style.cta}>
             <motion.div
               whileHover={{
@@ -85,6 +84,7 @@ const Nav: React.FC<NavProps> = ({ open }) => {
               <Link href="/contato">{b('cta')}</Link>
             </motion.div>
           </li>
+          <li><LocaleSwitcher /></li>
         </ul>
       </div>
     </nav>

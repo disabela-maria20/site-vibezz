@@ -8,7 +8,12 @@
     border: none;
     cursor: pointer;
     span {
+      padding: 0 !important;
       text-transform: uppercase !important;
+
+      &:hover {
+        background: transparent !important;
+      }
     }
     &.active {
       span {
