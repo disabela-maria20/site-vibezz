@@ -33,9 +33,32 @@ function Contato() {
   if (currentLocale == 'pt') {
     return <>
       <Header />
-      <div className='container'>
-        <div id="hubspot-form-container"></div>
-      </div>
+      <section className={Style.contact}>
+        <div className="container">
+          <h1>Contato</h1>
+          <div className={Style.grid}>
+            <div>
+              <h2>Novos Negócios:</h2>
+              <a href="mailto:comercial@vibezz.com">comercial@vibezz.com </a>
+            </div>
+            <div>
+              <h2>Carreiras:</h2>
+              <a href="mailto:comercial@vibezz.com">contato@vibezz.com </a>
+            </div>
+          </div>
+          <div className={Style.grid}>
+            <div>
+              <h2>Nosso Escritório: </h2>
+              <address>
+                <p>São Paulo, Brasil </p>
+                <p>Av Caxingui, 234 </p>
+                <p>Vila Pirajussara </p>
+                <p>CEP: 05579-000</p>
+              </address>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   }
@@ -65,7 +88,6 @@ function Contato() {
               <p>CEP: 05579-000</p>
             </address>
           </div>
-
         </div>
       </div>
     </section>

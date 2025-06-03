@@ -12,14 +12,14 @@ export default function LocaleSwitcher() {
   const currentLocale = useLocale()
   const locales = [
     {
-      code: 'pt',
-      name: 'Português',
-      flag: '/images/brasil.png'
-    },
-    {
       code: 'en',
       name: 'English',
       flag: '/images/estados-unidos.png'
+    },
+    {
+      code: 'pt',
+      name: 'Português',
+      flag: '/images/brasil.png'
     }
   ]
 
