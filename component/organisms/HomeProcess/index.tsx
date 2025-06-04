@@ -2,9 +2,9 @@
 import { Cta, Title } from "@/component/atoms";
 import Style from "./HomeProcess.module.scss";
 import './style.scss';
-import { Ciculo } from "@/component/atoms/Icons";
+import { Ciculo, CirculoEN } from "@/component/atoms/Icons";
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export interface DataItem {
   id: number;
@@ -19,8 +19,6 @@ const ROTATIONS: any = {
   3: 35, // Planejamento
   4: 320, // Execução
 };
-
-
 
 const HomeProcess = () => {
   const t = useTranslations('inicio');
@@ -56,8 +54,10 @@ const HomeProcess = () => {
   const circulo = useRef<HTMLDivElement | null>(null);
   const [componente, setComponente] = useState<DataItem>(PROCESS[0]);
   const [rotation, setRotation] = useState(0);
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
   const [activeItem, setActiveItem] = useState<Element | null>(null);
+
+  const currentLocale = useLocale()
 
 
   const handlePathClick = useCallback((item: Element, index: number) => {
@@ -73,6 +73,7 @@ const HomeProcess = () => {
       item.classList.add('active');
       setActiveItem(item);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeItem]);
 
   useEffect(() => {
@@ -100,13 +101,14 @@ const HomeProcess = () => {
             <div
               ref={circulo}
               style={{
-                transform: `rotate(${rotation}deg)`,
+                transform: `rotate(${rotation}deg) ${currentLocale == 'pt' ? '' : 'scale(1.2)'}`,
                 transition: 'transform 0.6s ease-in-out',
                 width: '90%',
               }}
               className="circulo"
             >
-              <Ciculo />
+              {currentLocale == 'pt' ? <Ciculo /> : <CirculoEN />}
+
             </div>
             <div className="img-icon">
               <img src="/images/illustration/vibezz-icon.svg" alt="Icone Vibezz" />

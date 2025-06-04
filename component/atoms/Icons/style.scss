@@ -1,7 +1,7 @@
 .area-circulo {
   position: relative;
 
-  .img-icon{ 
+  .img-icon {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -10,14 +10,13 @@
     align-items: center;
     justify-content: center;
     pointer-events: none;
-    
+
     img {
       width: 150px;
       height: 150px;
     }
   }
   .circulo {
-
     display: block;
     margin: 0 auto;
     #Layer_1 {
@@ -27,10 +26,10 @@
       }
 
       g {
-        path {
+        path:not(path .active) {
           cursor: pointer;
         }
-        path.active{
+        path.active {
           fill: #1f417a;
         }
       }
@@ -67,7 +66,8 @@
     .cls-25,
     .cls-26,
     .cls-27,
-    .cls-28 {
+    .cls-28,
+    .st1 {
       fill: #fff;
       font-family: ArialMT, Arial;
       isolation: isolate;
@@ -205,4 +205,27 @@
       font-size: 21px;
     }
   }
+}
+.st0 {
+  fill: #3b7fab;
+}
+
+.st1 {
+  fill: #fff;
+}
+
+.st2 {
+  fill: #3b7fab;
+}
+
+.st3 {
+  fill: #3b7fab;
+}
+
+.st4 {
+  fill: #3b7fab;
+}
+
+.st5 {
+  fill: #3b7fab;
 }

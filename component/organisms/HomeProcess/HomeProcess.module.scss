@@ -1,4 +1,7 @@
 .processArea {
+  h1 {
+    margin-bottom: 30px;
+  }
   margin-bottom: 35px;
 
   @include media(lg) {
@@ -7,7 +10,6 @@
 
   .process {
     display: grid;
-
 
     @include media(xl) {
       position: relative;
@@ -21,14 +23,13 @@
       align-items: center;
     }
 
-
     .areaProcess {
       margin-top: 35px;
-      @include media(lg){
+      @include media(lg) {
         margin-top: 0;
       }
       span {
-        font-family: 'Gantari', sans-serif;
+        font-family: "Gantari", sans-serif;
         font-weight: 900;
         font-size: 90px;
         display: block;
@@ -41,27 +42,24 @@
       }
 
       h2 {
-        font-family: 'Gantari', sans-serif;
+        font-family: "Gantari", sans-serif;
         font-size: 31px;
         font-weight: 900;
         color: $quaternary-colos;
-
-
       }
 
       p {
-        font-family: 'Gantari', sans-serif;
+        font-family: "Gantari", sans-serif;
         font-size: 16px;
         font-weight: 400;
         margin-top: 20px;
-        @include media(lg){
+        @include media(lg) {
           font-size: 2.2rem;
           line-height: 3.1rem;
         }
       }
     }
   }
-
 }
 
 .title {

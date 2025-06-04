@@ -13,6 +13,7 @@ import Style from "./Home.module.scss"
 import { useTranslations } from 'next-intl';
 function Home() {
   const t = useTranslations('inicio');
+
   const certificacoes = [
     "MS_Startups_FH_lockup_hrz_OnLght_RGB.png",
     "MBPBadge-Darkbackground.jpg",
@@ -67,7 +68,6 @@ function Home() {
                 ))}
               </Swiper>
             </Fade>
-
           </div>
         </section>
       </main>

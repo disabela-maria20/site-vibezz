@@ -8,6 +8,7 @@ import { useLocale } from 'next-intl';
 import Style from "./Contato.module.scss";
 function Contato() {
   const currentLocale = useLocale()
+
   useEffect(() => {
     const script = document.createElement('script');
     script.src = "//js.hsforms.net/forms/embed/v2.js";
@@ -74,7 +75,7 @@ function Contato() {
             <a href="mailto:comercial@vibezz.com">comercial@vibezz.com </a>
           </div>
           <div>
-            <h2>Carreiras:</h2>
+            <h2>Careers:</h2>
             <a href="mailto:comercial@vibezz.com">contato@vibezz.com </a>
           </div>
         </div>

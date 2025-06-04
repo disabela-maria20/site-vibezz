@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 import { motion, useAnimate } from 'framer-motion';
 import Mapa from '@/utilities/svg/mapa';
 import { Fade } from 'react-awesome-reveal';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 interface Estado {
   id: number;
@@ -148,6 +148,7 @@ function Sobre() {
     setOpenEstadoIndexes([index]);
   };
 
+  const currentLocale = useLocale()
   return (
     <>
       <Header />
@@ -163,7 +164,7 @@ function Sobre() {
                 </div>
               </Fade>
               <Fade direction='right'>
-                <img src="../../images/illustration/card-sobre.png" alt="" />
+                {currentLocale === 'pt' ? <img src="../../images/illustration/card-sobre.png" alt="" /> : <img src="../../images/illustration/vibezz_site_a-vibezz_ingles.jpg" alt="" />}
               </Fade>
             </div>
             <Cta>{b('cta')}</Cta>
