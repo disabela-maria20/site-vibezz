@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 
-import { Title } from '@/component/atoms';
+import { Loading, Title } from '@/component/atoms';
 import { Footer, SlideClientes } from '@/component/molecules';
 import Hero from '@/component/molecules/Hero';
 import { Header, HomeProcess, HomeSectionCard } from '@/component/organisms';
@@ -11,6 +11,7 @@ import { HashNavigation, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Style from "./Home.module.scss"
 import { useTranslations } from 'next-intl';
+import { Suspense } from 'react';
 function Home() {
   const t = useTranslations('inicio');
 
@@ -21,7 +22,7 @@ function Home() {
   ]
 
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <Header>
         <Hero />
       </Header>
@@ -72,7 +73,7 @@ function Home() {
         </section>
       </main>
       <Footer />
-    </>
+    </Suspense>
   );
 }
 export default transition(Home);

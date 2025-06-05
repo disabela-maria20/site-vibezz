@@ -1,8 +1,9 @@
 
+
 import { Home } from '@/component/templates';
 import { Metadata } from 'next';
 
-import React, { Suspense } from 'react'
+import React from 'react'
 
 export const metadata: Metadata = {
   title: 'Vibezz',
@@ -11,9 +12,8 @@ export const metadata: Metadata = {
 
 const pageHome = () => {
   return (
-    <Suspense fallback={<p>Carregango</p>}>
-      <Home />
-    </Suspense>
+
+    <Home />
   )
 }
 
