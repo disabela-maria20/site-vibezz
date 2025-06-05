@@ -159,12 +159,14 @@
 
       "areaNossostimesutilizam": {
         "titulo": "our marketing team use",
-        "Nossos times utilizam": "teams used"
+        "Nossostimesutilizam": "teams used"
       }
     }
   },
   "dados": {
     "titulo": "Data & Analytics",
+    "paragrafo1": "Our Business Intelligence vertical dives deep into data to transform decisions. This includes a robust ETL process, where we collect information from diverse sources, transform it to meet business needs, and load it into a centralized data storage. With a complete focus on client objectives, we analyze behavior, trends, and key indicators to generate strategic and actionable insights.",
+    "paragrafo2": "Our approach integrates planning, immersion, and goal setting, solidifying the results and positioning Vibezz builds for its business partners.",
     "card": {
       "titulo1": "Data Collection and Analysis",
       "texto1": "From numerous collections coming from different sources, we map data related to consumption and sales behavior. Thus, we can achieve a 360-degree understanding of your users and even the market.",
@@ -183,7 +185,7 @@
     },
     "areaNossostimesutilizam": {
       "titulo": "Our Data Teams use",
-      "Nossos times utilizam": "teams used"
+      "Nossostimesutilizam": "teams used"
     }
   },
   "segmentos": {

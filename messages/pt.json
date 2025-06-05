@@ -157,12 +157,14 @@
 
       "areaNossostimesutilizam": {
         "titulo": "Nossos times utilizam",
-        "Nossos times utilizam": "times utilizados"
+        "Nossostimesutilizam": "times utilizados"
       }
     }
   },
   "dados": {
     "titulo": "Inteligência de Mercado",
+    "paragrafo1": "Nossa vertical de Inteligência de Mercado mergulha nos dados para transformar decisões. Isso inclui um robusto processo de ETL, onde coletamos informações de diversas fontes, as transformamos para atender às necessidades de negócio e as carregamos em um armazenamento de dados centralizado. Com foco total nos objetivos do cliente, analisamos comportamento, tendências e indicadores chave para gerar insights estratégicos e acionáveis.",
+    "paragrafo2": "Nossa abordagem integra planejamento, imersão e definição de metas, solidificando os resultados e posicionamentos construídos pela Vibezz a seus parceiros de negócio.",
     "card": {
       "titulo1": "Coleta e análise de Dados ",
       "texto1": "A partir de inúmeras coletas vindas de diferentes fontes, mapeamos os dados referentes a consumo e comportamento de vendas. Assim, podemos buscar um entendimento 360, dos seus usuários e até mesmo mercado.",
@@ -181,7 +183,7 @@
     },
     "areaNossostimesutilizam": {
       "titulo": "Nossos times utilizam",
-      "Nossos times utilizam": "times utilizados"
+      "Nossostimesutilizam": "times utilizados"
     }
   },
   "segmentos": {

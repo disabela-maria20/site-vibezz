@@ -9,6 +9,7 @@ import { Fade } from "react-awesome-reveal";
 import Style from "./dados.module.scss";
 import { Navigation, Pagination } from "swiper/modules";
 import { useTranslations } from "next-intl";
+import { text } from "stream/consumers";
 
 export const metadata: Metadata = {
   title: 'Times de Marketing | Vibezz',
@@ -70,7 +71,8 @@ function PageMarketing() {
   const MERCADO = [
     {
       title: t('titulo'),
-      text: "",
+      text: t('paragrafo1'),
+      text2: t('paragrafo2'),
       img: "/images/fotos/close-up-caucasian-man-s-portrait-isolated-blue-studio-neon-light.png",
       data: [
 
@@ -139,6 +141,7 @@ function PageMarketing() {
                 <Fade direction='right' delay={1} cascade damping={0.1}>
                   <h2>{data.title}</h2>
                   <p>{data.text}</p>
+                  <p>{data.text2}</p>
                 </Fade>
               </div>
             ))}
@@ -170,7 +173,6 @@ function PageMarketing() {
 
         <div className={Style.slideTime}>
           <Title>{t('areaNossostimesutilizam.titulo')}</Title>
-
           <>
             <div className="container">
               <Slide.Content className={Style.cardFlex} swiperOptions={SwiperOptions1}>
