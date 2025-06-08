@@ -2,11 +2,23 @@ import { Marketing } from "@/component/templates"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Times de Marketing | Vibezz',
-  description: 'The official Next.js Course Dashboard, built with App Router.',
+  title: 'Time de Marketing',
+  description: 'Conheça o time de Marketing da Vibezz — profissionais que criam campanhas inovadoras e estratégias focadas em resultados e crescimento.',
+  keywords: [
+    'Vibezz',
+    'time de marketing',
+    'marketing digital',
+    'campanhas criativas',
+    'estratégias de marketing',
+    'performance marketing',
+    'publicidade',
+    'growth hacking',
+    'branding',
+    'gestão de marketing'
+  ],
 };
- 
+
 function PageDados() {
-  return <Marketing/>
+  return <Marketing />
 }
 export default PageDados
