@@ -2,8 +2,9 @@ import { Projetos } from "@/component/templates"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Projetos | Vibezz',
-  description: 'The official Next.js Course Dashboard, built with App Router.',
+  title: 'Projetos Estratégicos',
+  description: 'Conheça os projetos que conectam dados, performance e criatividade.',
+  keywords: ['Projetos', 'Cases', 'Dados', 'Performance', 'Criatividade'],
 };
 
 function Page() {

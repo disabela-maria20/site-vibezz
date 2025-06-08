@@ -2,11 +2,13 @@ import { Segmentos } from "@/component/templates";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Segmentos | Vibezz',
-  description: 'The official Next.js Course Dashboard, built with App Router.',
+  title: 'Segmentos',
+  description: 'Presente no Brasil, México, Colômbia e EUA com soluções em marketing, dados e produtos digitais.',
+  keywords: ['Segmentos', 'Internacional', 'Brasil', 'México', 'Colômbia', 'EUA', 'Marketing'],
 };
 
+
 function PageSeg() {
-  return <Segmentos/>
+  return <Segmentos />
 }
 export default PageSeg

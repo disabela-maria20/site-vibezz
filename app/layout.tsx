@@ -1,6 +1,14 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import '@/utilities/styles/sass/globals.scss';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: {
+    default: 'Vibezz',
+    template: '%s | Vibezz',
+  },
+  description: 'Agência full service que conecta dados, marketing e tecnologia para gerar resultados.',
+};
 export default function RootLayout({
   children,
 }: Readonly<{
