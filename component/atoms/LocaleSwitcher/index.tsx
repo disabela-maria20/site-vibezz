@@ -11,16 +11,22 @@ export default function LocaleSwitcher() {
   const pathname = usePathname()
   const currentLocale = useLocale()
   const locales = [
+
+    {
+      code: 'pt',
+      name: 'Português',
+      flag: '/images/brasil.png'
+    },
     {
       code: 'en',
       name: 'English',
       flag: '/images/estados-unidos.png'
     },
     {
-      code: 'pt',
-      name: 'Português',
-      flag: '/images/brasil.png'
-    }
+      code: 'es',
+      name: 'Espanhol',
+      flag: ''
+    },
   ]
 
   const switchLocale = (locale: Locale) => {

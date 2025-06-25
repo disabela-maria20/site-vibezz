@@ -13,7 +13,9 @@ const Header = ({ children }: Props) => {
     pathname === '/en' ||
     pathname === '/pt' ||
     pathname === '/en/' ||
-    pathname === '/pt/'
+    pathname === '/pt/' ||
+    pathname === '/es/' ||
+    pathname === '/es'
 
 
   return (

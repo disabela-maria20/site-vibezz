@@ -1,0 +1,239 @@
+{
+  "inicio": {
+    "titulo": "La parceira conectada a tu ",
+    "titulo2": "planificación y resultados.",
+    "clientes": "Clientes",
+    "areaMarketing": {
+      "titulo": "Marketing",
+      "subTitulo": "Núcleo",
+      "card": {
+        "titulo1": "Planificación de marca de Marca",
+        "texto1": "Descubre tu diferencial competitivo y domina tu nicho de mercado, construyendo una marca auténtica y memorable que conquiste clientes.",
+        "titulo2": "Plan de canales omnichannel",
+        "texto2": "Mapea el journey del cliente y alcánzalo en cada etapa y donde quiera que esté, creando un plan personalizado para impulsar las métricas ideales de cada canal y/o audiencia.",
+        "titulo3": "Design 360º",
+        "texto3": "Soluciones creativas para diferentes necesidades, que buscan una metodología de conexión para las múltiples necesidades y canales, yendo desde el objetivo, las audiencias y resultados que necesitamos tener con el contenido.",
+        "titulo4": "Social Media",
+        "texto4": "Creamos historias que atraen, educan y convierten a tu público, exploramos diversos conceptos y formatos para atender las diferentes necesidades de las audiencias en sus distintos journeys.",
+        "titulo5": "Planificación de Medios",
+        "texto5": "Base de todo nuestro racional es la performance del producto, respetando sus características y viendo oportunidades, igualamos los canales desde el journey y funnel, creando modelos de atribución de acuerdo con nuestra estrategia",
+        "titulo6": "Digital Analytics",
+        "texto6": "Con la visión macro de toda la estrategia, funcionamiento de los canales y ejecución, nuestro equipo busca obtener los principales insights de todos los frentes y conectarlos directamente al negocio."
+      }
+    },
+    "areaDataeTech": {
+      "titulo": "Data y Tech",
+      "subTitulo": "Núcleo",
+      "card": {
+        "titulo1": "Recolección y análisis de Datos",
+        "texto1": "A partir de innumerables recolecciones provenientes de diferentes fuentes, mapeamos los datos referentes a consumo y comportamiento de ventas. Así, podemos buscar un entendimiento 360, de tus usuarios e incluso del mercado.",
+        "titulo2": "Data Fusion e Insights Integrados",
+        "texto2": "Unificamos bases de datos de diferentes canales y las cruzamos, a partir del tratamiento de esos datos, interpretamos sus funciones, características y cómo pueden complementarse.",
+        "titulo3": "Construcción, Aplicación y Análisis de Investigación",
+        "texto3": "A partir de diferentes oportunidades, que van desde el descubrimiento de públicos potenciales, o incluso su profundización, hasta la validación de campañas y productos, buscamos conectar aplicaciones de investigaciones con datos.",
+        "titulo4": "Gestión y Arquitectura de Base de Datos",
+        "texto4": "La cantidad de datos que son generados por sistemas y diferentes ambientes muchas veces necesitan ser gestionados de la mejor forma en diversos puntos de vista. Para eso nuestro equipo apoya en toda esa capa de gestión de Data Warehouse para que los datos sean ágiles, fáciles y seguros.",
+        "titulo5": "Desarrollo de Data Products",
+        "texto5": "A partir de los negocios y propósito de nuestros clientes, tenemos equipos habilitados para desarrollar diferentes productos de análisis de datos para múltiples objetivos y canales",
+        "titulo6": "Implementación de Data Lakes:",
+        "texto6": "Toda la arquitectura, implantación y gobernanza de big data pasa por nuestro equipo que escala todos esos bancos y los conecta a un data lake."
+      }
+    },
+    "areaapoiamosvoce": {
+      "titulo": "te apoyamos desde el inicio",
+      "titulo1": "Análisis",
+      "texto": "El flujo y datos generados parte para toda la cadena que se repite y se retroalimenta, así, buscando optimizar toda la estrategia y planificación.",
+      "titulo2": "Conexión de datos",
+      "texto2": "Para validar nuestras hipótesis y alternativas de ejecución, la conexión con los datos es primordial. Las investigaciones pueden hacerse a partir de grupos focales, así como análisis de base de datos de diferentes canales, sean de comunicación, medios, ventas, internos, etc.",
+      "titulo3": "Iniciativa",
+      "texto3": "A partir de la inmersión en los datos, las iniciativas surgen o pueden ser validadas, a partir de eso se definen las directrices, así como nuestros objetivos y lo que necesitamos de hecho enfrentar como resultados.",
+      "titulo4": "Planificación",
+      "texto4": "A partir de las hipótesis y datos validados, partimos para lo que de hecho queremos ejecutar, buscando métodos que conecten la esfera estratégica, pasando por la táctica y operacional.",
+      "titulo5": "Ejecución",
+      "texto5": "Entra en juego todo el equipo que enfrenta la rutina, los canales, y todas sus singularidades para conectar todo el flujo de lo que queremos hacer y cómo haremos que eso suceda."
+    },
+    "areaCertificacoes": {
+      "Certificacoes": "Sellos"
+    }
+  },
+
+  "avibezz": {
+    "areaavibezz": {
+      "titulo": "La vibezz",
+      "texto1": "Somos una agencia Full Service actuante en Marketing y Datos. Nacimos y crecimos con un propósito: conectar todo lo que pensamos y hacemos a los canales de comunicación de forma constructiva y objetiva para nuestros parceiros. A partir de eso, formamos una estructura de datos que se conecta a los segmentos, construyendo un ecosistema que se retroalimenta y genera nuevas iniciativas a partir del cruce de esos polos.",
+      "texto2": "Y así nos proponemos a crear empoderamiento estratégico, táctico y operacional por medio de la conexión con los datos."
+    },
+    "areanossaevolucaodesde2019ate2023": {
+      "titulo": "nuestra evolución desde 2019 hasta 2023",
+      "titulo1": "2019",
+      "texto1": "Vibezz nace en 2019 del constante deseo de sus socios de trabajar Iniciativas de Marketing totalmente basadas en datos y no más por feeling. Uno de los grandes diferenciales de Vibezz desde su creación es justamente ayudar a nuestros clientes a conectar su producto/servicios a sus clientes en potenciales, siempre buscando comprender cada producto/servicio y contando las historias correctas para los públicos correctos. Así, creando una sinergia entre estrategia y negocio",
+      "titulo2": "2020",
+      "texto2": "Año de desafío. Delante de un escenario bastante triste y complicado, como Humanidad, concentramos nuestros esfuerzos para apoyar a nuestros clientes en aquello que necesitasen y, también, colocamos un foco muy grande en estudiar, aprender y estructurar cada vez más nuestro ecosistema de información.",
+      "titulo3": "2021",
+      "texto3": "Año de retomada, donde buscamos estructurarnos en todas las áreas internamente y donde cerramos nuestro primer contrato internacional (México)",
+      "titulo4": "2022",
+      "texto4": "Año de expansión internacional, con actuación en varios clientes en México y ahora actuando también en Colombia y EUA.",
+      "titulo5": "2023",
+      "texto5": "Expansión para otros segmentos y áreas de actuación, manteniendo el foco en la obtención del mayor número de información posible para la toma de decisión.",
+      "titulo6": "2024",
+      "texto6": "Maduramos todas nuestras verticales y comenzamos proyectos mayores y nuevas interlocuciones dentro de entretenimiento, trayendo players de streaming para nuestra cartera, además de players clave en MÉXICO y América Latina."
+    },
+    "areaSOLUCOESEMDIFERENTESTERRITORIOS": {
+      "titulo": "NUESTRA EVOLUCIÓN DESDE 2019 HASTA 2024",
+      "titulo1": "brasil",
+      "texto1": "Planificación de posicionamiento de marca",
+      "texto2": "Gestión de canales y redes sociales",
+      "texto3": "Planificación y Gestión de medios",
+      "texto4": "Análisis de datos y negocio",
+      "texto5": "Gestión de base de datos",
+      "texto6": "Desarrollo de productos",
+      "texto7": "Business Intelligene",
+      "texto8": "Storytelling con Datos",
+      "texto9": "Dashboards NRT",
+      "titulo2": "estados unidos",
+      "texto10": "Creación de assets",
+      "texto11": "Análisis de datos",
+      "texto12": "Planificación de marca",
+      "texto13": "Desarrollo de productos",
+      "titulo3": "colômbia",
+      "texto14": "Análisis de datos",
+      "texto15": "Gestión de base de datos",
+      "texto16": "Desarrollo de productos",
+      "texto17": "Storytelling con Datos",
+      "texto18": "Dashboards NRT",
+      "titulo4": "méxico",
+      "texto19": "Análisis de datos",
+      "texto20": "Gestión de base de datos",
+      "texto21": "Desarrollo de productos",
+      "texto22": "Storytelling con Datos",
+      "texto23": "Dashboards NRT"
+    }
+  },
+
+  "clientes": {
+    "titulo": "Parceiros",
+    "titulo1": "APAS",
+    "texto1": "Es la entidad representativa del sector supermercadista en el estado de São Paulo. Además de estar al frente de varias interlocuciones con esos supermercados, es responsable por el APAS SHOW, el mayor evento de alimentos y bebidas de las Américas y la mayor feria supermercadista del mundo.",
+    "titulo2": "Paramount Pictures",
+    "texto2": "Paramount Pictures es uno de los estudios de cine más antiguos y renombrados del mundo. Fundada en 1912, en los Estados Unidos, es considerada uno de los mayores estudios de Hollywood.",
+    "titulo3": "IMAX",
+    "texto3": "IMAX es la tecnología cinematográfica más avanzada del mundo, ofreciendo una experiencia única e inmersiva. Si buscas una experiencia cinematográfica de alta calidad, IMAX es la elección perfecta. Las salas IMAX están presentes en decenas de países, desde los Estados Unidos, donde la tecnología tuvo origen, hasta países de Europa, Asia, América Latina y Oceanía.",
+    "titulo4": "Sony Pictures",
+    "texto4": "Sony Pictures es una de las mayores empresas de entretenimiento del mundo, responsable por producir y distribuir películas, programas de televisión, animaciones y otros contenidos.",
+    "titulo5": "Diamond Films",
+    "texto5": "Diamond Films es la mayor distribuidora independiente de América Latina. Fundada en 2010, se destaca por distribuir las mejores películas independientes de la industria cinematográfica. Actualmente, la empresa actúa en siete países de América Latina: Argentina, Bolivia, Brasil, Chile, Colombia, Perú y México.",
+    "titulo6": "Paris Filmes",
+    "texto6": "Paris Filmes es la mayor distribuidora brasileña independiente y actúa en el mercado de distribución de películas en Brasil y en América Latina, destacándose por la alta calidad cinematográfica",
+    "titulo7": "Cinesystem",
+    "texto7": "Una de las mayores redes de cines de Brasil. Conocida por ofrecer una experiencia cinematográfica de alta calidad, la red se destaca por sus complejos modernos y cómodos, con diversas tecnologías innovadoras",
+    "titulo8": "UIP",
+    "texto8": "Una de las mayores distribuidoras de América Latina, UIP es la joint venture entre Universal Pictures, Sony Pictures y Paramount Pictures, quedando responsable por la estratégica y lanzamiento de los principales títulos de esos studios por muchos países de América Latina.",
+    "titulo9": "Filmelier",
+    "texto9": "Una plataforma digital que se dedica a ofrecer una experiencia completa y personalizada para los amantes del cine",
+    "titulo10": "SuperVarejo",
+    "texto10": "La principal revista del mercado de retail, SuperVarejo reúne una experiencia que permea entre el offline y online, siempre ofertando noticias calificadas y assertivas para diversos frentes del retail, que vaya desde tendencias, tecnologías y economía.",
+    "titulo11": "Velox Tickets",
+    "texto11": "Una de las mayores ticketeras en América Latina, Velox oferta una experiencia fluida de compra, que engaja y permite que su journey sea agradable al usuario, optimizando así el consumo y conversión online de entradas.",
+    "titulo12": "Cineart",
+    "texto12": "La mayor red de cines de Minas Gerais, estado ese que tiene gran influencia en el mercado cinematográfico. Cineart busca conectar sus consumidores a sus innumerables marcas y experiencias, que van desde salas hasta productos."
+  },
+  "Marketing": {
+    "titulo": "Marketing",
+    "texto1": "Nuestra vertical de marketing está preparada para tener una inmersión completa en múltiples segmentos y negocios, mapeando el propósito del cliente, así como sus indicadores clave, para así conectar la estrategia de comunicación y cómo ella y su operación serán efectivas para el resultado de nuestro cliente.",
+    "texto2": "Con metodologías ágiles y abordando diferentes conceptos de growth, buscamos aplicar, testar y comprender todas nuestras iniciativas para buscar un ciclo continuo de mejoras en todos los frentes.",
+    "card": {
+      "titulo1": "Planificación de Marca",
+      "texto1": "Descubre tu diferencial competitivo y domina tu nicho de mercado, construyendo una marca auténtica y memorable que conquiste clientes.",
+      "titulo2": "Plan de canales omnichannel",
+      "texto2": "Mapea el journey del cliente y alcánzalo en cada etapa y donde quiera que esté, creando un plan personalizado para impulsar las métricas ideales de cada canal y/o audiencia.",
+      "titulo3": "Design 360º",
+      "texto3": "Creamos historias que atraen, educan y convierten a tu público, exploramos diversos conceptos y formatos para atender las diferentes necesidades de las audiencias en sus distintos journeys.",
+      "titulo4": "Social Media",
+      "texto4": "Creamos historias que atraen, educan y convierten a tu público, exploramos diversos conceptos y formatos para atender las diferentes necesidades de las audiencias en sus distintos journeys.",
+      "titulo5": "Planificación de Medios",
+      "texto5": "Base de todo nuestro racional es la performance del producto, respetando sus características y viendo oportunidades, igualamos los canales desde el journey y funnel, creando modelos de atribución de acuerdo con nuestra estrategia",
+      "titulo6": "Digital Analytics",
+      "texto6": "Con la visión macro de toda la estrategia, funcionamiento de los canales y ejecución, nuestro equipo busca obtener los principales insights de todos los frentes y conectarlos directamente al negocio.",
+
+      "areaNossostimesutilizam": {
+        "titulo": "Nuestros equipos utilizan",
+        "Nossostimesutilizam": "equipos utilizados"
+      }
+    }
+  },
+  "dados": {
+    "titulo": "Inteligencia de Mercado",
+    "paragrafo1": "Nuestra vertical de Inteligencia de Mercado se sumerge en los datos para transformar decisiones. Esto incluye un robusto proceso de ETL, donde recolectamos informaciones de diversas fuentes, las transformamos para atender las necesidades de negocio y las cargamos en un almacenamiento de datos centralizado. Con foco total en los objetivos del cliente, analizamos comportamiento, tendencias e indicadores clave para generar insights estratégicos y accionables.",
+    "paragrafo2": "Nuestro abordaje integra planificación, inmersión y definición de metas, solidificando los resultados y posicionamientos construidos por Vibezz a sus parceiros de negocio.",
+    "card": {
+      "titulo1": "Recolección y análisis de Datos",
+      "texto1": "A partir de innumerables recolecciones provenientes de diferentes fuentes, mapeamos los datos referentes a consumo y comportamiento de ventas. Así, podemos buscar un entendimiento 360, de tus usuarios e incluso del mercado.",
+      "titulo2": "Data Fusion e Insights Integrados",
+      "texto2": "Unificamos bases de datos de diferentes canales y las cruzamos, a partir del tratamiento de esos datos, interpretamos sus funciones, características y cómo pueden complementarse.",
+      "titulo3": "Construcción, Aplicación y Análisis de Investigación",
+      "texto3": "A partir de diferentes oportunidades, que van desde el descubrimiento de públicos potenciales, o incluso su profundización, hasta la validación de campañas y productos, buscamos conectar aplicaciones de investigaciones con datos.",
+      "titulo4": "Gestión y Arquitectura de Base de Datos",
+      "texto4": "La cantidad de datos que son generados por sistemas y diferentes ambientes muchas veces necesitan ser gestionados de la mejor forma en diversos puntos de vista. Para eso nuestro equipo apoya en toda esa capa de gestión de Data Warehouse para que los datos sean ágiles, fáciles y seguros.",
+      "titulo5": "Desarrollo de Data Products",
+      "texto5": "A partir de los negocios y propósito de nuestros clientes, tenemos equipos habilitados para desarrollar diferentes productos de análisis de datos para múltiples objetivos y canales",
+      "titulo6": "Implementación de Data Lakes",
+      "texto6": "Toda la arquitectura, implantación y gobernanza de big data pasa por nuestro equipo que escala todos esos bancos y los conecta a un data lake.",
+      "titulo7": "Storytelling con Datos",
+      "texto7": "Cuanto más datos tenemos, más historias precisamos construir e interpretar. Pensando en eso tenemos equipos especial."
+    },
+    "areaNossostimesutilizam": {
+      "titulo": "Nuestros equipos utilizan",
+      "Nossostimesutilizam": "equipos utilizados"
+    }
+  },
+  "segmentos": {
+    "titulo": "segmentos",
+    "texto": "Partiendo de la premisa que nos conectamos con los indicadores clave de nuestro cliente, nuestros equipos están enfocados en diferentes mercados para cada vez más especializarnos en esos segmentos y al mismo tiempo usar de experiencia de otros para retroalimentar iniciativas.",
+    "card": {
+      "titulo1": "Cine",
+      "texto1": "Estrategia",
+      "texto2": "Canales",
+      "texto3": "Contenidos",
+      "texto4": "Performance",
+      "texto5": "Recolección de datos",
+      "texto6": "Gestión de datos",
+      "texto7": "Análisis de datos",
+      "titulo2": "Retail",
+      "texto8": "Planificación",
+      "texto9": "Estrategia",
+      "texto10": "Canales",
+      "texto11": "Performance",
+      "texto12": "Contenidos",
+      "titulo3": "Streaming",
+      "texto13": "Planificación",
+      "texto14": "Gestión de datos",
+      "texto15": "Análisis de datos",
+      "texto16": "Productos personalizados",
+      "titulo4": "Bebidas",
+      "texto17": "Planificación",
+      "texto18": "Estrategia",
+      "texto19": "Canales",
+      "texto20": "Performance"
+    }
+  },
+  "btn": {
+    "cta": "¿Vamos a Conversar?"
+  },
+  "menu": {
+    "vibezz": "La Vibezz",
+    "clientes": "clientes",
+    "marketing": "Marketing",
+    "dados": "Datos",
+    "times": "Equipos",
+    "segmentos": "segmentos"
+  },
+  "footer": {
+    "texto1": "¿Vamos a Conversar?",
+    "texto2": "¡Vamos!",
+    "link": {
+      "vibezz": "La Vibezz",
+      "segmentos": "Segmentos",
+      "parceiro": "Parceiros"
+    }
+  }
+}
