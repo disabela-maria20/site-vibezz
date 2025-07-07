@@ -164,7 +164,9 @@ function Sobre() {
                 </div>
               </Fade>
               <Fade direction='right'>
-                {currentLocale === 'pt' ? <img src="../../images/illustration/card-sobre.png" alt="" /> : <img src="../../images/illustration/vibezz_site_a-vibezz_ingles.jpg" alt="" />}
+                {currentLocale === 'pt' && <img src="../../images/illustration/card-sobre.png" alt="" />}
+                {currentLocale === 'en' && <img src="../../images/illustration/vibezz_site_a-vibezz_ingles.jpg" alt="" />}
+                {currentLocale === 'es' && <img src="../../images/illustration/vibezz_site_a-vibezz_espanhol.jpg" alt="" />}
               </Fade>
             </div>
             <Cta>{b('cta')}</Cta>
