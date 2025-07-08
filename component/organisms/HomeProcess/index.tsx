@@ -2,7 +2,7 @@
 import { Cta, Title } from "@/component/atoms";
 import Style from "./HomeProcess.module.scss";
 import './style.scss';
-import { Ciculo, CirculoEN } from "@/component/atoms/Icons";
+import { Ciculo, CirculoEN, CirculoES } from "@/component/atoms/Icons";
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -20,6 +20,14 @@ const ROTATIONS: any = {
   4: 320, // Execução
 };
 
+const ROTATIONS_ES: any = {
+  0: 250, // Análise
+  1: 178, // Conexão
+  2: 105, // Iniciativa
+  3: 35, // Planejamento
+  4: 320, // Execução
+};
+
 const HomeProcess = () => {
   const t = useTranslations('inicio');
   const b = useTranslations('btn');
@@ -27,7 +35,7 @@ const HomeProcess = () => {
     {
       id: 0,
       name: t('areaapoiamosvoce.titulo1'),
-      paragraph: t('areaapoiamosvoce.texto')
+      paragraph: t('areaapoiamosvoce.texto1')
     },
     {
       id: 1,
@@ -65,6 +73,7 @@ const HomeProcess = () => {
       setComponente(PROCESS[index]);
       const newRotation = ROTATIONS[index];
       setRotation(newRotation);
+
 
       if (activeItem) {
         activeItem.classList.remove('active');
@@ -107,8 +116,9 @@ const HomeProcess = () => {
               }}
               className="circulo"
             >
-              {currentLocale == 'pt' ? <Ciculo /> : <CirculoEN />}
-
+              {currentLocale == 'pt' && <Ciculo />}
+              {currentLocale == 'es' && <CirculoES />}
+              {currentLocale == 'en' && <CirculoEN />}
             </div>
             <div className="img-icon">
               <img src="/images/illustration/vibezz-icon.svg" alt="Icone Vibezz" />

@@ -41,16 +41,21 @@
     },
     "areaapoiamosvoce": {
       "titulo": "te apoyamos desde el inicio",
-      "titulo1": "Análisis",
-      "texto": "El flujo y datos generados parte para toda la cadena que se repite y se retroalimenta, así, buscando optimizar toda la estrategia y planificación.",
-      "titulo2": "Conexión de datos",
-      "texto2": "Para validar nuestras hipótesis y alternativas de ejecución, la conexión con los datos es primordial. Las investigaciones pueden hacerse a partir de grupos focales, así como análisis de base de datos de diferentes canales, sean de comunicación, medios, ventas, internos, etc.",
-      "titulo3": "Iniciativa",
-      "texto3": "A partir de la inmersión en los datos, las iniciativas surgen o pueden ser validadas, a partir de eso se definen las directrices, así como nuestros objetivos y lo que necesitamos de hecho enfrentar como resultados.",
-      "titulo4": "Planificación",
-      "texto4": "A partir de las hipótesis y datos validados, partimos para lo que de hecho queremos ejecutar, buscando métodos que conecten la esfera estratégica, pasando por la táctica y operacional.",
-      "titulo5": "Ejecución",
-      "texto5": "Entra en juego todo el equipo que enfrenta la rutina, los canales, y todas sus singularidades para conectar todo el flujo de lo que queremos hacer y cómo haremos que eso suceda."
+
+      "titulo1": "Ejecución",
+      "texto1": "Entra en juego todo el equipo que enfrenta la rutina, los canales, y todas sus singularidades para conectar todo el flujo de lo que queremos hacer y cómo haremos que eso suceda.",
+
+      "titulo2": "Análisis",
+      "texto2": "El flujo y datos generados parte para toda la cadena que se repite y se retroalimenta, así, buscando optimizar toda la estrategia y planificación.",
+
+      "titulo3": "Conexión de datos",
+      "texto3": "Para validar nuestras hipótesis y alternativas de ejecución, la conexión con los datos es primordial. Las investigaciones pueden hacerse a partir de grupos focales, así como análisis de base de datos de diferentes canales, sean de comunicación, medios, ventas, internos, etc.",
+
+      "titulo4": "Iniciativa",
+      "texto4": "A partir de la inmersión en los datos, las iniciativas surgen o pueden ser validadas, a partir de eso se definen las directrices, así como nuestros objetivos y lo que necesitamos de hecho enfrentar como resultados.",
+
+      "titulo5": "Planificación",
+      "texto5": "A partir de las hipótesis y datos validados, partimos para lo que de hecho queremos ejecutar, buscando métodos que conecten la esfera estratégica, pasando por la táctica y operacional."
     },
     "areaCertificacoes": {
       "Certificacoes": "Sellos"

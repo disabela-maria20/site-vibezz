@@ -40,6 +40,8 @@
       }
     },
     "areaapoiamosvoce": {
+      "titulo5": "Execução",
+      "texto5": "Entra em jogo todo o time que encara a rotina, os canais, e todas as suas singularidades para conectar todo o fluxo do que queremos fazer e como faremos isso acontecer.",
       "titulo": "apoiamos você desde o início",
       "titulo1": "Análise",
       "texto": "O fluxo e dados gerados parte para toda a cadeia que se repete e se retroalimenta, assim, buscando otimizar toda a estratégia e planejamento.",
@@ -48,9 +50,7 @@
       "titulo3": "Iniciativa",
       "texto3": "A partir da imersão nos dados, as iniciativas surgem ou podem ser validadas, a partir disso diretrizes são definidas, bem como os nossos objetivos e o que precisamos de fato encarar como resultados.",
       "titulo4": "Planejamento",
-      "texto4": "A partir das hipóteses e dados validados, partimos para o que de fato queremos executar, buscando métodos que conectem a esfera estratégica, passando pela tática e operacional.",
-      "titulo5": "Execução",
-      "texto5": "Entra em jogo todo o time que encara a rotina, os canais, e todas as suas singularidades para conectar todo o fluxo do que queremos fazer e como faremos isso acontecer."
+      "texto4": "A partir das hipóteses e dados validados, partimos para o que de fato queremos executar, buscando métodos que conectem a esfera estratégica, passando pela tática e operacional."
     },
     "areaCertificacoes": {
       "Certificacoes": "Selos"
