@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Logo } from "@/component/atoms"
 import Style from "./Footer.module.scss"
-import Link from "next/link"
+import { Link } from '@/i18n/navigation'
 import { LiaInstagram } from "react-icons/lia";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { motion } from "framer-motion";

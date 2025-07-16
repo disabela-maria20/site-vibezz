@@ -13,7 +13,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
 
-  // output: 'export',
+  output: 'export',
 }
 
 const withNextIntl = createNextIntlPlugin();

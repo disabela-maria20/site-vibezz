@@ -4,7 +4,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
-const locales = ['en', 'pt'];
+const locales = ['en', 'pt', 'es'];
 
 export const dynamic = 'force-static';
 

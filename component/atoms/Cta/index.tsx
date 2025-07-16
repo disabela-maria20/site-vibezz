@@ -1,7 +1,9 @@
 import React from 'react'
 import Style from './Cta.module.scss'
-import Link from 'next/link'
+
+
 import { motion } from 'framer-motion'
+import { Link } from '@/i18n/navigation'
 
 type Props = {
   children?: React.ReactNode
