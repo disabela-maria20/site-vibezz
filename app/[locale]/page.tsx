@@ -24,12 +24,19 @@ export const metadata: Metadata = {
     ],
     locale: 'pt-BR',
     type: 'website'
-  }
+  },
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+      'pt-Br': '/pt-BR',
+      'es': '/es'
+    },
+  },
 };
 
 const pageHome = () => {
   return (
-
     <Home />
   )
 }
